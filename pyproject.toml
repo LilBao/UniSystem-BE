@@ -1,0 +1,57 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "unisystem-backend"
+version = "0.1.0"
+description = "Backend for the unisystem evaluation pipeline"
+requires-python = ">=3.12"
+dependencies = [
+  "asyncpg>=0.30,<1",
+  "cloudinary>=1.46,<2",
+  "fastapi>=0.115,<1",
+  "graphifyy>=0.9.55,<0.10",
+  "httpx>=0.28,<1",
+  "pydantic-settings>=2.6,<3",
+  "python-multipart>=0.0.20,<1",
+  "pypdf>=6.0,<7",
+  "redis>=5.2,<6",
+  "requests>=2.32,<3",
+  "sqlalchemy[asyncio]>=2.0,<3",
+  "uvicorn[standard]>=0.32,<1",
+]
+
+[project.optional-dependencies]
+# Optional local fallback. Official API mode uses the base httpx dependency.
+ocr-local = ["paddleocr[doc-parser]>=3.7,<4"]
+ocr-local-cpu = ["paddleocr[doc-parser]>=3.7,<4", "paddlepaddle>=3.2.1,<4"]
+dev = [
+  "mypy>=1.13,<2",
+  "pytest>=8.3,<9",
+  "pytest-asyncio>=0.24,<1",
+  "ruff>=0.8,<1",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/app"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+plugins = ["pydantic.mypy"]
+
+[[tool.mypy.overrides]]
+module = ["cloudinary", "cloudinary.*"]
+ignore_missing_imports = true

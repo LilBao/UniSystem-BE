@@ -1,0 +1,2 @@
+# Optional CPU fallback for local OCR. Official API users do not need this file.
+-e .[ocr-local-cpu]
