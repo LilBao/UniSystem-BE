@@ -1,5 +1,6 @@
 import asyncio
 import hashlib
+import logging
 import time
 from pathlib import Path
 from urllib.parse import urlsplit
@@ -14,6 +15,8 @@ from app.core.error_codes import ErrorCode
 from app.core.exceptions import AppError
 from app.models.submission_model import Artifact
 from app.repositories.cloudinary_repository import CloudinaryRepository
+
+logger = logging.getLogger("uvicorn.error")
 
 
 class ArtifactRepository:
@@ -90,15 +93,29 @@ class ArtifactRepository:
     async def download_to(self, artifact: Artifact, destination: Path, max_bytes: int) -> None:
         if artifact.byte_size <= 0 or artifact.byte_size > max_bytes:
             raise AppError(ErrorCode.PAYLOAD_TOO_LARGE)
+
+        cache_dir = self.settings.cache_dir / "artifacts"
+        cache_file = cache_dir / artifact.sha256
+        if cache_file.exists() and cache_file.stat().st_size == artifact.byte_size:
+            logger.info("Artifact %s found in local cache, using cached file", artifact.id)
+            import shutil
+            shutil.copyfile(cache_file, destination)
+            return
+
         url = self._download_url(artifact)
         digest = hashlib.sha256()
         size = 0
+        timeout = httpx.Timeout(
+            self.settings.artifact_download_timeout_seconds,
+            connect=30.0,
+            read=self.settings.artifact_download_timeout_seconds,
+        )
         try:
             async with asyncio.timeout(self.settings.artifact_download_timeout_seconds):
-                async with httpx.AsyncClient(follow_redirects=False) as client:
+                async with httpx.AsyncClient(follow_redirects=True, timeout=timeout) as client:
                     async with client.stream("GET", url) as response:
                         response.raise_for_status()
-                        with destination.open("xb") as output:
+                        with destination.open("wb") as output:
                             async for chunk in response.aiter_bytes(64 * 1024):
                                 size += len(chunk)
                                 if size > max_bytes or size > artifact.byte_size:
@@ -107,7 +124,18 @@ class ArtifactRepository:
                                 output.write(chunk)
             if size != artifact.byte_size or digest.hexdigest() != artifact.sha256:
                 raise AppError(ErrorCode.CONFLICT, "Artifact checksum or size changed")
+
+            try:
+                cache_dir.mkdir(parents=True, exist_ok=True)
+                import shutil
+                shutil.copyfile(destination, cache_file)
+            except Exception as exc:
+                logger.warning("Failed to save artifact to cache: %s", exc)
+
+        except AppError:
+            raise
         except (httpx.HTTPError, TimeoutError, OSError) as exc:
+            logger.exception("Failed to download artifact %s from %s: %s", artifact.id, url, exc)
             raise AppError(ErrorCode.STORAGE_ERROR, "Could not download artifact") from exc
 
 

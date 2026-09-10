@@ -1,4 +1,5 @@
 from functools import lru_cache
+from pathlib import Path
 from typing import Literal
 
 from pydantic import model_validator
@@ -21,7 +22,8 @@ class Settings(BaseSettings):
     source_extract_max_depth: int = 20
     source_extract_max_ratio: float = 100
     source_parse_max_file_bytes: int = 2 * 1024 * 1024
-    ocr_provider: Literal["paddle_official", "local"] = "paddle_official"
+    ocr_provider: Literal["paddle_official", "local", "colab"] = "paddle_official"
+    ocr_colab_url: str = ""
     paddleocr_upload_mode: Literal["auto", "file", "pages"] = "auto"
     paddleocr_access_token: str = ""
     paddleocr_model: Literal["PaddleOCR-VL", "PaddleOCR-VL-1.5", "PaddleOCR-VL-1.6"] = (
@@ -43,6 +45,8 @@ class Settings(BaseSettings):
     claim_llm_api_key: str = ""
     claim_llm_model: str = ""
     claim_max_input_chars: int = 24000
+    cache_dir: Path = Path(".cache")
+    cache_ttl_days: int = 7
     graphify_version: str = "0.9.55"
     graphify_timeout_seconds: float = 1800
     graphify_max_workers: int = 4
@@ -78,6 +82,7 @@ class Settings(BaseSettings):
             "source_extract_max_ratio",
             "source_parse_max_file_bytes",
             "claim_max_input_chars",
+            "cache_ttl_days",
             "graphify_timeout_seconds",
             "graphify_max_workers",
             "max_report_bytes",

@@ -1,3 +1,5 @@
+from contextlib import asynccontextmanager
+
 from fastapi import FastAPI, Request
 from fastapi.exceptions import RequestValidationError
 from fastapi.responses import JSONResponse
@@ -7,8 +9,19 @@ from app.controllers.upload_controller import router as upload_router
 from app.core.config import get_settings
 from app.core.error_codes import ErrorCode, get_error
 from app.core.exceptions import AppError
+from app.services.cache_eviction_service import evict_stale_cache
 
-app = FastAPI(title=get_settings().app_name, version="0.1.0")
+
+@asynccontextmanager
+async def lifespan(_: FastAPI):
+    import asyncio
+
+    settings = get_settings()
+    await asyncio.to_thread(evict_stale_cache, settings)
+    yield
+
+
+app = FastAPI(title=get_settings().app_name, version="0.1.0", lifespan=lifespan)
 app.include_router(submission_router)
 app.include_router(upload_router)
 

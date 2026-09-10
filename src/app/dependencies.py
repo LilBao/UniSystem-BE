@@ -6,6 +6,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.adapters.archive import SafeZipExtractor
 from app.adapters.claim_llm import ClaimLLMAdapter
+from app.adapters.colab_parser import ColabParserAdapter
 from app.adapters.graphify import GraphifyAdapter
 from app.adapters.local_parser import LocalParserAdapter
 from app.adapters.parser import PaddleParserAdapter
@@ -26,10 +27,12 @@ from app.services.submission_service import SubmissionService
 
 
 @lru_cache
-def get_parser_adapter() -> PaddleParserAdapter | LocalParserAdapter:
+def get_parser_adapter() -> PaddleParserAdapter | LocalParserAdapter | ColabParserAdapter:
     settings = get_settings()
     if settings.ocr_provider == "local":
         return LocalParserAdapter(settings)
+    if settings.ocr_provider == "colab":
+        return ColabParserAdapter(settings)
     return PaddleParserAdapter(settings)
 
 

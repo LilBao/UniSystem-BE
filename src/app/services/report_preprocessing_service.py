@@ -1,3 +1,4 @@
+import json
 import logging
 import math
 import re
@@ -40,6 +41,20 @@ class ReportPreprocessingService:
         return await self.process_artifact(artifact)
 
     async def process_artifact(self, artifact: Artifact) -> ReportRepresentation:
+        cache_file = self.settings.cache_dir / "ocr" / f"{artifact.sha256}.json"
+        if cache_file.exists():
+            try:
+                with cache_file.open("r", encoding="utf-8") as f:
+                    pages = json.load(f)
+                logger.info(
+                    "Layer 1 report: loaded PaddleOCR result from cache %s, pages=%s",
+                    cache_file,
+                    len(pages),
+                )
+                return self.normalize(artifact.id, pages)
+            except Exception as exc:
+                logger.warning("Failed to load OCR cache, will re-parse: %s", exc)
+
         with TemporaryDirectory(prefix="report-") as temporary:
             file = Path(temporary) / "report.pdf"
             logger.info("Layer 1 report: downloading PDF from storage")
@@ -52,6 +67,15 @@ class ReportPreprocessingService:
             logger.info("Layer 1 report: submitting PDF to PaddleOCR")
             pages = await self.parser.parse_pdf(file)
             logger.info("Layer 1 report: PaddleOCR returned pages=%s", len(pages))
+
+        try:
+            cache_file.parent.mkdir(parents=True, exist_ok=True)
+            with cache_file.open("w", encoding="utf-8") as f:
+                json.dump(pages, f, ensure_ascii=False)
+            logger.info("Layer 1 report: saved PaddleOCR result to cache %s", cache_file)
+        except Exception as exc:
+            logger.warning("Failed to save OCR cache: %s", exc)
+
         try:
             return self.normalize(artifact.id, pages)
         except (ValueError, KeyError, TypeError, AttributeError) as exc:
@@ -155,7 +179,7 @@ class ReportPreprocessingService:
                             },
                         )
                     )
-            # Caption association is a geometry heuristic, not a verified semantic link.
+
             for caption in page_blocks:
                 caption_label = str(caption.metadata.get("paddle_label") or "")
                 kind = {
