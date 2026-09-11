@@ -420,6 +420,30 @@ POST /submissions/{id}/submit
 
 **Provenance code:** `EXTRACTED` | `INFERRED` | `AMBIGUOUS`
 
+## Pipeline 2 — Kiểm tra trích dẫn
+
+Sau khi Layer 1 thành công, chạy Phase 1 của Pipeline 2 bằng một endpoint:
+
+```powershell
+curl.exe -i --max-time 1800 -X POST `
+    "$base/api/v1/submissions/$sid/pipelines/p2"
+```
+
+Pipeline 2 hiện thực hiện tuần tự các bước sau:
+
+1. Resolve các tài liệu tham khảo chưa được xử lý qua Crossref.
+2. Ghép từng claim với citation marker và tài liệu tham khảo tương ứng.
+3. Lấy bằng chứng local/abstract có sẵn.
+4. Lưu evidence pack, evidence item và pipeline result để Phase 2 sử dụng sau.
+5. Trả `requires_review` cùng reason code `PHASE1_EVIDENCE_READY` hoặc
+   `NO_LOCAL_OR_ABSTRACT_EVIDENCE`.
+
+`CitationVerificationResult` là contract thống nhất của Pipeline 2. Code hiện tại
+chỉ hiện thực Phase 1. Claim decomposition và LLM citation judge của Phase 2 chỉ
+được giữ dưới dạng stub `TODO Phase 2` để làm sau và chưa được nối vào runtime.
+
+Crossref cần `CROSSREF_MAILTO` hợp lệ.
+
 ### Giới hạn hiện tại
 
 | Vấn đề | Chi tiết |

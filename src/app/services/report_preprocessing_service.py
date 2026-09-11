@@ -136,7 +136,11 @@ class ReportPreprocessingService:
                     text_content=text,
                     bbox=bbox,
                     citation_marker_ids=list(dict.fromkeys(m[0] for m in matches)),
-                    source_locator={"page": page_no, "paddle_block_id": raw.get("block_id")},
+                    source_locator={
+                        "page": page_no,
+                        "paddle_block_id": raw.get("block_id"),
+                        "paddle_label": label,
+                    },
                     metadata={
                         "paddle_label": label,
                         "paddle_block_order": raw.get("block_order"),
