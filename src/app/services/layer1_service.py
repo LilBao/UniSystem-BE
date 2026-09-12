@@ -10,10 +10,16 @@ from app.core.exceptions import AppError
 from app.repositories.code_repository import CodeRepository
 from app.repositories.document_repository import DocumentRepository
 from app.repositories.pipeline_repository import PipelineRepository
+from app.repositories.reference_repository import ReferenceRepository
 from app.repositories.submission_repository import SubmissionRepository
-from app.schemas.layer1_schema import ExtractedClaim, ReportRepresentation, SourceCodeRepresentation
+from app.schemas.layer1_schema import (
+    ExtractedClaim,
+    ReportRepresentation,
+    SourceCodeRepresentation,
+)
 from app.schemas.pipeline_schema import PipelineRunResponse
 from app.services.claim_extraction_service import ClaimExtractionService
+from app.services.reference_extraction_service import ReferenceExtractionService
 from app.services.report_preprocessing_service import ReportPreprocessingService
 from app.services.source_code_preprocessing_service import SourceCodePreprocessingService
 
@@ -30,6 +36,8 @@ class Layer1Service:
         report_preprocessor: ReportPreprocessingService,
         claim_extractor: ClaimExtractionService,
         source_code_preprocessor: SourceCodePreprocessingService,
+        reference_repository: ReferenceRepository,
+        reference_extractor: ReferenceExtractionService,
     ) -> None:
         self.submission_repository = submission_repository
         self.pipeline_repository = pipeline_repository
@@ -38,6 +46,8 @@ class Layer1Service:
         self.report_preprocessor = report_preprocessor
         self.claim_extractor = claim_extractor
         self.source_code_preprocessor = source_code_preprocessor
+        self.reference_repository = reference_repository
+        self.reference_extractor = reference_extractor
 
     async def submit(self, submission_id: UUID) -> PipelineRunResponse:
         logger.info("Layer 1: loading submission %s", submission_id)
@@ -123,16 +133,38 @@ class Layer1Service:
 
         logger.info("Layer 1: saving normalized results")
         section_ids = await self.document_repository.save_sections(
-            report.artifact_id, report.sections
+            report.artifact_id,
+            report.sections,
         )
+        references = self.reference_extractor.extract(report)
         block_ids = await self.document_repository.save_blocks(
             report.artifact_id,
             report.parser_version,
             report.blocks,
             section_ids,
         )
-        await self.document_repository.save_claims(submission_id, claims, block_ids)
-        await self.code_repository.save_graph_snapshot(submission_id, code)
+
+        claim_ids = await self.document_repository.save_claims(
+            submission_id,
+            claims,
+            block_ids,
+        )
+
+        reference_ids = await self.reference_repository.save_submission_references(
+            submission_id,
+            references,
+        )
+
+        await self.reference_repository.save_claim_reference_links(
+            claims,
+            claim_ids,
+            reference_ids,
+        )
+
+        await self.code_repository.save_graph_snapshot(
+            submission_id,
+            code,
+        )
 
         output_fingerprint = self._fingerprint(
             {

@@ -109,8 +109,8 @@ class DocumentRepository:
         submission_id: UUID,
         claims: Sequence[ExtractedClaim],
         block_ids: dict[str, UUID],
-    ) -> None:
-        self._allocate_ids(item.external_id for item in claims)
+    ) -> dict[str, UUID]:
+        claim_ids = self._allocate_ids(item.external_id for item in claims)
         models: list[Claim] = []
         for item in claims:
             try:
@@ -120,7 +120,7 @@ class DocumentRepository:
                 raise ValueError(f"Unknown block reference {exc.args[0]!r} in claim") from exc
             models.append(
                 Claim(
-                    id=uuid4(),
+                    id=claim_ids[item.external_id],
                     submission_id=submission_id,
                     source_block_id=source_block_id,
                     claim_type=item.claim_type.value,
@@ -139,6 +139,7 @@ class DocumentRepository:
             )
         self.session.add_all(models)
         await self.session.flush()
+        return claim_ids
 
     @staticmethod
     def _allocate_ids(external_ids: Iterable[str]) -> dict[str, UUID]:
@@ -149,7 +150,6 @@ class DocumentRepository:
             result[external_id] = uuid4()
         return result
 
-    @staticmethod
     @staticmethod
     def _resolve_optional_reference(
         external_id: str | None, ids: dict[str, UUID], label: str

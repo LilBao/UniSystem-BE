@@ -1,8 +1,8 @@
 import asyncio
 import logging
-from pathlib import Path
 import time
-from typing import Any
+from pathlib import Path
+from typing import Any, cast
 
 import httpx
 
@@ -91,7 +91,11 @@ class ColabParserAdapter:
                 except AppError:
                     raise
                 except Exception as exc:
-                    logger.warning("ColabOCR: transient polling error on job %s: %s, retrying...", job_id, exc)
+                    logger.warning(
+                        "ColabOCR: transient polling error on job %s: %s, retrying...",
+                        job_id,
+                        exc,
+                    )
 
             raise AppError(ErrorCode.PARSER_ERROR, "Colab OCR job timed out after 15 minutes")
 
@@ -112,4 +116,4 @@ class ColabParserAdapter:
                 timeout=long_timeout,
             )
             resp.raise_for_status()
-            return resp.json()
+            return cast(list[dict[str, Any]], resp.json())

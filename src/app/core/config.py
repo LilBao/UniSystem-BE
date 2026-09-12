@@ -60,6 +60,15 @@ class Settings(BaseSettings):
     max_report_bytes: int = 50 * 1024 * 1024
     max_source_bytes: int = 200 * 1024 * 1024
 
+    crossref_base_url: str = "https://api.crossref.org"
+    crossref_mailto: str = ""
+    reference_resolver_timeout_seconds: float = 20
+    reference_resolver_max_candidates: int = 3
+    reference_resolver_match_threshold: float = 0.85
+    reference_resolver_margin_threshold: float = 0.10
+    reference_resolver_concurrency: int = 4
+    reference_resolver_version: str = "crossref-1"
+
     @model_validator(mode="after")
     def validate_processing_limits(self) -> "Settings":
         for name in (
@@ -87,10 +96,19 @@ class Settings(BaseSettings):
             "graphify_max_workers",
             "max_report_bytes",
             "max_source_bytes",
+            "reference_resolver_timeout_seconds",
+            "reference_resolver_max_candidates",
+            "reference_resolver_match_threshold",
+            "reference_resolver_margin_threshold",
+            "reference_resolver_concurrency",
         ):
             value = float(getattr(self, name))
             if not 0 < value < float("inf"):
                 raise ValueError(f"{name} must be positive and finite")
+        if self.reference_resolver_match_threshold > 1:
+            raise ValueError("reference_resolver_match_threshold must be at most 1")
+        if self.reference_resolver_margin_threshold > 1:
+            raise ValueError("reference_resolver_margin_threshold must be at most 1")
         return self
 
 

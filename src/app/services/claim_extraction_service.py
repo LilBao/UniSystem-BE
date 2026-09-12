@@ -100,7 +100,7 @@ class ClaimExtractionService:
                     else:
                         item["context_block_external_ids"] = []
 
-                    # 3. Sanitize citation markers (allow only markers from source or context blocks)
+                    # 3. Keep citation markers only when they occur in source/context blocks.
                     allowed = set(source.citation_marker_ids)
                     for context_id in item["context_block_external_ids"]:
                         allowed.update(by_id[context_id].citation_marker_ids)
