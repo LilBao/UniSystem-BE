@@ -5,6 +5,7 @@ from uuid import UUID, uuid4
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
+from app.models.evaluation_model import CitationVerdict as CitationVerdictModel
 from app.models.evaluation_model import (
     ClaimReference,
     EvidenceItem,
@@ -54,7 +55,7 @@ class P2Repository:
                 .where(
                     ReferencePassage.reference_document_id.in_(document_ids),
                     ReferencePassage.is_active.is_(True),
-                    ReferencePassage.access_level == "abstract",
+                    ReferencePassage.access_level.in_(("abstract", "full_text")),
                 )
                 .order_by(ReferencePassage.reference_document_id, ReferencePassage.ordinal)
             )
@@ -75,8 +76,9 @@ class P2Repository:
                                 "page_start": passage.page_start,
                                 "page_end": passage.page_end,
                                 "section_path": passage.section_path,
+                                "block_type": passage.block_type,
                             },
-                            access_status="abstract",
+                            access_status=passage.access_level,
                             content_sha256=passage.content_sha256,
                         )
                     )
@@ -99,6 +101,7 @@ class P2Repository:
                     input=CitationVerificationInput(
                         claim_id=claim.id,
                         text_content=claim.text_content,
+                        is_atomic=claim.is_atomic,
                         qualifiers=claim.qualifiers,
                         citation_marker=reference.marker,
                         submission_reference_id=reference.id,
@@ -127,15 +130,24 @@ class P2Repository:
                 "available_evidence_count": len(work_item.evidence),
                 "used_evidence_count": len(result.evidence),
                 "verification_stage": result.verification_stage.value,
+                "verification_stages": [stage.value for stage in result.stage_history],
+                "atomic_claim_count": len(result.atomic_claims),
             },
-            created_by="pipeline-p2-phase1",
+            created_by="pipeline-p2",
         )
         self.session.add(pack)
         await self.session.flush()
 
         item_ids_by_source: dict[UUID, UUID] = {}
+        supports_by_source: dict[UUID, set[str]] = defaultdict(set)
+        contradicts_by_source: dict[UUID, set[str]] = defaultdict(set)
+        for assessment in result.atom_assessments:
+            for source_id in assessment.supporting_evidence_ids:
+                supports_by_source[source_id].add(assessment.atom_id)
+            for source_id in assessment.contradicting_evidence_ids:
+                contradicts_by_source[source_id].add(assessment.atom_id)
         evidence_models: list[EvidenceItem] = []
-        for evidence in work_item.evidence:
+        for evidence in result.evidence:
             evidence_id = uuid4()
             item_ids_by_source[evidence.source_id] = evidence_id
             source_type = (
@@ -156,10 +168,10 @@ class P2Repository:
                     text_snapshot=evidence.text,
                     location=location,
                     provenance=("retrieved" if source_type == "reference_passage" else "parsed"),
-                    retrieval_score=None,
-                    rerank_score=None,
-                    supports_atoms=[],
-                    contradicts_atoms=[],
+                    retrieval_score=evidence.retrieval_score,
+                    rerank_score=evidence.rerank_score,
+                    supports_atoms=sorted(supports_by_source[evidence.source_id]),
+                    contradicts_atoms=sorted(contradicts_by_source[evidence.source_id]),
                     access_status=evidence.access_status,
                     content_sha256=evidence.content_sha256,
                 )
@@ -174,7 +186,7 @@ class P2Repository:
             subject_id=work_item.input.claim_id,
             status=result.status.value,
             verdict=result.verdict.value if result.verdict is not None else None,
-            confidence=None,
+            confidence=result.confidence,
             reason_codes=result.reason_codes,
             escalation_history=[],
             result={
@@ -186,21 +198,53 @@ class P2Repository:
                     else None
                 ),
                 "verification_stage": result.verification_stage.value,
+                "verification_stages": [stage.value for stage in result.stage_history],
+                "requires_review": result.requires_review,
                 "rationale": result.rationale,
+                "atomic_claims": [item.model_dump(mode="json") for item in result.atomic_claims],
+                "atom_assessments": [
+                    item.model_dump(mode="json") for item in result.atom_assessments
+                ],
             },
         )
         self.session.add(pipeline_result)
         await self.session.flush()
 
-        links = [
-            PipelineResultEvidence(
-                pipeline_result_id=pipeline_result.id,
-                evidence_item_id=item_ids_by_source[evidence.source_id],
-                usage="context",
+        links = []
+        for evidence in result.evidence:
+            if evidence.source_id not in item_ids_by_source:
+                continue
+            supports = supports_by_source[evidence.source_id]
+            contradicts = contradicts_by_source[evidence.source_id]
+            usage = "context"
+            if supports and not contradicts:
+                usage = "support"
+            elif contradicts and not supports:
+                usage = "contradict"
+            links.append(
+                PipelineResultEvidence(
+                    pipeline_result_id=pipeline_result.id,
+                    evidence_item_id=item_ids_by_source[evidence.source_id],
+                    usage=usage,
+                )
             )
-            for evidence in result.evidence
-            if evidence.source_id in item_ids_by_source
-        ]
         self.session.add_all(links)
+
+        if result.verdict is not None and result.confidence is not None:
+            self.session.add(
+                CitationVerdictModel(
+                    id=uuid4(),
+                    pipeline_result_id=pipeline_result.id,
+                    claim_id=work_item.input.claim_id,
+                    verdict=result.verdict.value,
+                    confidence=result.confidence,
+                    pair_accuracy_label=(
+                        True
+                        if result.verdict.value == "SUPPORT"
+                        else False if result.verdict.value == "REFUTE" else None
+                    ),
+                    requires_review=result.requires_review,
+                )
+            )
 
         await self.session.flush()

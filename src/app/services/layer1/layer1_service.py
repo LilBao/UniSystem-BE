@@ -18,10 +18,10 @@ from app.schemas.layer1_schema import (
     SourceCodeRepresentation,
 )
 from app.schemas.pipeline_schema import PipelineRunResponse
-from app.services.claim_extraction_service import ClaimExtractionService
-from app.services.reference_extraction_service import ReferenceExtractionService
-from app.services.report_preprocessing_service import ReportPreprocessingService
-from app.services.source_code_preprocessing_service import SourceCodePreprocessingService
+from app.services.layer1.claim_extraction_service import ClaimExtractionService
+from app.services.layer1.reference_extraction_service import ReferenceExtractionService
+from app.services.layer1.report_preprocessing_service import ReportPreprocessingService
+from app.services.layer1.source_code_preprocessing_service import SourceCodePreprocessingService
 
 logger = logging.getLogger("uvicorn.error")
 

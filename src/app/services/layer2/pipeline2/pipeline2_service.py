@@ -14,10 +14,8 @@ from app.schemas.p2_schema import (
     VerificationStage,
 )
 from app.schemas.pipeline_schema import PipelineRunResponse
-from app.services.citation_evidence_preparation_service import (
-    CitationEvidencePreparationService,
-)
-from app.services.reference_resolution_service import ReferenceResolutionService
+from app.services.layer2.pipeline2.citation_verification_service import CitationVerificationService
+from app.services.layer2.pipeline2.reference_resolution_service import ReferenceResolutionService
 
 
 class Pipeline2Service:
@@ -27,13 +25,13 @@ class Pipeline2Service:
         pipeline_repository: PipelineRepository,
         p2_repository: P2Repository,
         reference_resolver: ReferenceResolutionService,
-        evidence_preparer: CitationEvidencePreparationService,
+        citation_verifier: CitationVerificationService,
     ) -> None:
         self.submission_repository = submission_repository
         self.pipeline_repository = pipeline_repository
         self.p2_repository = p2_repository
         self.reference_resolver = reference_resolver
-        self.evidence_preparer = evidence_preparer
+        self.citation_verifier = citation_verifier
 
     async def run(self, submission_id: UUID) -> PipelineRunResponse:
         submission = await self.submission_repository.get(submission_id)
@@ -52,10 +50,15 @@ class Pipeline2Service:
         input_fingerprint = self._fingerprint(
             {
                 "layer1_output_fingerprint": layer1_run.output_fingerprint,
-                "phase1_version": "p2-phase1-1",
+                "verification_version": "p2-2",
+                "judge_version": self.citation_verifier.judge.version,
+                "confidence_threshold": (
+                    self.citation_verifier.settings.citation_judge_confidence_threshold
+                ),
                 "pairs": [item.model_dump(mode="json") for item in work_items],
             }
         )
+
         reusable = await self.pipeline_repository.find_reusable_run(
             submission_id, "P2", input_fingerprint
         )
@@ -71,11 +74,11 @@ class Pipeline2Service:
                 "pipeline": "P2",
                 "status": "running",
                 "attempt_no": attempt_no,
-                "code_version": "p2-phase1-1",
-                "model_version": None,
-                "prompt_version": None,
+                "code_version": "p2-2",
+                "model_version": self.citation_verifier.judge.model or None,
+                "prompt_version": self.citation_verifier.judge.prompt_version,
                 "schema_version": "1.0",
-                "policy_version": "p2-feedback-only-1",
+                "policy_version": "p2-citation-verification-1",
                 "input_fingerprint": input_fingerprint,
                 "config": {
                     "reference_resolution": resolution_metrics,
@@ -87,7 +90,7 @@ class Pipeline2Service:
         results: list[CitationVerificationResult] = []
         for work_item in work_items:
             try:
-                result = await self.evidence_preparer.prepare(work_item.input, work_item.evidence)
+                result = await self.citation_verifier.verify(work_item.input, work_item.evidence)
             except AppError as exc:
                 result = CitationVerificationResult(
                     claim_id=work_item.input.claim_id,
@@ -103,11 +106,30 @@ class Pipeline2Service:
         status = self._run_status(results)
         metrics = {
             "total_pairs": len(results),
+            "total_atomic_claims": sum(len(item.atomic_claims) for item in results),
             "succeeded": sum(item.status == CitationResultStatus.SUCCEEDED for item in results),
             "requires_review": sum(
                 item.status == CitationResultStatus.REQUIRES_REVIEW for item in results
             ),
             "failed": sum(item.status == CitationResultStatus.FAILED for item in results),
+            "support": sum(
+                item.verdict is not None and item.verdict.value == "SUPPORT" for item in results
+            ),
+            "refute": sum(
+                item.verdict is not None and item.verdict.value == "REFUTE" for item in results
+            ),
+            "nei": sum(
+                item.verdict is not None and item.verdict.value == "NEI" for item in results
+            ),
+            "abstract_only_exits": sum(
+                1 for item in results if [s.value for s in item.stage_history] == ["ABSTRACT"]
+            ),
+            "full_text_escalations": sum(
+                1 for item in results if "FULL_TEXT" in [s.value for s in item.stage_history]
+            ),
+            "low_confidence_escalations": sum(
+                1 for item in results if "LOW_CONFIDENCE" in item.reason_codes
+            ),
             "reference_resolution": resolution_metrics,
         }
         output_fingerprint = self._fingerprint(

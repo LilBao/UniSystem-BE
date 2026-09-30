@@ -8,8 +8,8 @@ from app.dependencies import get_layer1_service, get_submission_service
 from app.schemas.artifact_schema import ArtifactCreate, ArtifactResponse
 from app.schemas.pipeline_schema import PipelineRunResponse
 from app.schemas.submission_schema import SubmissionCreate, SubmissionResponse
-from app.services.layer1_service import Layer1Service
-from app.services.submission_service import SubmissionService
+from app.services.common.submission_service import SubmissionService
+from app.services.layer1.layer1_service import Layer1Service
 
 router = APIRouter(prefix="/api/v1/submissions", tags=["Submissions"])
 logger = logging.getLogger("uvicorn.error")

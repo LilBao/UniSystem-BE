@@ -4,6 +4,7 @@ from uuid import UUID
 import httpx
 
 from app.adapters.crossref import CrossrefAdapter
+from app.adapters.open_access import OpenAccessAdapter
 from app.core.config import Settings
 from app.repositories.reference_repository import ReferenceRepository
 
@@ -14,10 +15,12 @@ class ReferenceResolutionService:
         repository: ReferenceRepository,
         resolver: CrossrefAdapter,
         settings: Settings,
+        open_access: OpenAccessAdapter | None = None,
     ) -> None:
         self.repository = repository
         self.resolver = resolver
         self.settings = settings
+        self.open_access = open_access
 
     async def resolve_submission(
         self,
@@ -57,6 +60,14 @@ class ReferenceResolutionService:
                 and resolution.candidate is not None
             ):
                 candidate = resolution.candidate
+
+                if candidate.abstract is None and self.open_access is not None:
+                    enriched_abstract = await self.open_access.fetch_abstract(
+                        doi=candidate.doi,
+                        title=candidate.title,
+                    )
+                    if enriched_abstract:
+                        candidate = candidate.model_copy(update={"abstract": enriched_abstract})
 
                 document = None
                 if candidate.doi is not None:

@@ -28,7 +28,8 @@ UniSystem Backend cung cấp REST API để:
 
 1. Nhận submission (PDF báo cáo + ZIP source code) từ sinh viên.
 2. Chạy **Layer 1 pipeline** — OCR → phân tích tài liệu → trích xuất claims → phân tích code graph.
-3. Lưu kết quả vào PostgreSQL và Cloudinary để các layer sau tiêu thụ.
+3. Chạy **Pipeline 2** — resolve reference → tách atomic claim → đánh giá evidence bằng LLM → lưu verdict.
+4. Lưu kết quả vào PostgreSQL và Cloudinary để các layer sau tiêu thụ.
 
 Pipeline hiện chạy **đồng bộ trong HTTP request** (chưa có queue). Xem [Layer 1 — Luồng xử lý](#layer-1--luồng-xử-lý) để biết chi tiết.
 
@@ -46,7 +47,15 @@ Backend/
 │   ├── main.py                  # FastAPI app, routers, health check
 │   ├── dependencies.py          # Composition root — nối service/repo/adapter
 │   ├── controllers/             # HTTP routes & request/response
-│   ├── services/                # Business logic, điều phối L1
+│   ├── services/                # Business logic & Pipeline orchestrators
+│   │   ├── common/              # Submission, upload, cache lifecycle
+│   │   ├── layer1/              # L1: OCR layout, claims LLM, code graph, references
+│   │   ├── layer2/              # L2: 4 pipelines phân tích độc lập
+│   │   │   ├── pipeline1/       # P1: Chấm điểm Rubric & G-EVAL
+│   │   │   ├── pipeline2/       # P2: Thẩm định trích dẫn (Citation Verification)
+│   │   │   ├── pipeline3/       # P3: Đối soát Code - Báo cáo (Graphify + CASCADE)
+│   │   │   └── pipeline4/       # P4: Tín hiệu văn bản AI (Binoculars/VietBinoculars)
+│   │   └── layer3/              # L3: Tổng hợp evidence, rule & collaborative judge
 │   ├── adapters/                # PaddleOCR-VL, LLM HTTP, ZIP, Graphify CLI
 │   ├── repositories/            # ORM + Cloudinary storage
 │   ├── models/                  # SQLAlchemy ORM models
@@ -181,6 +190,16 @@ CLAIM_LLM_API_KEY=your_llm_key
 CLAIM_LLM_MODEL=your_model_name
 CLAIM_MAX_INPUT_CHARS=24000
 
+# ── LLM (Pipeline 2 citation verification) ─────────────
+# Nếu bỏ trống, P2 tái sử dụng CLAIM_LLM_URL/API_KEY/MODEL.
+CITATION_LLM_URL=https://your-provider.example/v1/
+CITATION_LLM_API_KEY=your_llm_key
+CITATION_LLM_MODEL=your_model_name
+CITATION_JUDGE_MAX_INPUT_CHARS=24000
+CITATION_JUDGE_MAX_EVIDENCE_ITEMS=12
+CITATION_JUDGE_MAX_ATOMIC_CLAIMS=8
+CITATION_JUDGE_CONFIDENCE_THRESHOLD=0.8
+
 # ── Graphify local CLI ──────────────────────────────────
 GRAPHIFY_VERSION=0.9.55
 GRAPHIFY_TIMEOUT_SECONDS=1800
@@ -196,6 +215,7 @@ GRAPHIFY_MAX_WORKERS=4
 | **OCR output** | Tải JSONL từ `resultUrl.jsonUrl`; lấy `layoutParsingResults[].prunedResult.parsing_res_list` |
 | **LLM** | Base URL + `chat/completions`; `response_format=json_object`; model cấu hình qua env |
 | **LLM output** | `choices[0].finish_reason == "stop"`; `message.content` là JSON theo `ExtractedClaim` schema |
+| **Citation LLM** | Cùng OpenAI-compatible contract; tách atomic claim và trả verdict cho từng atom, chỉ dùng evidence được cung cấp |
 | **Graphify CLI** | Chạy `python -m graphify extract <source> --code-only --out <output>`; đọc `graphify-out/graph.json` |
 
 > PDF được gửi lên dịch vụ PaddleOCR của Baidu. Không dùng cách này cho tài liệu không được phép đưa ra dịch vụ bên ngoài.

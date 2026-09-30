@@ -58,6 +58,7 @@ class SourceCodePreprocessingService:
             graph = await self.parser.build(filtered, detected)
             graph.validate_inventory(detected["files"])
             summary = Counter(element.provenance for element in [*graph.nodes, *graph.edges])
+
             graphify_version = self.parser.version
             payload = graph.model_dump(mode="json")
             payload.update(

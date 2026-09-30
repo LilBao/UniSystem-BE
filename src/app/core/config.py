@@ -45,6 +45,13 @@ class Settings(BaseSettings):
     claim_llm_api_key: str = ""
     claim_llm_model: str = ""
     claim_max_input_chars: int = 24000
+    citation_llm_url: str = ""
+    citation_llm_api_key: str = ""
+    citation_llm_model: str = ""
+    citation_judge_max_input_chars: int = 24000
+    citation_judge_max_evidence_items: int = 12
+    citation_judge_max_atomic_claims: int = 8
+    citation_judge_confidence_threshold: float = 0.8
     cache_dir: Path = Path(".cache")
     cache_ttl_days: int = 7
     graphify_version: str = "0.9.55"
@@ -91,6 +98,10 @@ class Settings(BaseSettings):
             "source_extract_max_ratio",
             "source_parse_max_file_bytes",
             "claim_max_input_chars",
+            "citation_judge_max_input_chars",
+            "citation_judge_max_evidence_items",
+            "citation_judge_max_atomic_claims",
+            "citation_judge_confidence_threshold",
             "cache_ttl_days",
             "graphify_timeout_seconds",
             "graphify_max_workers",
@@ -109,6 +120,8 @@ class Settings(BaseSettings):
             raise ValueError("reference_resolver_match_threshold must be at most 1")
         if self.reference_resolver_margin_threshold > 1:
             raise ValueError("reference_resolver_margin_threshold must be at most 1")
+        if self.citation_judge_confidence_threshold > 1:
+            raise ValueError("citation_judge_confidence_threshold must be at most 1")
         return self
 
 

@@ -5,7 +5,7 @@ from fastapi import APIRouter, Depends, File, Form, UploadFile, status
 
 from app.dependencies import get_file_upload_service
 from app.schemas.upload_schema import CloudinaryUploadResponse, UploadArtifactKind
-from app.services.file_upload_service import FileUploadService
+from app.services.common.file_upload_service import FileUploadService
 
 router = APIRouter(prefix="/api/v1/submissions", tags=["Submission files"])
 
