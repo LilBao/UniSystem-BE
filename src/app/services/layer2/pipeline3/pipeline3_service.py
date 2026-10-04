@@ -190,7 +190,6 @@ class Pipeline3Service:
         filter_mode: str = "all",
         min_importance: float = 0.0,
     ) -> VisualGraphResponse:
-        """API truy vấn Visual Graph cho Frontend."""
         cached = await self.p3_repository.get_visual_graph(
             submission_id, filter_mode=filter_mode, min_importance=min_importance
         )

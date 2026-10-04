@@ -16,16 +16,6 @@ from app.schemas.p2_schema import (
 
 
 class CitationVerificationService:
-    """Run the staged, confidence-aware citation-verification policy for one claim-reference pair.
-
-    Implements:
-    1. Atomic claim decomposition (SciLens-recommended decoupling).
-    2. Phase 1: Local / Abstract-level evidence verification.
-    3. Confidence-aware escalation: Any NEI or SUPPORT/REFUTE with confidence < threshold
-       escalates to Full-Text RAG (using BM25 query retrieval) and Table/Figure checks.
-    4. Exact atomic aggregation: A claim is REFUTED if any atomic claim is contradicted;
-       SUPPORTED if all atomic claims are supported; otherwise NEI.
-    """
 
     def __init__(
         self,
@@ -208,13 +198,6 @@ class CitationVerificationService:
 
     @staticmethod
     def _aggregate_verdict(assessments: list[AtomAssessment]) -> CitationVerdict:
-        """Aggregate verdicts of atomic claims into an overall claim verdict.
-
-        Rule:
-        - If any atom is REFUTE -> REFUTE (contradiction falsifies the citation claim).
-        - If all atoms are SUPPORT -> SUPPORT.
-        - Otherwise (mixture of SUPPORT and NEI, or all NEI) -> NEI.
-        """
         verdicts = {item.verdict for item in assessments}
         if CitationVerdict.REFUTE in verdicts:
             return CitationVerdict.REFUTE

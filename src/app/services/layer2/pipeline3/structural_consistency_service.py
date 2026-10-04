@@ -1,10 +1,3 @@
-"""StructuralConsistencyService (Tier 1: EXTRACTED).
-
-Deterministic, AST-level verification between natural language claims and
-Graphify CodeGraph representations. Matches extracted symbols (classes,
-functions, module imports, framework mentions) with zero LLM overhead.
-"""
-
 import re
 
 from app.schemas.code_graph_schema import CodeGraph, GraphNode
@@ -54,11 +47,7 @@ class StructuralConsistencyService:
     async def verify(
         self, work_item: P3WorkItem, code_graph: CodeGraph
     ) -> CodeConsistencyResult | None:
-        """Kiểm chứng cấu trúc Tầng 1.
-
-        Trả về CodeConsistencyResult nếu khớp hoặc mâu thuẫn tất định;
-        Trả về None nếu không đủ căn cứ cấu trúc (cần leo thang Tầng 2).
-        """
+        """Kiểm chứng cấu trúc Tầng 1."""
         claim_text = work_item.text_content.lower()
 
         # 1. Trích xuất các thực thể trong đồ thị mã nguồn
@@ -223,9 +212,9 @@ class StructuralConsistencyService:
             ]
             evidence_locs = [
                 CodeLocationSpan(
-                    path=n.location.path,  # type: ignore[union-attr]
-                    start_line=n.location.start_line,  # type: ignore[union-attr]
-                    end_line=n.location.end_line,  # type: ignore[union-attr]
+                    path=n.location.path,
+                    start_line=n.location.start_line,
+                    end_line=n.location.end_line,
                 )
                 for n in matched_nodes[:2]
             ]

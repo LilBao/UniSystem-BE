@@ -1,10 +1,3 @@
-"""CodeSemanticJudgeService (Tier 2: INFERRED / AMBIGUOUS).
-
-Performs semantic consistency evaluation between report claims and source code
-context. Extracts distinguishing code spans to create MismatchWitness objects
-when semantic divergence or parameter conflict is detected.
-"""
-
 from app.adapters.llm_code_judge import LLMCodeConsistencyJudge
 from app.schemas.code_graph_schema import CodeGraph
 from app.schemas.p3_schema import (

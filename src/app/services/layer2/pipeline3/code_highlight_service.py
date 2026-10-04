@@ -1,12 +1,3 @@
-"""CodeHighlightService.
-
-Analyzes Graphify CodeGraph centrality (Degree, In-Degree, PageRank) to extract:
-1. Important Code Highlights: Domain Core Features, Core Algorithms, Key Entrypoints.
-   Filters out boilerplate classes (ApiResponse, AppException, DTOs, Enums, Utils).
-2. Visual Graph Response: Structured Node/Edge graph for Frontend rendering
-   (React Flow / Cytoscape) with feature clusters and dual-span mismatch highlighting.
-"""
-
 from collections import defaultdict
 from typing import Any
 from uuid import UUID

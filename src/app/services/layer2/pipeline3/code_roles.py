@@ -84,11 +84,7 @@ def get_file_stem(path: str) -> str:
 
 
 def is_boilerplate_path(path: str) -> bool:
-    """Xác định xem file có phải là file bổ trợ / boilerplate hay không.
-
-    Loại trừ các file DTO, Request, Response, Exception, Enum, Constants, Utils, Test...
-    khỏi danh sách highlight tính năng trọng tâm để biểu đồ không bị nhiễu.
-    """
+    """Xác định xem file có phải là file bổ trợ / boilerplate hay không."""
     posix = PurePosixPath(path.replace("\\", "/"))
     parts = [p.lower() for p in posix.parts]
 
@@ -114,7 +110,6 @@ def is_boilerplate_path(path: str) -> bool:
 
 def detect_file_role(path: str) -> str:
     """Nhận diện vai trò kiến trúc của file.
-
     (controller, service, repo, entity, infra, component, boilerplate).
     """
     if is_boilerplate_path(path):
