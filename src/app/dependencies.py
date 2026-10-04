@@ -11,6 +11,7 @@ from app.adapters.colab_parser import ColabParserAdapter
 from app.adapters.crossref import CrossrefAdapter
 from app.adapters.graphify import GraphifyAdapter
 from app.adapters.llm_citation_judge import LLMCitationJudge
+from app.adapters.llm_code_judge import LLMCodeConsistencyJudge
 from app.adapters.local_parser import LocalParserAdapter
 from app.adapters.open_access import OpenAccessAdapter
 from app.adapters.parser import PaddleParserAdapter
@@ -58,7 +59,8 @@ def get_file_upload_service() -> FileUploadService:
     settings = get_settings()
     return FileUploadService(CloudinaryRepository(settings), settings)
 
-def get_submission_service(
+
+def get_submission_service(
     session: Annotated[AsyncSession, Depends(get_session)],
 ) -> SubmissionService:
     return SubmissionService(SubmissionRepository(session))
@@ -98,6 +100,7 @@ def get_layer1_service(
         ),
         reference_extractor=ReferenceExtractionService(),
     )
+
 
 def get_reference_resolution_service(
     session: Annotated[
@@ -147,9 +150,11 @@ def get_pipeline3_service(
         P3Repository(session),
         StructuralConsistencyService(),
         CodeSemanticJudgeService(
-            confidence_threshold=settings.citation_judge_confidence_threshold
+            confidence_threshold=settings.citation_judge_confidence_threshold,
+            llm=LLMCodeConsistencyJudge(settings),
+            max_cards=settings.code_judge_max_cards,
         ),
         CascadeExecutionService(),
         CodeHighlightService(),
+        semantic_concurrency=settings.code_judge_concurrency,
     )
-

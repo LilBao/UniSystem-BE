@@ -86,9 +86,7 @@ class StructuralConsistencyService:
             return optimizer_result
 
         # 4. Kiểm tra sự tồn tại của các Định danh (Identifier matching: Class / Function)
-        identifier_result = self._check_identifiers_match(
-            work_item, claim_text, nodes_by_name
-        )
+        identifier_result = self._check_identifiers_match(work_item, claim_text, nodes_by_name)
         if identifier_result is not None:
             return identifier_result
 
@@ -113,9 +111,7 @@ class StructuralConsistencyService:
             )
 
             # Tìm xem có framework đối lập hay không (ví dụ claim pytorch nhưng chỉ có tensorflow)
-            competing_groups = [
-                g for g in ("pytorch", "tensorflow") if g != group_name
-            ]
+            competing_groups = [g for g in ("pytorch", "tensorflow") if g != group_name]
             competing_found = [
                 g
                 for g in competing_groups
@@ -216,9 +212,7 @@ class StructuralConsistencyService:
         claimed_opt = claimed_optimizers[0]
         # Tìm optimizer thực tế trong code
         found_in_code = [
-            opt
-            for opt in KNOWN_OPTIMIZERS
-            if any(opt in name for name in nodes_by_name)
+            opt for opt in KNOWN_OPTIMIZERS if any(opt in name for name in nodes_by_name)
         ]
 
         if claimed_opt in found_in_code:
@@ -244,8 +238,7 @@ class StructuralConsistencyService:
                 reason_codes=["STRUCTURAL_MATCH", "OPTIMIZER_MATCH"],
                 stage_history=[VerificationStage.STRUCTURAL],
                 rationale=(
-                    f"Thuật toán tối ưu hóa {claimed_opt.upper()} được tìm thấy "
-                    "trong mã nguồn."
+                    f"Thuật toán tối ưu hóa {claimed_opt.upper()} được tìm thấy trong mã nguồn."
                 ),
                 evidence_locations=evidence_locs,
             )

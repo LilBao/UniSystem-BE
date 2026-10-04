@@ -132,9 +132,7 @@ class Pipeline2Service:
             ),
             "reference_resolution": resolution_metrics,
         }
-        output_fingerprint = self._fingerprint(
-            [item.model_dump(mode="json") for item in results]
-        )
+        output_fingerprint = self._fingerprint([item.model_dump(mode="json") for item in results])
         await self.pipeline_repository.finalize(
             run.id,
             status=status,

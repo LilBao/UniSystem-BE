@@ -52,12 +52,8 @@ class CitationEvaluationService:
                 total_pairs=0,
                 pair_accuracy=0.0,
                 macro_f1=0.0,
-                class_metrics={
-                    label: ClassMetric(0.0, 0.0, 0.0, 0) for label in cls.LABELS
-                },
-                confusion_matrix={
-                    gold: {pred: 0 for pred in cls.LABELS} for gold in cls.LABELS
-                },
+                class_metrics={label: ClassMetric(0.0, 0.0, 0.0, 0) for label in cls.LABELS},
+                confusion_matrix={gold: {pred: 0 for pred in cls.LABELS} for gold in cls.LABELS},
                 escalation_stats={},
             )
 
@@ -90,9 +86,7 @@ class CitationEvaluationService:
             precision = tp / (tp + fp) if (tp + fp) > 0 else 0.0
             recall = tp / (tp + fn) if (tp + fn) > 0 else 0.0
             f1 = (
-                (2 * precision * recall) / (precision + recall)
-                if (precision + recall) > 0
-                else 0.0
+                (2 * precision * recall) / (precision + recall) if (precision + recall) > 0 else 0.0
             )
 
             class_metrics[label] = ClassMetric(
@@ -117,9 +111,7 @@ class CitationEvaluationService:
             "total_evaluated": total,
             "abstract_only_exits": abstract_only,
             "full_text_escalations": escalated_full_text,
-            "escalation_rate": (
-                round(escalated_full_text / total, 4) if total > 0 else 0.0
-            ),
+            "escalation_rate": (round(escalated_full_text / total, 4) if total > 0 else 0.0),
             "requires_review_count": sum(1 for p in predictions if p.requires_review),
         }
 

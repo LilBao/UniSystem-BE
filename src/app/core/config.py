@@ -52,6 +52,11 @@ class Settings(BaseSettings):
     citation_judge_max_evidence_items: int = 12
     citation_judge_max_atomic_claims: int = 8
     citation_judge_confidence_threshold: float = 0.8
+    code_llm_url: str = ""
+    code_llm_api_key: str = ""
+    code_llm_model: str = ""
+    code_judge_max_cards: int = 6
+    code_judge_concurrency: int = 4
     cache_dir: Path = Path(".cache")
     cache_ttl_days: int = 7
     graphify_version: str = "0.9.55"
@@ -102,6 +107,8 @@ class Settings(BaseSettings):
             "citation_judge_max_evidence_items",
             "citation_judge_max_atomic_claims",
             "citation_judge_confidence_threshold",
+            "code_judge_max_cards",
+            "code_judge_concurrency",
             "cache_ttl_days",
             "graphify_timeout_seconds",
             "graphify_max_workers",

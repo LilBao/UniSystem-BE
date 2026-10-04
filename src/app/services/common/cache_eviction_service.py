@@ -33,8 +33,7 @@ def evict_stale_cache(settings: Settings) -> None:
 
     if removed:
         logger.info(
-            "Cache eviction: removed %d stale file(s), freed %.1f MB "
-            "(TTL=%d days, dir=%s)",
+            "Cache eviction: removed %d stale file(s), freed %.1f MB (TTL=%d days, dir=%s)",
             removed,
             freed_bytes / 1024 / 1024,
             settings.cache_ttl_days,

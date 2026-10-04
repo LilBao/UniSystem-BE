@@ -200,6 +200,14 @@ CITATION_JUDGE_MAX_EVIDENCE_ITEMS=12
 CITATION_JUDGE_MAX_ATOMIC_CLAIMS=8
 CITATION_JUDGE_CONFIDENCE_THRESHOLD=0.8
 
+# ── LLM (Pipeline 3 code consistency verification) ─────
+# Nếu bỏ trống, P3 fallback: CITATION_LLM_* -> CLAIM_LLM_*.
+CODE_LLM_URL=https://your-provider.example/v1/
+CODE_LLM_API_KEY=your_llm_key
+CODE_LLM_MODEL=your_model_name
+CODE_JUDGE_MAX_CARDS=6
+CODE_JUDGE_CONCURRENCY=4
+
 # ── Graphify local CLI ──────────────────────────────────
 GRAPHIFY_VERSION=0.9.55
 GRAPHIFY_TIMEOUT_SECONDS=1800
@@ -216,6 +224,7 @@ GRAPHIFY_MAX_WORKERS=4
 | **LLM** | Base URL + `chat/completions`; `response_format=json_object`; model cấu hình qua env |
 | **LLM output** | `choices[0].finish_reason == "stop"`; `message.content` là JSON theo `ExtractedClaim` schema |
 | **Citation LLM** | Cùng OpenAI-compatible contract; tách atomic claim và trả verdict cho từng atom, chỉ dùng evidence được cung cấp |
+| **Code LLM (P3)** | Dịch thuật ngữ song ngữ (VI->EN) cho BM25 retriever và thực hiện đối soát ngữ nghĩa Tầng 2 với thẻ bằng chứng code |
 | **Graphify CLI** | Chạy `python -m graphify extract <source> --code-only --out <output>`; đọc `graphify-out/graph.json` |
 
 > PDF được gửi lên dịch vụ PaddleOCR của Baidu. Không dùng cách này cho tài liệu không được phép đưa ra dịch vụ bên ngoài.

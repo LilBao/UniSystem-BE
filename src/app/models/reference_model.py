@@ -35,14 +35,10 @@ class ReferenceDocument(TimestampMixin, Base):
 
 class ReferencePassage(TimestampMixin, Base):
     __tablename__ = "reference_passages"
-    __table_args__ = (
-        UniqueConstraint("reference_document_id", "ordinal", "chunker_version"),
-    )
+    __table_args__ = (UniqueConstraint("reference_document_id", "ordinal", "chunker_version"),)
 
     id: Mapped[UUID] = mapped_column(primary_key=True, default=uuid4)
-    reference_document_id: Mapped[UUID] = mapped_column(
-        ForeignKey("reference_documents.id")
-    )
+    reference_document_id: Mapped[UUID] = mapped_column(ForeignKey("reference_documents.id"))
     ordinal: Mapped[int]
     content: Mapped[str] = mapped_column(Text)
     token_count: Mapped[int | None]
@@ -66,9 +62,7 @@ class SubmissionReference(CreatedAtMixin, Base):
     submission_id: Mapped[UUID] = mapped_column(ForeignKey("submissions.id"))
     marker: Mapped[str] = mapped_column(Text)
     raw_citation: Mapped[str] = mapped_column(Text)
-    reference_document_id: Mapped[UUID | None] = mapped_column(
-        ForeignKey("reference_documents.id")
-    )
+    reference_document_id: Mapped[UUID | None] = mapped_column(ForeignKey("reference_documents.id"))
     resolver_status: Mapped[str] = mapped_column(Text, server_default="unresolved")
     resolver_confidence: Mapped[Decimal | None] = mapped_column(Numeric(5, 4))
     resolver_version: Mapped[str | None] = mapped_column(Text)

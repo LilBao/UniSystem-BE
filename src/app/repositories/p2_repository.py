@@ -151,9 +151,7 @@ class P2Repository:
             evidence_id = uuid4()
             item_ids_by_source[evidence.source_id] = evidence_id
             source_type = (
-                evidence.source_type
-                if evidence.source_type == "reference_passage"
-                else "other"
+                evidence.source_type if evidence.source_type == "reference_passage" else "other"
             )
             location = dict(evidence.location)
             if source_type == "other":
@@ -241,7 +239,9 @@ class P2Repository:
                     pair_accuracy_label=(
                         True
                         if result.verdict.value == "SUPPORT"
-                        else False if result.verdict.value == "REFUTE" else None
+                        else False
+                        if result.verdict.value == "REFUTE"
+                        else None
                     ),
                     requires_review=result.requires_review,
                 )

@@ -223,9 +223,7 @@ class CitationVerificationService:
         return CitationVerdict.NEI
 
     @staticmethod
-    def _aggregate_confidence(
-        assessments: list[AtomAssessment], verdict: CitationVerdict
-    ) -> float:
+    def _aggregate_confidence(assessments: list[AtomAssessment], verdict: CitationVerdict) -> float:
         """Aggregate confidence across atomic assessments for the determined verdict."""
         relevant = [item.confidence for item in assessments if item.verdict == verdict]
         if not relevant:

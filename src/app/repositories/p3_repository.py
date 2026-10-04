@@ -21,7 +21,9 @@ from app.models.submission_model import Artifact
 from app.schemas.code_graph_schema import CodeGraph
 from app.schemas.p3_schema import (
     CodeConsistencyResult,
+    CodeConsistencyVerdict,
     P3WorkItem,
+    VerificationStage,
     VisualGraphResponse,
 )
 
@@ -34,14 +36,10 @@ class P3Repository:
         """Lấy danh sách các claim cần kiểm chứng tính nhất quán với code."""
         # Ưu tiên lấy claims có claim_type == "implementation", nếu không có thì lấy tất cả
         statement = (
-            select(Claim)
-            .where(Claim.submission_id == submission_id)
-            .order_by(Claim.created_at)
+            select(Claim).where(Claim.submission_id == submission_id).order_by(Claim.created_at)
         )
         claims = list((await self.session.scalars(statement)).all())
-        implementation_claims = [
-            c for c in claims if c.claim_type == "implementation"
-        ]
+        implementation_claims = [c for c in claims if c.claim_type == "implementation"]
         selected_claims = implementation_claims if implementation_claims else claims
 
         return [
@@ -60,9 +58,7 @@ class P3Repository:
             for claim in selected_claims
         ]
 
-    async def get_latest_graph_snapshot(
-        self, submission_id: UUID
-    ) -> CodeGraphSnapshot | None:
+    async def get_latest_graph_snapshot(self, submission_id: UUID) -> CodeGraphSnapshot | None:
         """Lấy CodeGraphSnapshot mới nhất do Layer 1 trích xuất."""
         statement = (
             select(CodeGraphSnapshot)
@@ -82,14 +78,16 @@ class P3Repository:
         if artifact is None or not artifact.object_uri:
             return CodeGraph(nodes=[], edges=[])
 
-        # Thử đọc từ đường dẫn file cục bộ nếu có
+        # Thử đọc từ đường dẫn file cục bộ hoặc thư mục .cache/artifacts
         file_path = Path(artifact.object_uri)
-        if file_path.is_file():
-            try:
-                data = json.loads(file_path.read_text(encoding="utf-8"))
-                return CodeGraph.model_validate(data)
-            except Exception:
-                pass
+        cache_path = Path(".cache/artifacts") / artifact.sha256
+        for candidate in (file_path, cache_path):
+            if candidate.is_file():
+                try:
+                    data = json.loads(candidate.read_text(encoding="utf-8"))
+                    return CodeGraph.model_validate(data)
+                except Exception:
+                    pass
 
         return CodeGraph(nodes=[], edges=[])
 
@@ -129,7 +127,7 @@ class P3Repository:
                 EvidenceItem(
                     id=evidence_id,
                     evidence_pack_id=pack.id,
-                    source_type="code",
+                    source_type="code_node",
                     source_id=snapshot_id,
                     source_uri=loc.path,
                     text_snapshot=None,
@@ -138,7 +136,7 @@ class P3Repository:
                         "start_line": loc.start_line,
                         "end_line": loc.end_line,
                     },
-                    provenance="graphify",
+                    provenance="extracted",
                     retrieval_score=result.confidence,
                     rerank_score=None,
                     supports_atoms=[],
@@ -173,15 +171,37 @@ class P3Repository:
         await self.session.flush()
 
         # Liên kết bằng chứng
+        usage = (
+            "support"
+            if result.verdict == CodeConsistencyVerdict.CONSISTENT
+            else (
+                "contradict" if result.verdict == CodeConsistencyVerdict.INCONSISTENT else "context"
+            )
+        )
         links = [
             PipelineResultEvidence(
                 pipeline_result_id=pipeline_result.id,
                 evidence_item_id=ev.id,
-                usage="support" if result.verdict == "CONSISTENT" else "contradict",
+                usage=usage,
             )
             for ev in evidence_models
         ]
         self.session.add_all(links)
+
+        # Map VerificationStage to DB check constraint ('EXTRACTED', 'LLM_JUDGE', 'EXECUTION')
+        stage_map = {
+            VerificationStage.STRUCTURAL: "EXTRACTED",
+            VerificationStage.SEMANTIC: "LLM_JUDGE",
+            VerificationStage.SKIPPED_TIER3: "EXECUTION",
+        }
+        db_stage = stage_map.get(result.verification_stage, "LLM_JUDGE")
+
+        # Map PARTIAL to AMBIGUOUS to satisfy code_consistency_verdicts check constraint
+        db_verdict = (
+            "AMBIGUOUS"
+            if result.verdict == CodeConsistencyVerdict.PARTIAL
+            else result.verdict.value
+        )
 
         # Lưu CodeConsistencyVerdict Model
         self.session.add(
@@ -190,8 +210,8 @@ class P3Repository:
                 pipeline_result_id=pipeline_result.id,
                 claim_id=work_item.claim_id,
                 graph_snapshot_id=snapshot_id,
-                verdict=result.verdict.value,
-                verification_stage=result.verification_stage.value,
+                verdict=db_verdict,
+                verification_stage=db_stage,
                 confidence=Decimal(str(result.confidence)),
                 requires_review=result.requires_review,
             )
@@ -224,6 +244,7 @@ class P3Repository:
             return None
 
         try:
-            return VisualGraphResponse.model_validate(cached_graph)
+            response = VisualGraphResponse.model_validate(cached_graph)
+            return response.filtered(filter_mode=filter_mode, min_importance=min_importance)
         except Exception:
             return None

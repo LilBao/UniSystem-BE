@@ -124,7 +124,7 @@ class PaddleParserAdapter:
             )
             time.sleep(delay)
 
-        raise RuntimeError("Unreachable retry state") 
+        raise RuntimeError("Unreachable retry state")
 
     def _poll(
         self,

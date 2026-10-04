@@ -59,9 +59,7 @@ class FileUploadService:
                 public_id=remote_public_id,
                 resource_type=resource_type,
                 delivery_type=delivery_type,
-                object_uri=(
-                    f"cloudinary://{resource_type}/{delivery_type}/{remote_public_id}"
-                ),
+                object_uri=(f"cloudinary://{resource_type}/{delivery_type}/{remote_public_id}"),
                 secure_url=str(result["secure_url"]),
                 original_filename=filename,
                 media_type=media_type,

@@ -22,6 +22,7 @@ class HighlightKind(StrEnum):
     CENTRAL_CONCEPT = "CENTRAL_CONCEPT"
     CORE_ALGORITHM = "CORE_ALGORITHM"
     KEY_ENTRYPOINT = "KEY_ENTRYPOINT"
+    CORE_FEATURE = "CORE_FEATURE"
     MISMATCH_STRUCTURAL = "MISMATCH_STRUCTURAL"
     MISMATCH_SEMANTIC = "MISMATCH_SEMANTIC"
     MISMATCH_EXECUTION = "MISMATCH_EXECUTION"
@@ -49,6 +50,11 @@ class CodeHighlightItem(BaseModel):
     code_snippet: str | None = None
     importance_score: float | None = None
     related_claim_id: UUID | None = None
+    feature_key: str | None = None
+    layers: list[str] = Field(default_factory=list)
+    components: list[str] = Field(default_factory=list)
+    member_node_ids: list[str] = Field(default_factory=list)
+    member_paths: list[str] = Field(default_factory=list)
 
 
 class MismatchWitness(BaseModel):
@@ -89,6 +95,7 @@ class P3WorkItem(BaseModel):
     source_span: dict[str, Any] = Field(default_factory=dict)
     source_block_id: UUID | None = None
 
+
 class VisualGraphNodeData(BaseModel):
     label: str
     kind: str  # "CLAIM" | "FILE" | "CLASS" | "FUNCTION" | "ENTRYPOINT"
@@ -100,6 +107,7 @@ class VisualGraphNodeData(BaseModel):
     snippet: str | None = None
     cluster_id: str | None = None
     cluster_name: str | None = None
+    role: str | None = None
 
 
 class VisualGraphNode(BaseModel):
@@ -117,6 +125,7 @@ class VisualGraphEdge(BaseModel):
     severity: HighlightSeverity | None = None
     discrepancy_details: str | None = None
     label: str | None = None
+    is_aggregated: bool = False
 
 
 class VisualGraphMetrics(BaseModel):
@@ -135,6 +144,87 @@ class VisualGraphResponse(BaseModel):
     edges: list[VisualGraphEdge] = Field(default_factory=list)
     metrics: VisualGraphMetrics
     mismatch_witnesses: list[MismatchWitness] = Field(default_factory=list)
+
+    def filtered(
+        self, filter_mode: str = "all", min_importance: float = 0.0
+    ) -> "VisualGraphResponse":
+        if filter_mode == "all" and min_importance <= 0.0:
+            return self
+
+        kept_nodes: list[VisualGraphNode] = []
+        for n in self.nodes:
+            if n.type == "claim_node":
+                if filter_mode == "mismatches_only" and not n.data.has_mismatch:
+                    continue
+                kept_nodes.append(n)
+            else:
+                if filter_mode == "mismatches_only" and not n.data.has_mismatch:
+                    continue
+                if (
+                    filter_mode == "important_only"
+                    and not n.data.is_important
+                    and not n.data.has_mismatch
+                ):
+                    continue
+                if n.data.importance_score < min_importance and not n.data.has_mismatch:
+                    continue
+                kept_nodes.append(n)
+
+        kept_ids = {n.id for n in kept_nodes}
+        kept_edges = [e for e in self.edges if e.source in kept_ids and e.target in kept_ids]
+
+        metrics = VisualGraphMetrics(
+            total_nodes=len(kept_nodes),
+            total_edges=len(kept_edges),
+            important_nodes_count=sum(1 for n in kept_nodes if n.data.is_important),
+            mismatched_nodes_count=sum(1 for n in kept_nodes if n.data.has_mismatch),
+            mismatched_edges_count=sum(1 for e in kept_edges if e.is_mismatch),
+            consistency_score=self.metrics.consistency_score,
+        )
+
+        return VisualGraphResponse(
+            submission_id=self.submission_id,
+            run_id=self.run_id,
+            nodes=kept_nodes,
+            edges=kept_edges,
+            metrics=metrics,
+            mismatch_witnesses=self.mismatch_witnesses,
+        )
+
+
+class CodeEvidenceSymbol(BaseModel):
+    ref: str
+    name: str
+    kind: str
+    start_line: int
+    end_line: int
+
+
+class CodeEvidenceCard(BaseModel):
+    ref: str
+    path: str
+    score: float = 0.0
+    coverage: float = 0.0
+    matched_terms: list[str] = Field(default_factory=list)
+    symbols: list[CodeEvidenceSymbol] = Field(default_factory=list)
+    calls: list[str] = Field(default_factory=list)
+    imports: list[str] = Field(default_factory=list)
+    span: CodeLocationSpan
+
+
+class CodeJudgementMismatch(BaseModel):
+    ref: str | None = None
+    expected_behavior: str = ""
+    actual_behavior: str = ""
+
+
+class CodeJudgement(BaseModel):
+    verdict: CodeConsistencyVerdict
+    confidence: float = Field(ge=0.0, le=1.0)
+    rationale: str
+    supporting_refs: list[str] = Field(default_factory=list)
+    contradicting_refs: list[str] = Field(default_factory=list)
+    mismatch: CodeJudgementMismatch | None = None
 
 
 class Pipeline3RunResponse(BaseModel):

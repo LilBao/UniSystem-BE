@@ -41,11 +41,7 @@ class SubmissionRepository:
         return submission
 
     async def get_for_update(self, submission_id: UUID) -> Submission | None:
-        statement = (
-            select(Submission)
-            .where(Submission.id == submission_id)
-            .with_for_update()
-        )
+        statement = select(Submission).where(Submission.id == submission_id).with_for_update()
         return (await self.session.scalars(statement)).one_or_none()
 
     async def list_artifacts(self, submission_id: UUID) -> list[Artifact]:

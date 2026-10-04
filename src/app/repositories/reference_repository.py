@@ -40,10 +40,7 @@ class ReferenceRepository:
                     resolver_status="unresolved",
                     resolver_confidence=None,
                     resolver_version=None,
-                    metadata_json={
-                        "source_block_external_id":
-                            reference.source_block_external_id
-                    },
+                    metadata_json={"source_block_external_id": reference.source_block_external_id},
                 )
             )
 
@@ -92,28 +89,22 @@ class ReferenceRepository:
             select(SubmissionReference)
             .where(
                 SubmissionReference.submission_id == submission_id,
-                SubmissionReference.resolver_status
-                == "unresolved",
+                SubmissionReference.resolver_status == "unresolved",
             )
             .order_by(SubmissionReference.marker)
         )
 
-        return list(
-            (await self.session.scalars(statement)).all()
-        )
+        return list((await self.session.scalars(statement)).all())
 
     async def find_document_by_doi(
         self,
         doi: str,
     ) -> ReferenceDocument | None:
         statement = select(ReferenceDocument).where(
-            func.lower(ReferenceDocument.doi)
-            == doi.lower()
+            func.lower(ReferenceDocument.doi) == doi.lower()
         )
 
-        return (
-            await self.session.scalars(statement)
-        ).one_or_none()
+        return (await self.session.scalars(statement)).one_or_none()
 
     async def create_reference_document(
         self,

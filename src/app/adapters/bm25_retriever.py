@@ -178,10 +178,7 @@ class BM25Retriever:
         query_tokens = self.tokenize(query)
         if not query_tokens:
             # Fallback if query has no tokens: preserve existing candidate order
-            return [
-                item.model_copy(update={"retrieval_score": 0.0})
-                for item in candidates[:top_k]
-            ]
+            return [item.model_copy(update={"retrieval_score": 0.0}) for item in candidates[:top_k]]
 
         corpus_tokens = [self.tokenize(item.text) for item in candidates]
         num_docs = len(candidates)
