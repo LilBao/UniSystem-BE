@@ -13,6 +13,7 @@ class ErrorCode(StrEnum):
     SUBMISSION_NOT_FOUND = "submission_not_found"
     ARTIFACT_NOT_FOUND = "artifact_not_found"
     PIPELINE_RUN_NOT_FOUND = "pipeline_run_not_found"
+    RUBRIC_NOT_FOUND = "rubric_not_found"
     CONFLICT = "conflict"
     DUPLICATE_RESOURCE = "duplicate_resource"
     INVALID_STATE_TRANSITION = "invalid_state_transition"
@@ -56,6 +57,9 @@ ERROR_CATALOG: Final[dict[ErrorCode, ErrorDefinition]] = {
     ),
     ErrorCode.PIPELINE_RUN_NOT_FOUND: ErrorDefinition(
         40403, HTTPStatus.NOT_FOUND, "Pipeline run not found"
+    ),
+    ErrorCode.RUBRIC_NOT_FOUND: ErrorDefinition(
+        40404, HTTPStatus.NOT_FOUND, "Rubric version or criteria not found"
     ),
     ErrorCode.CONFLICT: ErrorDefinition(40900, HTTPStatus.CONFLICT, "Resource conflict"),
     ErrorCode.DUPLICATE_RESOURCE: ErrorDefinition(

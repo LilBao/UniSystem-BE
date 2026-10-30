@@ -1,0 +1,2536 @@
+[
+  {
+    "id": "0578e83b-7677-4f6e-9ab1-ef8faa0f7b8a",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "90710238-add8-4ffa-851e-8d97b56ebcd3",
+    "claim_type": "factual",
+    "text_content": "Ngành công nghiệp điện ảnh và giải trí đang chứng kiến sự tăng trưởng mạnh mẽ cùng với sự thay đổi trong hành vi tiêu dùng của khách hàng.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 85,
+      "start": 0
+    },
+    "context_block_ids": [
+      "90710238-add8-4ffa-851e-8d97b56ebcd3"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "e06b898d-22b4-4d5f-b68e-2371e32fc1ab",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "90710238-add8-4ffa-851e-8d97b56ebcd3",
+    "claim_type": "factual",
+    "text_content": "Người xem ngày càng có xu hướng tìm kiếm, đặt vé và thanh toán trực tuyến thay vì mua vé trực tiếp tại quây.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 156,
+      "start": 86
+    },
+    "context_block_ids": [
+      "90710238-add8-4ffa-851e-8d97b56ebcd3"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "0e4bbeb1-fbb5-4a79-aa8b-d36240f9df4f",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "90710238-add8-4ffa-851e-8d97b56ebcd3",
+    "claim_type": "factual",
+    "text_content": "Tuy nhiên, tại nhiều rạp chiếu phim, đặc biệt là các rạp quy mô vừa và nhỏ, hệ thống quản lý vẫn còn mang tính thủ công hoặc sử dụng các phần mềm rời rạc, thiếu tính đồng bộ.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 265,
+      "start": 157
+    },
+    "context_block_ids": [
+      "90710238-add8-4ffa-851e-8d97b56ebcd3"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "826f643e-73ec-4092-b649-0e2a921ab650",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "c8e1a3d7-a850-4c29-88a5-278891794acf",
+    "claim_type": "factual",
+    "text_content": "Những hạn chế phổ biến bao gồm: khó kiểm soát số lượng ghế trống theo thời gian thực, dễ xảy ra trùng lịch chiếu, báo cáo doanh thu chậm và thiếu dữ liệu hỗ trợ ra quyết định.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 215,
+      "start": 0
+    },
+    "context_block_ids": [
+      "c8e1a3d7-a850-4c29-88a5-278891794acf"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "b34238a5-3cfc-4099-997f-93606ad9c0e0",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "c8e1a3d7-a850-4c29-88a5-278891794acf",
+    "claim_type": "factual",
+    "text_content": "Điều này không chỉ làm giảm hiệu quả vận hành mà còn ảnh hưởng tiêu cực đến trải nghiệm khách hàng.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 275,
+      "start": 176
+    },
+    "context_block_ids": [
+      "c8e1a3d7-a850-4c29-88a5-278891794acf"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "c1c11870-116f-4f49-bfd6-0d24097fdc0d",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "04ca6feb-266b-4d97-9efd-181621be3863",
+    "claim_type": "factual",
+    "text_content": "Xuất phát từ thực tế trên, đề tài Cinema Management System (CMS) được lựa chọn nhằm nghiên cứu, phân tích và xây dựng một hệ thống phần mềm quản lý rập chiếu phim hiện đại, toàn diện và có khả năng triển khai trong thực tế.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 223,
+      "start": 0
+    },
+    "context_block_ids": [
+      "04ca6feb-266b-4d97-9efd-181621be3863"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "8d809051-2810-4351-a913-fd2fca9959f3",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "e152cf26-fd6a-4497-b55a-90416999ea78",
+    "claim_type": "factual",
+    "text_content": "Mô tả đầy đủ bối cảnh, mục tiêu và phạm vi của hệ thống.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 56,
+      "start": 0
+    },
+    "context_block_ids": [
+      "e152cf26-fd6a-4497-b55a-90416999ea78"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "0085bb69-4f54-416b-91b6-926d37dc6c22",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "52bfe56d-defb-4871-a106-d28e7f2699fc",
+    "claim_type": "factual",
+    "text_content": "Xác định rõ các yêu cầu chức năng và phi chức năng.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 42,
+      "start": 0
+    },
+    "context_block_ids": [
+      "52bfe56d-defb-4871-a106-d28e7f2699fc"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "205d8d19-1736-4ce1-a19b-b35cd11b6d35",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "1f082e6f-220f-4a11-8bd8-6b40f257aaad",
+    "claim_type": "factual",
+    "text_content": "Làm cơ sở cho các giai đoạn thiết kế kiến trúc, thiết kế chi tiết và triển khai.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 72,
+      "start": 0
+    },
+    "context_block_ids": [
+      "1f082e6f-220f-4a11-8bd8-6b40f257aaad"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "337797af-3e22-4b3f-9955-5736ff5a0165",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "73d5409e-acaf-4944-8009-b31a33d144f7",
+    "claim_type": "factual",
+    "text_content": "• Phục vụ đánh giá học phần, đồ án môn học.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 38,
+      "start": 1
+    },
+    "context_block_ids": [
+      "73d5409e-acaf-4944-8009-b31a33d144f7"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "7424f85b-9c76-469e-bcd7-94c22a86a1a6",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "5a897e45-b687-444c-97f9-2ec7cb89c205",
+    "claim_type": "factual",
+    "text_content": "Trong bối cảnh số hóa mạnh mẽ của ngành công nghiệp giải trí, các rập chiếu phim đang đối mặt với nhiều hạn chế từ phương thức quản lý truyền thống như bán vé thù công, quản lý lịch chiếu bằng tính rời rạc và thiếu khả năng phân tích dữ liệu theo thời gian thực.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 211,
+      "start": 0
+    },
+    "context_block_ids": [
+      "5a897e45-b687-444c-97f9-2ec7cb89c205"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "92a45fbf-95da-4a9c-87e1-afda3826aaa6",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "12d9f89d-a8d0-42c1-8244-81fab9098985",
+    "claim_type": "text",
+    "text_content": "CMS là một hệ thống Web-based Full-stack Application, đóng vai trò như một hệ sinh thái số kết nối khách hàng - nhân viên, quản lý - quản trị viên. Hệ thống cho phép:",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 161,
+      "start": 0
+    },
+    "context_block_ids": [
+      "12d9f89d-a8d0-42c1-8244-81fab9098985"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "d47f3d27-68ca-4134-aa75-d49f44642b3f",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "90faa8ad-861f-4471-b444-1e20470f29be",
+    "claim_type": "factual",
+    "text_content": "Xây dựng một hệ thống quản lý rập chiếu phim ổn định, bảo mật, dễ sử dụng và có khả năng mở rộng, thay thế hoàn toàn các quy trình thủ công truyền thống.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 153,
+      "start": 0
+    },
+    "context_block_ids": [],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "91eb6e13-d23b-4656-b6c3-eb31dd16f89b",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "ecbb7ad2-530c-4b3c-8e7d-9e4b2f5e888f",
+    "claim_type": "factual",
+    "text_content": "Tự động hóa quản lý phim, phòng chiếu, lịch chiếu.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 42,
+      "start": 0
+    },
+    "context_block_ids": [
+      "290c2837-5bd0-4a93-87e0-f1fcd658cdf8"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "11950631-b07d-43fd-ac5d-d21afa08c3fd",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "aa7d5980-850a-41c9-aac7-7e6cc00c4434",
+    "claim_type": "factual",
+    "text_content": "Loại bỏ xung đột lịch chiếu và trùng ghế.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 38,
+      "start": 0
+    },
+    "context_block_ids": [
+      "290c2837-5bd0-4a93-87e0-f1fcd658cdf8"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "bc9e7486-40ae-41ae-93c8-3c9ca10542b0",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "657ba139-e0a3-4801-9699-b3963b933c64",
+    "claim_type": "factual",
+    "text_content": "Quản lý doanh thu và kho dịch vụ đi kèm.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 38,
+      "start": 0
+    },
+    "context_block_ids": [
+      "290c2837-5bd0-4a93-87e0-f1fcd658cdf8"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "74068845-0ce5-4629-bfec-a0be7917bdfb",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "d38452c2-8abc-402b-bd4c-d62ba77e145d",
+    "claim_type": "factual",
+    "text_content": "Bán vé thủ công dễ sai sót.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 15,
+      "start": 0
+    },
+    "context_block_ids": [
+      "d38452c2-8abc-402b-bd4c-d62ba77e145d"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "83dd8b36-55f2-4233-b4c5-5a56739bd101",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "a8d6213e-0199-47ed-8af1-8e8d341e6607",
+    "claim_type": "factual",
+    "text_content": "Khó kiểm soát ghế trống.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 11,
+      "start": 0
+    },
+    "context_block_ids": [
+      "a8d6213e-0199-47ed-8af1-8e8d341e6607"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "be99a37d-cda4-46f3-93b3-233725e2a489",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "9a0cb734-914d-4703-b888-47e163f7e8b9",
+    "claim_type": "factual",
+    "text_content": "• Lịch chiếu dễ chồng chéo.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 15,
+      "start": 2
+    },
+    "context_block_ids": [
+      "9a0cb734-914d-4703-b888-47e163f7e8b9"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "22704080-1f91-477e-a6ff-d5baaacc12de",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "99abe305-d01f-4d05-8c8b-70572085173a",
+    "claim_type": "factual",
+    "text_content": "Báo cáo doanh thu không kịp thời.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 16,
+      "start": 0
+    },
+    "context_block_ids": [
+      "99abe305-d01f-4d05-8c8b-70572085173a"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "594648ff-38b2-4339-9269-40b40ba74165",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "25b6243e-38ae-4795-aa93-82fcd3cf44df",
+    "claim_type": "factual",
+    "text_content": "Khách hàng phải xếp hàng mua vé.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 19,
+      "start": 0
+    },
+    "context_block_ids": [
+      "25b6243e-38ae-4795-aa93-82fcd3cf44df"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "8c5709e7-c051-4546-9e1b-0d42a9d5b5b0",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "7a0c1768-a197-48f9-aacb-c074a940aff2",
+    "claim_type": "text",
+    "text_content": "• Hệ thống quản lý tập trung.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 21,
+      "start": 4
+    },
+    "context_block_ids": [
+      "7a0c1768-a197-48f9-aacb-c074a940aff2"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "5f5fc721-9fe4-4038-a97e-fd6112690ca9",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "df1a1e24-890f-49eb-a906-dc0401273a82",
+    "claim_type": "text",
+    "text_content": "Đồng bộ dữ liệu thời gian thực.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 23,
+      "start": 4
+    },
+    "context_block_ids": [
+      "df1a1e24-890f-49eb-a906-dc0401273a82"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "89cd8ebe-8f36-4766-a730-cc31a80b3c2b",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "6087356b-eb66-493f-a61a-2fddb27dca37",
+    "claim_type": "text",
+    "text_content": "Tự động hóa quy trình bán vé.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 22,
+      "start": 4
+    },
+    "context_block_ids": [
+      "6087356b-eb66-493f-a61a-2fddb27dca37"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "798627ae-ae2b-46e8-abbd-cc1ef8448dcc",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "601ccc3d-c8eb-40c8-a484-6231b6348cb9",
+    "claim_type": "text",
+    "text_content": "- Báo cáo và dashboard trực quan.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 25,
+      "start": 2
+    },
+    "context_block_ids": [
+      "601ccc3d-c8eb-40c8-a484-6231b6348cb9"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "eb05ec52-3400-4cf5-ad7c-a561b0033c50",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "e6e34122-2677-45a2-8bd8-553a1b3e1e08",
+    "claim_type": "text",
+    "text_content": "Frontend: React.js / Next.js (TypeScript), SPA, Responsive UI.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 64,
+      "start": 2
+    },
+    "context_block_ids": [
+      "e6e34122-2677-45a2-8bd8-553a1b3e1e08"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "c239f03b-ac07-44d7-8ed6-47906d606f40",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "8f62f0c6-38b6-4787-9667-e30343249197",
+    "claim_type": "text",
+    "text_content": "Backend: RESTful API, Spring boot, xǔ lý nghiệp vụ và concurrency.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 68,
+      "start": 2
+    },
+    "context_block_ids": [
+      "8f62f0c6-38b6-4787-9667-e30343249197"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "bc55cc5a-2c54-4684-9727-942a7476f39a",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "ad6933a3-9e1c-49bb-8273-5417be4b447f",
+    "claim_type": "text",
+    "text_content": "Database: RDBMS (ACID) + Cache (Redis).",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 41,
+      "start": 2
+    },
+    "context_block_ids": [
+      "ad6933a3-9e1c-49bb-8273-5417be4b447f"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "402e59ef-6024-4c0a-9c38-67d278215772",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "c027808b-f517-4bdf-96da-47f9c49a1cc0",
+    "claim_type": "text",
+    "text_content": "Realtime: WebSocket cho trạng thái ghế.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 41,
+      "start": 2
+    },
+    "context_block_ids": [
+      "c027808b-f517-4bdf-96da-47f9c49a1cc0"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "d017aa63-33dc-47ac-ae06-04eb9fc991b9",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "6b570600-99ce-4ecb-8561-7bc9e93e4d47",
+    "claim_type": "text",
+    "text_content": "Storage: Cloudinary.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 22,
+      "start": 2
+    },
+    "context_block_ids": [
+      "6b570600-99ce-4ecb-8561-7bc9e93e4d47"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "62d749e8-613f-450e-88c9-2849ed189174",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "0f4edc1e-5666-4d82-9e33-4343da91d53e",
+    "claim_type": "text",
+    "text_content": "• Đăng ký, đăng nhập, quản lý tài khoản.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 25,
+      "start": 4
+    },
+    "context_block_ids": [
+      "0f4edc1e-5666-4d82-9e33-4343da91d53e"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "85921dee-17c3-4086-b50f-ce6c3a699e4b",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "b227dbea-3d90-4aef-8b58-12e99435df3d",
+    "claim_type": "text",
+    "text_content": "Xem phim đang chiếu / sắp chiếu.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 21,
+      "start": 0
+    },
+    "context_block_ids": [
+      "b227dbea-3d90-4aef-8b58-12e99435df3d"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "3aa2900b-a2e3-4802-afb1-915dbc98c13c",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "302ffc95-5e6d-4b98-a6b1-b3732c1e2575",
+    "claim_type": "text",
+    "text_content": "Tìm kiếm phim theo nhiều tiêu chí.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 24,
+      "start": 0
+    },
+    "context_block_ids": [
+      "302ffc95-5e6d-4b98-a6b1-b3732c1e2575"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "472d34e4-14f5-4b7a-b927-3bc17b177843",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "20de2c77-7c35-4360-adfa-1aba3a3636c3",
+    "claim_type": "text",
+    "text_content": "• Đặt vé: chọn suất chiếu, ghế, dịch vụ.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 40,
+      "start": 0
+    },
+    "context_block_ids": [
+      "20de2c77-7c35-4360-adfa-1aba3a3636c3"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "00afecad-f165-4c78-b7c4-fafd64649470",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "88012ac7-5c1d-49e9-b43a-0d9fbb098169",
+    "claim_type": "text",
+    "text_content": "• Thanh toán & nhận vé QR.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 24,
+      "start": 4
+    },
+    "context_block_ids": [
+      "88012ac7-5c1d-49e9-b43a-0d9fbb098169"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "5b93cb24-39d4-4587-875b-78a865cca096",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "2defe965-c018-4cea-8ffd-3f6e86dc6861",
+    "claim_type": "text",
+    "text_content": "• Quản lý phim (CRUD).",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 20,
+      "start": 4
+    },
+    "context_block_ids": [
+      "2defe965-c018-4cea-8ffd-3f6e86dc6861"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "3e0a5c7b-f579-4033-ba70-9738fb2651a0",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "768a8829-8275-45ad-b089-1f5d411b5339",
+    "claim_type": "text",
+    "text_content": "Quản lý phòng chiếu & ghế.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 21,
+      "start": 0
+    },
+    "context_block_ids": [
+      "768a8829-8275-45ad-b089-1f5d411b5339"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "19cdb555-8eb7-4d47-9635-e71c556d72ad",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "f3711384-f0c3-4bff-87ee-d725cf34bf56",
+    "claim_type": "text",
+    "text_content": "• Quản lý lịch chiếu (chống trùng).",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 28,
+      "start": 4
+    },
+    "context_block_ids": [
+      "f3711384-f0c3-4bff-87ee-d725cf34bf56"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "9f03f364-4adb-4360-8eb9-bc9ff9072e95",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "cc4f9c6e-eac6-49e3-95e5-104f491dd311",
+    "claim_type": "text",
+    "text_content": "Quản lý người dùng & phân quyền (RBAC).",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 32,
+      "start": 0
+    },
+    "context_block_ids": [
+      "cc4f9c6e-eac6-49e3-95e5-104f491dd311"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "7d64ac8d-69e5-46c5-81b2-5c193aa50844",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "8ba6611a-942f-4562-873c-5ae5bf44b6db",
+    "claim_type": "text",
+    "text_content": "Báo cáo doanh thu, thống kê.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 21,
+      "start": 0
+    },
+    "context_block_ids": [
+      "8ba6611a-942f-4562-873c-5ae5bf44b6db"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "8ed9770e-4ccd-48d7-84b6-019135a6aa8b",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "c0ff9350-2b12-4ae2-8840-dd00d37ce40f",
+    "claim_type": "factual",
+    "text_content": "95% request < 500ms.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 21,
+      "start": 4
+    },
+    "context_block_ids": [
+      "c0ff9350-2b12-4ae2-8840-dd00d37ce40f"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "050949ae-ab12-48a4-9b38-67ae5b26ad31",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "880d9fe5-5a54-4d0d-8910-6473298f57a8",
+    "claim_type": "factual",
+    "text_content": "Xử lý ≥ 1.000-2.000 users đồng thời.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 38,
+      "start": 2
+    },
+    "context_block_ids": [
+      "880d9fe5-5a54-4d0d-8910-6473298f57a8"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "c7f37be1-80ba-41cb-a9c2-2dc78369e920",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "96b53705-c31c-455f-9dc3-c1f8416b3cb7",
+    "claim_type": "factual",
+    "text_content": "Thời gian đặt vé < 2 giây.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 15,
+      "start": 0
+    },
+    "context_block_ids": [
+      "96b53705-c31c-455f-9dc3-c1f8416b3cb7"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "cbaa466b-c65c-44db-a03d-21f56732ef58",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "68029492-6c64-4f01-9129-b33ab1c387df",
+    "claim_type": "factual",
+    "text_content": "• Uptime  $ \\geq $ 99.9%.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 21,
+      "start": 4
+    },
+    "context_block_ids": [
+      "68029492-6c64-4f01-9129-b33ab1c387df"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "783826c2-f5db-4a34-b5fa-eed2473ccff2",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "3b688aca-d819-46ae-ab23-ddee1b6d77fc",
+    "claim_type": "factual",
+    "text_content": "RBAC phân quyền.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 6,
+      "start": 0
+    },
+    "context_block_ids": [
+      "98e0ac4b-8e6e-4877-961f-3c68c1db8861",
+      "3b688aca-d819-46ae-ab23-ddee1b6d77fc",
+      "d8f14c3b-beb0-4bca-a03a-3eeda7ccd73e",
+      "d0f27cbe-7eff-41c7-a1dc-9042fc0fff1a",
+      "1581d5ce-660d-45b2-ab5e-17ba50c97e2c"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "6ee0b8ab-cb5d-4d0f-b0e3-cbbab0b2be36",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "d8f14c3b-beb0-4bca-a03a-3eeda7ccd73e",
+    "claim_type": "factual",
+    "text_content": "- Mã hóa mật khẩu (BCrypt/Argon2).",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 18,
+      "start": 1
+    },
+    "context_block_ids": [
+      "98e0ac4b-8e6e-4877-961f-3c68c1db8861",
+      "3b688aca-d819-46ae-ab23-ddee1b6d77fc",
+      "d8f14c3b-beb0-4bca-a03a-3eeda7ccd73e",
+      "d0f27cbe-7eff-41c7-a1dc-9042fc0fff1a",
+      "1581d5ce-660d-45b2-ab5e-17ba50c97e2c"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "b606c4bd-88d0-47d7-9947-7398a911e0ae",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "d0f27cbe-7eff-41c7-a1dc-9042fc0fff1a",
+    "claim_type": "factual",
+    "text_content": "• HTTPS (TLS 1.3).",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 8,
+      "start": 0
+    },
+    "context_block_ids": [
+      "98e0ac4b-8e6e-4877-961f-3c68c1db8861",
+      "3b688aca-d819-46ae-ab23-ddee1b6d77fc",
+      "d8f14c3b-beb0-4bca-a03a-3eeda7ccd73e",
+      "d0f27cbe-7eff-41c7-a1dc-9042fc0fff1a",
+      "1581d5ce-660d-45b2-ab5e-17ba50c97e2c"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "b9731258-cae8-4e95-a332-9a16c8575685",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "1581d5ce-660d-45b2-ab5e-17ba50c97e2c",
+    "claim_type": "factual",
+    "text_content": "• Chống SQLi, XSS, CSRF.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 12,
+      "start": 0
+    },
+    "context_block_ids": [
+      "98e0ac4b-8e6e-4877-961f-3c68c1db8861",
+      "3b688aca-d819-46ae-ab23-ddee1b6d77fc",
+      "d8f14c3b-beb0-4bca-a03a-3eeda7ccd73e",
+      "d0f27cbe-7eff-41c7-a1dc-9042fc0fff1a",
+      "1581d5ce-660d-45b2-ab5e-17ba50c97e2c"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "18b8f68d-8c8c-4756-88f3-0c6d5fb42b78",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "450ce46d-0e12-4498-9bf3-a9091af48fcf",
+    "claim_type": "implementation",
+    "text_content": "• Hỗ trợ multi-cinema.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 21,
+      "start": 4
+    },
+    "context_block_ids": [
+      "450ce46d-0e12-4498-9bf3-a9091af48fcf"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "c4b5e1e1-0c5f-470a-8b77-ddad60634eb2",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "52957c8c-4175-46b9-91f5-8cc5b866d6bc",
+    "claim_type": "implementation",
+    "text_content": "• Horizontal Scaling (Docker/K8s).",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 29,
+      "start": 4
+    },
+    "context_block_ids": [
+      "52957c8c-4175-46b9-91f5-8cc5b866d6bc"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "1b3edaf4-edd5-49bb-9975-f4ec9445873f",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "098c0cec-84b0-401f-a1ca-bafc783660b4",
+    "claim_type": "implementation",
+    "text_content": "• RESTful API tích hợp bên thứ ba.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 33,
+      "start": 4
+    },
+    "context_block_ids": [
+      "098c0cec-84b0-401f-a1ca-bafc783660b4"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "6cacfe84-bdcd-4268-b1a0-578c2ba2ec75",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "7ab03c3a-42a4-4ead-b42b-e56b448ac8ae",
+    "claim_type": "factual",
+    "text_content": "Tuân thủ WCAG 2.1 cơ bản.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 21,
+      "start": 0
+    },
+    "context_block_ids": [
+      "8291bd55-f7ee-4b6f-adc8-f95adc60dfeb",
+      "1c6b9864-070d-481e-ae64-5802e6bde271",
+      "43a18524-3cd9-4bf0-a4e5-1fc863112824",
+      "7ab03c3a-42a4-4ead-b42b-e56b448ac8ae"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "811b89d8-8d19-41b0-9005-4b4d33ddcb84",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "6dc6968e-316c-4c3d-bb95-a0875555830a",
+    "claim_type": "factual",
+    "text_content": "Một phòng chiếu không thể có 2 suất chiếu trong cùng thời điểm.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 61,
+      "start": 0
+    },
+    "context_block_ids": [
+      "c6d2ddc3-2bc9-4e0d-bb47-a22b4928e246"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "36f84188-e9ba-49c1-8294-da3536044ee1",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "2fa0399c-f427-4488-a882-7733a6065bcd",
+    "claim_type": "factual",
+    "text_content": "Mỗi phim cần có khoảng nghỉ tối thiểu 15 phút giữa các suất chiếu.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 66,
+      "start": 0
+    },
+    "context_block_ids": [
+      "c6d2ddc3-2bc9-4e0d-bb47-a22b4928e246"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "869dc6aa-5714-4669-be7f-24b902d0cfbb",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "c85e6344-20b6-4aec-8bf8-77540c1adaad",
+    "claim_type": "factual",
+    "text_content": "Không thể xóa suất chiếu đã có vé được bán.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 43,
+      "start": 0
+    },
+    "context_block_ids": [
+      "c6d2ddc3-2bc9-4e0d-bb47-a22b4928e246"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "ce26dbc5-55d4-4823-82e4-baba524c9a26",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "7c1013d2-c31a-4f4b-84e5-1275c9c075ce",
+    "claim_type": "text",
+    "text_content": "Lớp đại diện cho một chi nhánh rap chiếu phim.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 55,
+      "start": 35
+    },
+    "context_block_ids": [
+      "7c1013d2-c31a-4f4b-84e5-1275c9c075ce"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "e1cfca49-8053-4aa2-90d3-c3302ab631dd",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "35da3f5d-4717-4c0c-9efe-851efc7385f2",
+    "claim_type": "text",
+    "text_content": "Thuộc tính:",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 6,
+      "start": 0
+    },
+    "context_block_ids": [
+      "35da3f5d-4717-4c0c-9efe-851efc7385f2"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "a345e406-722b-4ebd-bcc3-84fd83a7c062",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "cc1088ae-aa5a-473c-992e-e4a15c998d0e",
+    "claim_type": "factual",
+    "text_content": "id: Thường cố định là 1.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 21,
+      "start": 0
+    },
+    "context_block_ids": [
+      "35da3f5d-4717-4c0c-9efe-851efc7385f2",
+      "cc1088ae-aa5a-473c-992e-e4a15c998d0e"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "1ffc7a0c-dff2-4020-8dcc-cc842b4254f1",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "71111df0-20ef-485f-8492-e0027d5e64da",
+    "claim_type": "factual",
+    "text_content": "emailNotification: Bật/tất thông báo qua email.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 32,
+      "start": 0
+    },
+    "context_block_ids": [
+      "35da3f5d-4717-4c0c-9efe-851efc7385f2",
+      "71111df0-20ef-485f-8492-e0027d5e64da"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "32c969e6-94da-499f-82b4-6528aec0ed49",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "a56bb157-cf30-4400-992e-9ea4fbc06190",
+    "claim_type": "factual",
+    "text_content": "orderExpirationMinutes: Thời gian hết hạn của đơn hàng chờ thanh toán.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 52,
+      "start": 0
+    },
+    "context_block_ids": [
+      "35da3f5d-4717-4c0c-9efe-851efc7385f2",
+      "a56bb157-cf30-4400-992e-9ea4fbc06190"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "e8674f30-a69d-42f4-87df-442ff412652e",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "f1ae6410-9e66-4670-b26e-38d728f2abed",
+    "claim_type": "factual",
+    "text_content": "autoCancelEnabled: Tự động hủy đơn hàng quá hạn.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 39,
+      "start": 0
+    },
+    "context_block_ids": [
+      "35da3f5d-4717-4c0c-9efe-851efc7385f2",
+      "f1ae6410-9e66-4670-b26e-38d728f2abed"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "4963db07-a038-43e4-a1c7-daa4def35896",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "e448dd72-2b0e-4831-9a6b-ff9dbbbcfdc6",
+    "claim_type": "factual",
+    "text_content": "seatSyncInterval: Khoảng thời gian đồng bộ trạng thái ghế.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 45,
+      "start": 0
+    },
+    "context_block_ids": [
+      "35da3f5d-4717-4c0c-9efe-851efc7385f2",
+      "e448dd72-2b0e-4831-9a6b-ff9dbbbcfdc6"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "3ceefdfe-6fd2-48b2-b386-6c485a78ae21",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "a8015157-6bcd-45fe-81b7-f1efc83be9cd",
+    "claim_type": "factual",
+    "text_content": "primaryColor: Màu sắc chủ đạo của giao diện.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 38,
+      "start": 0
+    },
+    "context_block_ids": [
+      "35da3f5d-4717-4c0c-9efe-851efc7385f2",
+      "a8015157-6bcd-45fe-81b7-f1efc83be9cd"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "b3bfac92-c000-4590-a884-73a50b45fae7",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "42ab736c-a8e4-4e17-8049-87b5ae3bfd32",
+    "claim_type": "factual",
+    "text_content": "currency, currencyFormat: Đơn vị và định dạng tiền tệ.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 42,
+      "start": 0
+    },
+    "context_block_ids": [
+      "35da3f5d-4717-4c0c-9efe-851efc7385f2",
+      "42ab736c-a8e4-4e17-8049-87b5ae3bfd32"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "cf70314e-3502-4523-aee0-5119f5bd09b6",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "c80979f4-bf1a-41b8-b238-91ecb324f038",
+    "claim_type": "factual",
+    "text_content": "cinemaName, cinemaAddress, cinemaPhone: Thông tin thương hiệu chung.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 55,
+      "start": 0
+    },
+    "context_block_ids": [
+      "35da3f5d-4717-4c0c-9efe-851efc7385f2",
+      "c80979f4-bf1a-41b8-b238-91ecb324f038"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "d2a528ce-887e-49f5-a41b-6b65fac0d73c",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "b1d61f7c-1559-4721-8716-e518abab5d60",
+    "claim_type": "text",
+    "text_content": "Movie (Phim) Lớp trung tâm lưu trữ thông tin về các bộ phim.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 61,
+      "start": 0
+    },
+    "context_block_ids": [
+      "b1d61f7c-1559-4721-8716-e518abab5d60",
+      "6de411b3-d3a1-4184-ac1f-1fbf576b6bec",
+      "afaa845c-44b9-4cc4-bd02-42c6b1972bc3",
+      "27baca27-7f50-476c-b9f9-91cc483e6fb3",
+      "4d95f824-a09d-4fe0-bada-e8ebbb391bd1",
+      "afc2dd2f-81ed-498e-bced-715a038cdf0c",
+      "df538684-a04f-4813-a5cb-ef7b3beca9c6",
+      "cf0752cc-1333-40ef-8ad0-589259755b09",
+      "abb1beb7-416a-4808-8b89-5cdd591be392"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "36d3debc-4d07-494f-9007-080a28d6d5e4",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "a6ec5de8-fba5-4e63-81b3-75c0f1433eb5",
+    "claim_type": "factual",
+    "text_content": "Phim được chiếu.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 15,
+      "start": 11
+    },
+    "context_block_ids": [
+      "a6ec5de8-fba5-4e63-81b3-75c0f1433eb5"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "667f3756-56f9-4cb4-929b-26ca23be5384",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "db4a8fd8-87ca-4e6f-b58e-4b383ba57040",
+    "claim_type": "factual",
+    "text_content": "Phòng chiếu nơi diễn ra suất chiếu.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 24,
+      "start": 11
+    },
+    "context_block_ids": [
+      "db4a8fd8-87ca-4e6f-b58e-4b383ba57040"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "61641303-576d-4b05-8150-9d2853af97c9",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "d38eb9e0-cc8a-4cb8-b769-c112bab9a321",
+    "claim_type": "factual",
+    "text_content": "Định dạng của suất chiếu này.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 22,
+      "start": 11
+    },
+    "context_block_ids": [
+      "d38eb9e0-cc8a-4cb8-b769-c112bab9a321"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "ab189ac5-320e-494a-a96a-76e8cc95aa19",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "3a14609d-0d4b-43f7-ae37-d60ff21c6127",
+    "claim_type": "text",
+    "text_content": "showtime (Many-to-One): Suất chiếu của vé.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 31,
+      "start": 0
+    },
+    "context_block_ids": [
+      "3a14609d-0d4b-43f7-ae37-d60ff21c6127"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "6da88df2-fbbb-4f30-9cbd-067901d2ac88",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "c73fd784-8437-440c-aa95-b803811f2792",
+    "claim_type": "text",
+    "text_content": "Thuộc tính:",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 6,
+      "start": 0
+    },
+    "context_block_ids": [
+      "c73fd784-8437-440c-aa95-b803811f2792"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "209ab90b-1b75-487e-8de8-1d7e808daafd",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "5a2a8581-2b18-418a-9f0f-9d0ee983840b",
+    "claim_type": "text",
+    "text_content": "- eUserId: ID nhân viên (EMP001...).",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 26,
+      "start": 0
+    },
+    "context_block_ids": [
+      "c73fd784-8437-440c-aa95-b803811f2792",
+      "5a2a8581-2b18-418a-9f0f-9d0ee983840b"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "de5d0fa0-7b3c-4835-ac44-7b948dc1537f",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "e1fe9639-00b3-4269-9504-3036418dd320",
+    "claim_type": "text",
+    "text_content": "- eName: Họ tên.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 16,
+      "start": 0
+    },
+    "context_block_ids": [
+      "c73fd784-8437-440c-aa95-b803811f2792",
+      "5a2a8581-2b18-418a-9f0f-9d0ee983840b",
+      "e1fe9639-00b3-4269-9504-3036418dd320"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "6528a4d7-0282-4c81-8479-7ab81d092ef8",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "b4331bc2-8279-4b3c-bce6-5f18f585af95",
+    "claim_type": "text",
+    "text_content": "userType: Chức vụ (ADMIN, MANAGER, STAFF).",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 42,
+      "start": 0
+    },
+    "context_block_ids": [
+      "c73fd784-8437-440c-aa95-b803811f2792",
+      "5a2a8581-2b18-418a-9f0f-9d0ee983840b",
+      "e1fe9639-00b3-4269-9504-3036418dd320",
+      "b4331bc2-8279-4b3c-bce6-5f18f585af95"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "51b99b4a-dd82-46bb-9c16-2e691420853e",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "e70e218b-742b-4dd0-ad78-f25d1b0c9148",
+    "claim_type": "text",
+    "text_content": "Quan hệ:",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 6,
+      "start": 0
+    },
+    "context_block_ids": [
+      "c73fd784-8437-440c-aa95-b803811f2792",
+      "5a2a8581-2b18-418a-9f0f-9d0ee983840b",
+      "e1fe9639-00b3-4269-9504-3036418dd320",
+      "b4331bc2-8279-4b3c-bce6-5f18f585af95",
+      "e70e218b-742b-4dd0-ad78-f25d1b0c9148"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "9431d8da-b446-4347-8012-7ef419f3f4cc",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "96f824b5-b5f7-468d-a035-9a28ac9d0316",
+    "claim_type": "text",
+    "text_content": "- salary: Mức lương.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 16,
+      "start": 0
+    },
+    "context_block_ids": [
+      "c73fd784-8437-440c-aa95-b803811f2792",
+      "5a2a8581-2b18-418a-9f0f-9d0ee983840b",
+      "e1fe9639-00b3-4269-9504-3036418dd320",
+      "b4331bc2-8279-4b3c-bce6-5f18f585af95",
+      "e70e218b-742b-4dd0-ad78-f25d1b0c9148",
+      "96f824b5-b5f7-468d-a035-9a28ac9d0316"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "10c12108-4063-4c8c-aa05-c7e7c0cd8ad5",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "073184b5-558e-499f-9898-95ea2e910c2f",
+    "claim_type": "text",
+    "text_content": "- branch (Many-to-One): Chi nhánh làm việc.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 36,
+      "start": 0
+    },
+    "context_block_ids": [
+      "c73fd784-8437-440c-aa95-b803811f2792",
+      "5a2a8581-2b18-418a-9f0f-9d0ee983840b",
+      "e1fe9639-00b3-4269-9504-3036418dd320",
+      "b4331bc2-8279-4b3c-bce6-5f18f585af95",
+      "e70e218b-742b-4dd0-ad78-f25d1b0c9148",
+      "96f824b5-b5f7-468d-a035-9a28ac9d0316",
+      "073184b5-558e-499f-9898-95ea2e910c2f"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "7864dbd2-b915-40da-952a-81c60893057a",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "d5333559-f46b-44a1-84ca-49519bc9785a",
+    "claim_type": "text",
+    "text_content": "– manager (Self-referencing): Quản lý trực tiếp của nhân viên này.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 62,
+      "start": 0
+    },
+    "context_block_ids": [
+      "c73fd784-8437-440c-aa95-b803811f2792",
+      "5a2a8581-2b18-418a-9f0f-9d0ee983840b",
+      "e1fe9639-00b3-4269-9504-3036418dd320",
+      "b4331bc2-8279-4b3c-bce6-5f18f585af95",
+      "e70e218b-742b-4dd0-ad78-f25d1b0c9148",
+      "96f824b5-b5f7-468d-a035-9a28ac9d0316",
+      "073184b5-558e-499f-9898-95ea2e910c2f",
+      "d5333559-f46b-44a1-84ca-49519bc9785a"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "09125b97-0ce2-45f3-8ea9-9bee6dd8e9e2",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "394966b3-30f5-4ea1-b940-dc8469c99810",
+    "claim_type": "text",
+    "text_content": "Thuộc tính:",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 6,
+      "start": 0
+    },
+    "context_block_ids": [
+      "394966b3-30f5-4ea1-b940-dc8469c99810"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "36a24453-0063-4fda-a1e9-59803dc2d10b",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "95437f5b-de6a-4460-aec3-dc9d3da89feb",
+    "claim_type": "text",
+    "text_content": "– cUserId: ID khách hàng.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 16,
+      "start": 0
+    },
+    "context_block_ids": [
+      "394966b3-30f5-4ea1-b940-dc8469c99810",
+      "95437f5b-de6a-4460-aec3-dc9d3da89feb"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "cd5413e2-1ea7-463a-970d-8f9ece68e314",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "5996414e-4159-4bc9-b341-3920c76388e0",
+    "claim_type": "text",
+    "text_content": "- cName: Họ tên.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 11,
+      "start": 0
+    },
+    "context_block_ids": [
+      "394966b3-30f5-4ea1-b940-dc8469c99810",
+      "5996414e-4159-4bc9-b341-3920c76388e0"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "4a6775e4-3238-44cd-940a-24f6e60de093",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "f60d63d4-030f-4620-9f18-c55f2d278d47",
+    "claim_type": "text",
+    "text_content": "- points: Điểm tích lũy.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 14,
+      "start": 0
+    },
+    "context_block_ids": [
+      "394966b3-30f5-4ea1-b940-dc8469c99810",
+      "f60d63d4-030f-4620-9f18-c55f2d278d47"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "ed2298bf-3790-429d-a33d-81f4a3f80f7a",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "8f61cc4f-c68e-4b4d-9225-134e4ea013d5",
+    "claim_type": "text",
+    "text_content": "Quan hệ:",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 6,
+      "start": 0
+    },
+    "context_block_ids": [
+      "8f61cc4f-c68e-4b4d-9225-134e4ea013d5"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "3ec6ea10-543c-4c11-80de-c7c1eb7bdd48",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "618ad81e-507c-4a7c-8aa2-81621955dbd2",
+    "claim_type": "text",
+    "text_content": "- membership (One-to-One): Thông tin cấp bậc thành viên.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 46,
+      "start": 0
+    },
+    "context_block_ids": [
+      "8f61cc4f-c68e-4b4d-9225-134e4ea013d5",
+      "618ad81e-507c-4a7c-8aa2-81621955dbd2"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "e5f96452-6035-4a5a-a7b8-17c6fbe491c4",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "cfc7bb21-bab4-4177-820c-ba67a3c54e04",
+    "claim_type": "factual",
+    "text_content": "RESTful API, dữ liệu trao đổi ở định dạng JSON.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 45,
+      "start": 0
+    },
+    "context_block_ids": [
+      "cfc7bb21-bab4-4177-820c-ba67a3c54e04"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "8994ceef-4181-4717-a46e-094990037b6b",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "ea1db53c-01e0-4bd0-b891-cd3331b23deb",
+    "claim_type": "factual",
+    "text_content": "Base URL chuẩn:/api/v1.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 21,
+      "start": 0
+    },
+    "context_block_ids": [
+      "ea1db53c-01e0-4bd0-b891-cd3331b23deb"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "cbaeeecf-991d-48c7-9ad3-4846a36922a5",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "9d00ac6f-bf91-4890-91c7-68b281a54014",
+    "claim_type": "factual",
+    "text_content": "Cơ chế xác thực: Bearer JWT Token trong header Authorization.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 62,
+      "start": 0
+    },
+    "context_block_ids": [
+      "9d00ac6f-bf91-4890-91c7-68b281a54014"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "6249fe14-6465-47d0-86ad-e8d9a8c9801d",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "74d6c8c0-cc0e-4cfa-a1c3-2929529e9978",
+    "claim_type": "factual",
+    "text_content": "HTTP Status Code sử dụng thống nhất: 200 OK, 201 Created, 400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found, 500 Internal Server Error.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 151,
+      "start": 2
+    },
+    "context_block_ids": [
+      "74d6c8c0-cc0e-4cfa-a1c3-2929529e9978"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "93bf4bcb-f652-4ab5-9c72-130e8adb26ca",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "eeaf6c12-7d3c-422e-b5c3-1d8221caf036",
+    "claim_type": "factual",
+    "text_content": "Hệ thống áp dụng mô hình kiểm thử phân tàng (Test Pyramid) để đảm bảo tính ổn định và bảo mật ở các lớp nghiệp vụ quan trọng.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 111,
+      "start": 0
+    },
+    "context_block_ids": [],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "0477485f-9c22-4dca-b5f2-1e5093dc06ee",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "97af5a51-cdd6-41d3-b12d-1d44945fa09d",
+    "claim_type": "factual",
+    "text_content": "Mục tiêu xử lý 500 request/giấy cho các API xem lịch chiếu.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 62,
+      "start": 12
+    },
+    "context_block_ids": [
+      "97af5a51-cdd6-41d3-b12d-1d44945fa09d"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "4c9c4d58-d45f-454c-9814-d5e5413ea376",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "b23426e6-267d-4ea2-9bef-2ca081073b11",
+    "claim_type": "factual",
+    "text_content": "Đã cấu hình CORS, CSRF (vô hiệu hóa cho Stateless API) và bộ lọc JWT cho mọi request.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 95,
+      "start": 12
+    },
+    "context_block_ids": [
+      "b23426e6-267d-4ea2-9bef-2ca081073b11"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "ebe33fec-5934-4113-b9ea-c8d1addd78a1",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "a952edf1-db34-4fde-a2ba-afd8b033184e",
+    "claim_type": "text",
+    "text_content": "Truy cấp vào đây để xem mã nguồn dự án Back-end trên GitHub",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 61,
+      "start": 10
+    },
+    "context_block_ids": [
+      "a952edf1-db34-4fde-a2ba-afd8b033184e"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "97c664b7-a905-41f3-872f-24eae7b242ac",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "1fda1fa9-1dd1-4dee-bf12-24129b876bc3",
+    "claim_type": "text",
+    "text_content": "Truy cấp vào đây để xem mã nguồn dự án Front-end khách hàng trên GitHub",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 62,
+      "start": 10
+    },
+    "context_block_ids": [
+      "1fda1fa9-1dd1-4dee-bf12-24129b876bc3"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "e38ef93b-d22b-49c2-aa34-87c57fee7e65",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "629e57c6-f023-4b6d-a9f8-8b94fdc1981b",
+    "claim_type": "text",
+    "text_content": "Truy cấp vào đây để xem mã nguồn dự án Front-end Dashboard trên GitHub",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 65,
+      "start": 10
+    },
+    "context_block_ids": [
+      "629e57c6-f023-4b6d-a9f8-8b94fdc1981b"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "4d03cd4a-43b0-4b08-addb-2c35aa56dfc8",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "e5c3d5e7-f930-42e9-bfa6-c496b0788307",
+    "claim_type": "factual",
+    "text_content": "AI được dùng để gợi ý ý tưởng, tham khảo tài liệu, hỗ trợ viết nội dung báo cáo, và kiểm tra ngữ pháp/ngôn ngữ.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 111,
+      "start": 0
+    },
+    "context_block_ids": [],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "4a73c5b5-e28f-470e-8c92-6f1941630d28",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "acbf9224-239e-481d-82e5-3111f51047c0",
+    "claim_type": "factual",
+    "text_content": "AI không được sử dụng để tạo ra toàn bộ nội dung báo cáo, không thay thế cho phân tích và thiết kế của nhóm.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 104,
+      "start": 0
+    },
+    "context_block_ids": [],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "5bba3cd4-a75e-4b0b-9735-3e1a928fe248",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "7a614ca3-a996-44ed-8299-a0e7448f55e5",
+    "claim_type": "factual",
+    "text_content": "Nhóm chịu trách nhiệm hoàn toàn về nội dung đã nộp, đảm bảo hiểu rõ và làm chủ các phần có sự hỗ trợ từ AI.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 111,
+      "start": 0
+    },
+    "context_block_ids": [
+      "7a614ca3-a996-44ed-8299-a0e7448f55e5"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "01e432c4-eff8-46be-8a29-94d2a5e85a56",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "dd70cf76-2d93-42f2-b100-8a342ce954b1",
+    "claim_type": "text",
+    "text_content": "Đồ án đã trình bày toàn diện quá trình phân tích, thiết kế và đề xuất giải pháp cho Hệ thống quản lý rập chiếu phim CMS.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 111,
+      "start": 0
+    },
+    "context_block_ids": [
+      "dd70cf76-2d93-42f2-b100-8a342ce954b1"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "c93ccf7f-fea5-411c-9017-3c838b13a5e2",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_block_id": "360839bc-6eaa-4742-9084-f8a15ecea6c6",
+    "claim_type": "factual",
+    "text_content": "Tích hợp trí tuệ nhân tạo (AI/ML) gợi ý phim dựa trên lịch sử xem và sở thích.",
+    "is_atomic": false,
+    "is_central": false,
+    "qualifiers": {
+      "citation_markers": []
+    },
+    "source_span": {
+      "end": 78,
+      "start": 0
+    },
+    "context_block_ids": [
+      "360839bc-6eaa-4742-9084-f8a15ecea6c6"
+    ],
+    "impact": 1,
+    "testability": 0,
+    "risk": 1,
+    "extractor_version": "qwen2.5:7b:claims-1",
+    "confidence": null,
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  }
+]

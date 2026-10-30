@@ -1,0 +1,1577 @@
+[
+  {
+    "pack_id": "0afa8fb8-670d-4792-b469-16af253d7674",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000011",
+    "criterion_code": "CRIT-1",
+    "coverage": {
+      "criterion_code": "CRIT-1",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 8783
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "0128a149-58fe-484e-967e-8677fa6c0994",
+    "source_type": "submission_block",
+    "text_snapshot": "9 Thiết Kế Chi Tiết\n9.1 Class Diagram..... 17\n9.2 Mô tả thực thể chi tiết..... 17\n9.2.1 Phân hệ Cinema (Quản lý Rập)..... 17\n9.2.2 Phân hệ Movie (Quản lý Phim)..... 18\n9.2.3 Phân hệ Screening & Booking (Suất chiếu & Đặt vế)..... 19\n9.2.4 Phân hệ Staff & Customer (Nhân sự & Khách hàng)..... 20\n9.2.5 Phân hệ Products (Sản phẩm phụ trợ)..... 21\n9.3 Thiết kế API..... 21\n9.3.1 Quy ước API..... 21\n9.3.2 Các nhóm API chính..... 21\n9.4 Thiết kế giao diện (UI/UX)..... 24\n9.4.1 Wireframe chính Front-end Customer..... 24\n9.4.2 Wireframe chính Front-end Dashboard..... 25\n9.5 Sơ đồ tuần tự (Sequence Diagrams)..... 29\n9.5.1 Sequence Diagram: Đặt vế trực tuyến..... 29\n10 Kế hoạch kiểm thủ\n10.1 Chiến lược kiểm thủ..... 30\n10.2 Test Cases mẫu..... 30\n10.2.1 Unit Test (Kiểm thủ đơn vị)..... 30\n10.2.2 Integration Test (Kiểm thủ tích hợp)..... 30\n10.2.3 Performance & Security (Kế hoạch)..... 31\n10.2.4 Xem báo cáo chi tiết..... 31\n11 Quản lý rủi ro\n12 Kế hoạch dự án\n12.1 Phân công nhiệm vụ..... 31\n12.2 Tiến độ dự án và đóng góp..... 32\n12.3 Công cụ và quy trình làm việc..... 32\n13 Mã nguồn dự án\n14 Khai báo sử dụng AI trong dự án\n14.1 Mục đích sử dụng..... 33\n14.2 Phạm vi đóng góp..... 33\n14.3 Giới hạn..... 33\n14.4 Trách nhiệm..... 33\n15 Kết luận và hướng phát triển\n15.1 Kết luận..... 34\n15.2 Hướng phát triển trong tương lai..... 34\nTÀI LIỆU THAM KHẢO",
+    "location": {
+      "page_no": 3,
+      "block_type": "text",
+      "section_title": "Mục lục"
+    },
+    "retrieval_score": 0.6136
+  },
+  {
+    "pack_id": "0afa8fb8-670d-4792-b469-16af253d7674",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000011",
+    "criterion_code": "CRIT-1",
+    "coverage": {
+      "criterion_code": "CRIT-1",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 8783
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "7d64dc0b-b03b-4634-af9b-297c2f09da0b",
+    "source_type": "submission_block",
+    "text_snapshot": "<table><tr><td>Nghiệp vụ</td><td>Quy tắc và Điều kiện áp dụng</td></tr><tr><td>Độ tuổi xem phim</td><td>Hệ thống bắt buộc hiển thị cảnh báo và yêu cầu xác nhận độ tuổi đối với các phim gắn nhân T13, T16, T18. Nhân viên sẽ kiểm tra CCCD khi soát vé.</td></tr><tr><td>Hủy vé và Hoàn tiền</td><td>Khách hàng chỉ được phép hủy vé trước giờ chiếu ít nhất 60 phút. Tiền sẽ được hoàn lại dưới dạng điểm thành viên hoặc hoàn về tài khoản gốc tùy chính sách rạp.</td></tr><tr><td>Tích lũy điểm</td><td>Điểm thành viên được tính dựa trên tổng giá trị hóa đơn (sau khi trừ khuyến mãi). Tỷ lệ tích điểm mặc định là 5% cho khách hàng thường và 10% cho khách hàng VIP.</td></tr><tr><td>Xác thực vé (Check-in)</td><td>Mỗi vé tương ứng với một mã QR duy nhất. Sau khi mã QR đã được nhân viên quét xác nhận vào phòng, trạng thái vé sẽ chuyển thành &quot;Used&quot; và không thể sử dụng lại.</td></tr></table>",
+    "location": {
+      "page_no": 14,
+      "block_type": "table",
+      "section_title": "8.1.2 Quy trình nghiệp vụ Đặt vé (Booking Workflow)"
+    },
+    "retrieval_score": 0.5318
+  },
+  {
+    "pack_id": "0afa8fb8-670d-4792-b469-16af253d7674",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000011",
+    "criterion_code": "CRIT-1",
+    "coverage": {
+      "criterion_code": "CRIT-1",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 8783
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "7daec4e7-a142-4c72-9c72-9762082d3d00",
+    "source_type": "submission_block",
+    "text_snapshot": "<table><tr><td>Nhóm API</td><td>Mô tả</td></tr><tr><td>/auth</td><td>Đăng ký, đăng nhập (Local &amp; Google), làm mới token (Refresh Token), đăng xuất và lấy thông tin tài khoản đang đăng nhập.</td></tr><tr><td>/movies</td><td>Quản lý phim (CRUD), tìm kiếm, lọc theo thể loại, danh sách phim đang chiếu/sắp chiếu.</td></tr><tr><td>/showtimes</td><td>Quản lý suất chiếu, lịch chiếu theo phim hoặc chi nhánh, xem sơ đồ ghế và trạng thái đặt chỗ của suất chiếu.</td></tr><tr><td>/orders</td><td>Quy trình đặt vẻ, tạo đơn hàng, quản lý và cấp nhất trạng thái đơn hàng (Booking flow).</td></tr><tr><td>/branches</td><td>Quản lý danh sách các chi nhánh rạp phim trong hệ thống.</td></tr><tr><td>/rooms</td><td>Quản lý các phòng chiếu (Screen Room) và cấu hình loại phòng.</td></tr><tr><td>/seats</td><td>Quản lý sơ đồ ghế ngồi, loại ghế (Standard, VIP, Sweetbox) và giá vẻ tương ứng.</td></tr><tr><td>/customers</td><td>Quản lý thông tin khách hàng, tra cứu hàng thành viên và điểm tích lũy.</td></tr><tr><td>/employees</td><td>Quản lý danh sách nhân viên, thông tin cá nhân và phân quyền theo chi nhánh.</td></tr><tr><td>/food-drinks</td><td>Quản lý danh mục các sản phẩm đồ ăn, thực uống và combo bán kèm.</td></tr><tr><td>/coupons</td><td>Quản lý mã giảm giá, chương trình khuyến mãi và kiểm tra tính hợp lệ của coupon.</td></tr><tr><td>/payments</td><td>Xử lý thanh toán qua các cổng như VNPAY, quản lý giao dịch và phản hồi thanh toán.</td></tr><tr><td>/statistics</td><td>Các API thống kê doanh thu, số lượng vẻ, tỷ lệ lấp đầy phòng chiếu phục vụ Dashboard.</td></tr><tr><td>/catalogs</td><td>Quản lý các danh mục dùng chung: Thể loại (Genres), Định dạng (Formats), Ngôn ngữ.</td></tr><tr><td>/users</td><td>Các tiện ích người dùng như đổi mặt khẩu và quản lý hỗ sơ cá nhân.</td></tr><tr><td>/files</td><td>API hỗ trợ tài lên (upload) và quản lý các tập tin, hình ảnh (Poster phim, Avatar...).</td></tr><tr><td>/work-shifts</td><td>Quản lý phân của vùng lâm việc của nhân viên tại rạp.</td></tr><tr><td>/system-settings</td><td>Cấu hình các tham số vận hành hệ thống.</td></tr></table>",
+    "location": {
+      "page_no": 23,
+      "block_type": "table",
+      "section_title": "9.3.2 Các nhóm API chính"
+    },
+    "retrieval_score": 0.4636
+  },
+  {
+    "pack_id": "0afa8fb8-670d-4792-b469-16af253d7674",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000011",
+    "criterion_code": "CRIT-1",
+    "coverage": {
+      "criterion_code": "CRIT-1",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 8783
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "134a91cf-f9bc-48d4-ae8a-1eebc0b11a58",
+    "source_type": "submission_block",
+    "text_snapshot": "Ngành công nghiệp điện ảnh và giải trí đang chứng kiến sự tăng trưởng mạnh mẽ cùng với sự thay đổi trong hành vi tiêu dùng của khách hàng. Người xem ngày càng có xu hướng tìm kiếm, đặt vé và thanh toán trực tuyến thay vì mua vé trực tiếp tại quây. Tuy nhiên, tại nhiều rạp chiếu phim, đặc biệt là các rạp quy mô vừa và nhỏ, hệ thống quản lý vẫn còn mang tính thủ công hoặc sử dụng các phần mềm rời rạc, thiếu tính đồng bộ.",
+    "location": {
+      "page_no": 4,
+      "block_type": "text",
+      "section_title": "1.1 Bối cảnh nghiên cứu và lý do chọn đề tài"
+    },
+    "retrieval_score": 0.4318
+  },
+  {
+    "pack_id": "0afa8fb8-670d-4792-b469-16af253d7674",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000011",
+    "criterion_code": "CRIT-1",
+    "coverage": {
+      "criterion_code": "CRIT-1",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 8783
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "0b17035c-828e-4fd8-81df-9ef551a919e8",
+    "source_type": "submission_block",
+    "text_snapshot": "Xuất phát từ thực tế trên, đề tài Cinema Management System (CMS) được lựa chọn nhằm nghiên cứu, phân tích và xây dựng một hệ thống phần mềm quản lý rập chiếu phim hiện đại, toàn diện và có khả năng triển khai trong thực tế.",
+    "location": {
+      "page_no": 4,
+      "block_type": "text",
+      "section_title": "1.1 Bối cảnh nghiên cứu và lý do chọn đề tài"
+    },
+    "retrieval_score": 0.4318
+  },
+  {
+    "pack_id": "0afa8fb8-670d-4792-b469-16af253d7674",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000011",
+    "criterion_code": "CRIT-1",
+    "coverage": {
+      "criterion_code": "CRIT-1",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 8783
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "38d6cd0a-6ca9-45b9-85fd-fe39cc5f90ba",
+    "source_type": "submission_block",
+    "text_snapshot": "Quy trình đặt vế được thiết kế nhằm tối ưu hóa trải nghiệm người dùng và đảm bảo tính toàn vện dữ liệu trong môi trường đa người dùng.",
+    "location": {
+      "page_no": 13,
+      "block_type": "text",
+      "section_title": "8.1.2 Quy trình nghiệp vụ Đặt vé (Booking Workflow)"
+    },
+    "retrieval_score": 0.4318
+  },
+  {
+    "pack_id": "0afa8fb8-670d-4792-b469-16af253d7674",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000011",
+    "criterion_code": "CRIT-1",
+    "coverage": {
+      "criterion_code": "CRIT-1",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 8783
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "43b3e4bb-a398-4c5e-a1f9-54820838a607",
+    "source_type": "submission_block",
+    "text_snapshot": "1 Giới thiệu chung\n1.1 Bối cảnh nghiên cứu và lý do chọn đề tài..... 3\n1.2 Mục tiêu tài liệu..... 3\n1.3 Phạm vi hệ thống..... 3\n1.4 Bối cảnh dự án..... 3\n\n2 Tổng quan hệ thống\n2.1 Mở tả hệ thống..... 3\n2.2 Đối tượng sử dụng (Stakeholders & Users)..... 4\n\n3 Mục tiêu dự án (Project Goals)\n3.1 Mục tiêu tổng quát..... 4\n3.2 Mục tiêu cụ thể..... 4\n\n4 Phân tích nghiệp vụ (Business Analysis)\n4.1 Hiện trạng (As-Is)..... 5\n4.2 Giải pháp đề xuất (To-Be)..... 5\n\n5 Kiến trúc hệ thống đề xuất\n5.1 Tổng quan kiến trúc..... 5\n5.2 Mở hình phân tầng..... 5\n\n6 Yêu cầu chức năng (Functional Requirements)\n6.1 Chức năng cho Khách hàng..... 6\n6.2 Chức năng cho Nhân viên..... 6\n6.3 Chức năng cho Quản trị viên..... 6\n6.4 Chức năng hệ thống..... 6\n\n7 Yêu cầu phi chức năng (Non-Functional Requirements)\n7.1 Hiệu năng (Performance)..... 6\n7.2 Độ tin cậy & sẵn sàng (Reliability & Availability)..... 7\n7.3 Bảo mật (Security)..... 7\n7.4 Khả năng mở rộng (Scalability)..... 7\n7.5 Khả dụng & UX (Usability)..... 7\n7.6 Bảo trì & hỗ trợ (Maintainability)..... 7\n\n8 Use-case\n8.1 Use-case diagram and Use-case scenario Customer..... 8\n8.1.1 Phân tích nghiệp vụ phía người dùng..... 12\n8.1.2 Quy trình nghiệp vụ Đặt vế (Booking Workflow)..... 12\n8.1.3 Bảng quy tắc nghiệp vụ (Business Rules)..... 13\n8.2 Use-case diagram and Use-case scenario Staff and Manager..... 13\n8.2.1 Phân tích quy trình vận hành..... 14\n8.2.2 Cơ chế kiểm soát tài nguyên và xung đột..... 14\n8.2.3 Quản trị trạng thái và bảo toàn giao dịch..... 14\n8.3 Use-case diagram and Use-case scenario Admin..... 15",
+    "location": {
+      "page_no": 2,
+      "block_type": "text",
+      "section_title": "Mục lục"
+    },
+    "retrieval_score": 0.6591
+  },
+  {
+    "pack_id": "0afa8fb8-670d-4792-b469-16af253d7674",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000011",
+    "criterion_code": "CRIT-1",
+    "coverage": {
+      "criterion_code": "CRIT-1",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 8783
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "866bc552-7278-486c-a6e1-cb2331648ff0",
+    "source_type": "submission_block",
+    "text_snapshot": "1.1 Bối cảnh nghiên cứu và lý do chọn đề tài",
+    "location": {
+      "page_no": 4,
+      "block_type": "text",
+      "section_title": "1.1 Bối cảnh nghiên cứu và lý do chọn đề tài"
+    },
+    "retrieval_score": 0.3864
+  },
+  {
+    "pack_id": "0afa8fb8-670d-4792-b469-16af253d7674",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000011",
+    "criterion_code": "CRIT-1",
+    "coverage": {
+      "criterion_code": "CRIT-1",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 8783
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "d7720999-cf59-437e-87fb-687fd6f15fff",
+    "source_type": "submission_block",
+    "text_snapshot": "10. Hỗ trợ thiết kế bối cảnh (backgrounds). Các hình ảnh này đã được nhóm phát triển tinh chỉnh và biên tập lại để đảm bảo tính thẩm mỹ và phong cách nghệ thuật đồng nhất của trò chơi.",
+    "location": {
+      "page_no": 34,
+      "block_type": "text",
+      "section_title": "14.2 Phạm vi đóng góp"
+    },
+    "retrieval_score": 0.3864
+  },
+  {
+    "pack_id": "0afa8fb8-670d-4792-b469-16af253d7674",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000011",
+    "criterion_code": "CRIT-1",
+    "coverage": {
+      "criterion_code": "CRIT-1",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 8783
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "7088470d-5d20-4ed3-8e83-419b306f4c56",
+    "source_type": "submission_block",
+    "text_snapshot": "Những hạn chế phổ biến bao gồm: khó kiểm soát số lượng ghế trống theo thời gian thực, dễ xảy ra trùng lịch chiếu, báo cáo doanh thu chậm và thiếu dữ liệu hỗ trợ ra quyết định. Điều này không chỉ làm giảm hiệu quả vận hành mà còn ảnh hưởng tiêu cực đến trải nghiệm khách hàng.",
+    "location": {
+      "page_no": 4,
+      "block_type": "text",
+      "section_title": "1.1 Bối cảnh nghiên cứu và lý do chọn đề tài"
+    },
+    "retrieval_score": 0.3409
+  },
+  {
+    "pack_id": "0afa8fb8-670d-4792-b469-16af253d7674",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000011",
+    "criterion_code": "CRIT-1",
+    "coverage": {
+      "criterion_code": "CRIT-1",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 8783
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "9cd322d3-1e6e-446e-b206-b39cd9116db8",
+    "source_type": "submission_block",
+    "text_snapshot": "1.2 Mục tiêu tài liệu",
+    "location": {
+      "page_no": 4,
+      "block_type": "text",
+      "section_title": "1.2 Mục tiêu tài liệu"
+    },
+    "retrieval_score": 0.3409
+  },
+  {
+    "pack_id": "0afa8fb8-670d-4792-b469-16af253d7674",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000011",
+    "criterion_code": "CRIT-1",
+    "coverage": {
+      "criterion_code": "CRIT-1",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 8783
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "f8996044-8ae9-4ac2-9d8e-58caa9a083d3",
+    "source_type": "submission_block",
+    "text_snapshot": "Mô tả đầy đủ bối cảnh, mục tiêu và phạm vi của hệ thống.",
+    "location": {
+      "page_no": 4,
+      "block_type": "text",
+      "section_title": "1.2 Mục tiêu tài liệu"
+    },
+    "retrieval_score": 0.3409
+  },
+  {
+    "pack_id": "0afa8fb8-670d-4792-b469-16af253d7674",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000011",
+    "criterion_code": "CRIT-1",
+    "coverage": {
+      "criterion_code": "CRIT-1",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 8783
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "05b70e0f-588c-4091-aff3-f553d908c294",
+    "source_type": "submission_block",
+    "text_snapshot": "Làm cơ sở cho các giai đoạn thiết kế kiến trúc, thiết kế chi tiết và triển khai.",
+    "location": {
+      "page_no": 4,
+      "block_type": "text",
+      "section_title": "1.2 Mục tiêu tài liệu"
+    },
+    "retrieval_score": 0.3409
+  },
+  {
+    "pack_id": "0afa8fb8-670d-4792-b469-16af253d7674",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000011",
+    "criterion_code": "CRIT-1",
+    "coverage": {
+      "criterion_code": "CRIT-1",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 8783
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "6f18a084-912e-46db-88e0-f16151b9d2d4",
+    "source_type": "submission_block",
+    "text_snapshot": "• Phục vụ đánh giá học phần, đồ án môn học.",
+    "location": {
+      "page_no": 4,
+      "block_type": "text",
+      "section_title": "1.2 Mục tiêu tài liệu"
+    },
+    "retrieval_score": 0.3409
+  },
+  {
+    "pack_id": "0afa8fb8-670d-4792-b469-16af253d7674",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000011",
+    "criterion_code": "CRIT-1",
+    "coverage": {
+      "criterion_code": "CRIT-1",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 8783
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "cb8a977c-0198-456e-afc5-6809a795506e",
+    "source_type": "submission_block",
+    "text_snapshot": "Hệ thống CMS tập trung vào việc quản lý nghiệp vụ cốt lõi của một hoặc nhiều rạp chiếu phim, bao gồm: quản lý phim, phòng chiếu, lịch chiếu, bán vé, thanh toán, người dùng và báo cáo. Các chức năng ngoài phạm vi như sản xuất phim hoặc phân phối phim không được xem xét trong đề tài này.",
+    "location": {
+      "page_no": 4,
+      "block_type": "text",
+      "section_title": "1.3 Phạm vi hệ thống"
+    },
+    "retrieval_score": 0.3409
+  },
+  {
+    "pack_id": "8b913c2a-a0d1-4190-95c5-87d6b12cc7ff",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000012",
+    "criterion_code": "CRIT-2",
+    "coverage": {
+      "criterion_code": "CRIT-2",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 6511
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "a1f6305a-9cc6-41ea-ba62-7a7883ec91df",
+    "source_type": "submission_block",
+    "text_snapshot": "2 Tổng quan hệ thống",
+    "location": {
+      "page_no": 4,
+      "block_type": "text",
+      "section_title": "2 Tổng quan hệ thống"
+    },
+    "retrieval_score": 0.3125
+  },
+  {
+    "pack_id": "8b913c2a-a0d1-4190-95c5-87d6b12cc7ff",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000012",
+    "criterion_code": "CRIT-2",
+    "coverage": {
+      "criterion_code": "CRIT-2",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 6511
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "d9632508-0355-4d20-950f-aef3b7e61e97",
+    "source_type": "submission_block",
+    "text_snapshot": "Ngành công nghiệp điện ảnh và giải trí đang chứng kiến sự tăng trưởng mạnh mẽ cùng với sự thay đổi trong hành vi tiêu dùng của khách hàng. Người xem ngày càng có xu hướng tìm kiếm, đặt vé và thanh toán trực tuyến thay vì mua vé trực tiếp tại quây. Tuy nhiên, tại nhiều rạp chiếu phim, đặc biệt là các rạp quy mô vừa và nhỏ, hệ thống quản lý vẫn còn mang tính thủ công hoặc sử dụng các phần mềm rời rạc, thiếu tính đồng bộ.",
+    "location": {
+      "page_no": 4,
+      "block_type": "text",
+      "section_title": "1.1 Bối cảnh nghiên cứu và lý do chọn đề tài"
+    },
+    "retrieval_score": 0.4062
+  },
+  {
+    "pack_id": "8b913c2a-a0d1-4190-95c5-87d6b12cc7ff",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000012",
+    "criterion_code": "CRIT-2",
+    "coverage": {
+      "criterion_code": "CRIT-2",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 6511
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "49be944e-37d9-4278-8981-19e15efbb236",
+    "source_type": "submission_block",
+    "text_snapshot": "<table><tr><td>Nghiệp vụ</td><td>Quy tắc và Điều kiện áp dụng</td></tr><tr><td>Độ tuổi xem phim</td><td>Hệ thống bắt buộc hiển thị cảnh báo và yêu cầu xác nhận độ tuổi đối với các phim gắn nhân T13, T16, T18. Nhân viên sẽ kiểm tra CCCD khi soát vé.</td></tr><tr><td>Hủy vé và Hoàn tiền</td><td>Khách hàng chỉ được phép hủy vé trước giờ chiếu ít nhất 60 phút. Tiền sẽ được hoàn lại dưới dạng điểm thành viên hoặc hoàn về tài khoản gốc tùy chính sách rạp.</td></tr><tr><td>Tích lũy điểm</td><td>Điểm thành viên được tính dựa trên tổng giá trị hóa đơn (sau khi trừ khuyến mãi). Tỷ lệ tích điểm mặc định là 5% cho khách hàng thường và 10% cho khách hàng VIP.</td></tr><tr><td>Xác thực vé (Check-in)</td><td>Mỗi vé tương ứng với một mã QR duy nhất. Sau khi mã QR đã được nhân viên quét xác nhận vào phòng, trạng thái vé sẽ chuyển thành &quot;Used&quot; và không thể sử dụng lại.</td></tr></table>",
+    "location": {
+      "page_no": 14,
+      "block_type": "table",
+      "section_title": "8.1.2 Quy trình nghiệp vụ Đặt vé (Booking Workflow)"
+    },
+    "retrieval_score": 0.5062
+  },
+  {
+    "pack_id": "8b913c2a-a0d1-4190-95c5-87d6b12cc7ff",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000012",
+    "criterion_code": "CRIT-2",
+    "coverage": {
+      "criterion_code": "CRIT-2",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 6511
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "c5928953-afe5-4a9a-9cf2-fdee14e52eac",
+    "source_type": "submission_block",
+    "text_snapshot": "Xuất phát từ thực tế trên, đề tài Cinema Management System (CMS) được lựa chọn nhằm nghiên cứu, phân tích và xây dựng một hệ thống phần mềm quản lý rập chiếu phim hiện đại, toàn diện và có khả năng triển khai trong thực tế.",
+    "location": {
+      "page_no": 4,
+      "block_type": "text",
+      "section_title": "1.1 Bối cảnh nghiên cứu và lý do chọn đề tài"
+    },
+    "retrieval_score": 0.375
+  },
+  {
+    "pack_id": "8b913c2a-a0d1-4190-95c5-87d6b12cc7ff",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000012",
+    "criterion_code": "CRIT-2",
+    "coverage": {
+      "criterion_code": "CRIT-2",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 6511
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "43f589af-a0bf-44b8-9018-6ab98bfe02dd",
+    "source_type": "submission_block",
+    "text_snapshot": "Trong bối cảnh số hóa mạnh mẽ của ngành công nghiệp giải trí, các rập chiếu phim đang đối mặt với nhiều hạn chế từ phương thức quản lý truyền thống như bán vẻ thù công, quản lý lịch chiếu bằng bằng tính rời rạc và thiếu khả năng phân tích dữ liệu theo thời gian thực. Những vấn đề này dẫn đến sai sót vận hành, giảm trải nghiệm khác hàng và hạn chế khả năng mở rộng kinh doanh. Dự án Cinema Management System (CMS) được xây dựng nhằm phát triển một hệ thống phần mềm quản lý rập chiếu phim toàn diện, hiện đại, hỗ trợ vận hành đa cơ sở, tối ưu hóa quy trình nghiệp vụ và nâng cao trải nghiệm người dùng.",
+    "location": {
+      "page_no": 4,
+      "block_type": "text",
+      "section_title": "1.4 Bối cảnh dự án"
+    },
+    "retrieval_score": 0.375
+  },
+  {
+    "pack_id": "8b913c2a-a0d1-4190-95c5-87d6b12cc7ff",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000012",
+    "criterion_code": "CRIT-2",
+    "coverage": {
+      "criterion_code": "CRIT-2",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 6511
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "c6a3ad70-8337-44be-8b4d-0e24d31ed46a",
+    "source_type": "submission_block",
+    "text_snapshot": "<table><tr><td>TC ID</td><td>Mô tả</td><td>Kết quả mong đợi</td><td>Trạng thái</td></tr><tr><td>TC-INTEG-01</td><td>GET /api/v1/movies</td><td>Trả về 200 OK và JSON hợp lệ</td><td>Pass</td></tr><tr><td>TC-INTEG-02</td><td>POST /api/v1/movies (Admin)</td><td>Trả về 201 Created</td><td>Pass</td></tr><tr><td>TC-INTEG-03</td><td>Truy cấp API bảo mật không token</td><td>Trả về 401 Unauthorized</td><td>Pass</td></tr></table>",
+    "location": {
+      "page_no": 31,
+      "block_type": "table",
+      "section_title": "10.2.2 Integration Test (Kiểm thử tích hợp)"
+    },
+    "retrieval_score": 0.35
+  },
+  {
+    "pack_id": "8b913c2a-a0d1-4190-95c5-87d6b12cc7ff",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000012",
+    "criterion_code": "CRIT-2",
+    "coverage": {
+      "criterion_code": "CRIT-2",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 6511
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "95fafe4e-c879-40cc-9195-9b145937bd4a",
+    "source_type": "submission_block",
+    "text_snapshot": "<table><tr><td>Thành viên</td><td>MSSV</td><td>Nhiệm vụ chính</td></tr><tr><td>Nguyễn Văn Bảo</td><td>2433037</td><td>Triển khai Backend API, Thiết kế Database, Thiết kế giao diện Dashboard, Mockup FE/API.</td></tr><tr><td>Nguyễn Vũ Mai Anh</td><td>2310133</td><td>Thiết kế Database, Mockup FE theo figma Dashboard, Mockup API Dashboard.</td></tr><tr><td>Mai Trịnh Thiên Ân</td><td>2310182</td><td>Thiết kế giao diện Customer, Mockup FE theo figma Dashboard, Mockup API Dashboard.</td></tr></table>",
+    "location": {
+      "page_no": 32,
+      "block_type": "table",
+      "section_title": "12.1 Phân công nhiệm vụ"
+    },
+    "retrieval_score": 0.35
+  },
+  {
+    "pack_id": "8b913c2a-a0d1-4190-95c5-87d6b12cc7ff",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000012",
+    "criterion_code": "CRIT-2",
+    "coverage": {
+      "criterion_code": "CRIT-2",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 6511
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "a0322afa-219a-4d30-baa4-69fb1899e16d",
+    "source_type": "submission_block",
+    "text_snapshot": "1 Giới thiệu chung\n1.1 Bối cảnh nghiên cứu và lý do chọn đề tài..... 3\n1.2 Mục tiêu tài liệu..... 3\n1.3 Phạm vi hệ thống..... 3\n1.4 Bối cảnh dự án..... 3\n\n2 Tổng quan hệ thống\n2.1 Mở tả hệ thống..... 3\n2.2 Đối tượng sử dụng (Stakeholders & Users)..... 4\n\n3 Mục tiêu dự án (Project Goals)\n3.1 Mục tiêu tổng quát..... 4\n3.2 Mục tiêu cụ thể..... 4\n\n4 Phân tích nghiệp vụ (Business Analysis)\n4.1 Hiện trạng (As-Is)..... 5\n4.2 Giải pháp đề xuất (To-Be)..... 5\n\n5 Kiến trúc hệ thống đề xuất\n5.1 Tổng quan kiến trúc..... 5\n5.2 Mở hình phân tầng..... 5\n\n6 Yêu cầu chức năng (Functional Requirements)\n6.1 Chức năng cho Khách hàng..... 6\n6.2 Chức năng cho Nhân viên..... 6\n6.3 Chức năng cho Quản trị viên..... 6\n6.4 Chức năng hệ thống..... 6\n\n7 Yêu cầu phi chức năng (Non-Functional Requirements)\n7.1 Hiệu năng (Performance)..... 6\n7.2 Độ tin cậy & sẵn sàng (Reliability & Availability)..... 7\n7.3 Bảo mật (Security)..... 7\n7.4 Khả năng mở rộng (Scalability)..... 7\n7.5 Khả dụng & UX (Usability)..... 7\n7.6 Bảo trì & hỗ trợ (Maintainability)..... 7\n\n8 Use-case\n8.1 Use-case diagram and Use-case scenario Customer..... 8\n8.1.1 Phân tích nghiệp vụ phía người dùng..... 12\n8.1.2 Quy trình nghiệp vụ Đặt vế (Booking Workflow)..... 12\n8.1.3 Bảng quy tắc nghiệp vụ (Business Rules)..... 13\n8.2 Use-case diagram and Use-case scenario Staff and Manager..... 13\n8.2.1 Phân tích quy trình vận hành..... 14\n8.2.2 Cơ chế kiểm soát tài nguyên và xung đột..... 14\n8.2.3 Quản trị trạng thái và bảo toàn giao dịch..... 14\n8.3 Use-case diagram and Use-case scenario Admin..... 15",
+    "location": {
+      "page_no": 2,
+      "block_type": "text",
+      "section_title": "Mục lục"
+    },
+    "retrieval_score": 0.3438
+  },
+  {
+    "pack_id": "8b913c2a-a0d1-4190-95c5-87d6b12cc7ff",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000012",
+    "criterion_code": "CRIT-2",
+    "coverage": {
+      "criterion_code": "CRIT-2",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 6511
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "a4b0ea84-ec87-4695-8d9a-077eed2cfe60",
+    "source_type": "submission_block",
+    "text_snapshot": "Những hạn chế phổ biến bao gồm: khó kiểm soát số lượng ghế trống theo thời gian thực, dễ xảy ra trùng lịch chiếu, báo cáo doanh thu chậm và thiếu dữ liệu hỗ trợ ra quyết định. Điều này không chỉ làm giảm hiệu quả vận hành mà còn ảnh hưởng tiêu cực đến trải nghiệm khách hàng.",
+    "location": {
+      "page_no": 4,
+      "block_type": "text",
+      "section_title": "1.1 Bối cảnh nghiên cứu và lý do chọn đề tài"
+    },
+    "retrieval_score": 0.3438
+  },
+  {
+    "pack_id": "8b913c2a-a0d1-4190-95c5-87d6b12cc7ff",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000012",
+    "criterion_code": "CRIT-2",
+    "coverage": {
+      "criterion_code": "CRIT-2",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 6511
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "37854ed6-5b0e-4ced-b133-1e94cd847612",
+    "source_type": "submission_block",
+    "text_snapshot": "Xây dựng một hệ thống quản lý rập chiếu phim ổn định, bảo mật, dễ sử dụng và có khả năng mở rộng, thay thế hoàn toàn các quy trình thủ công truyền thống.",
+    "location": {
+      "page_no": 5,
+      "block_type": "text",
+      "section_title": "3.1 Mục tiêu tổng quát"
+    },
+    "retrieval_score": 0.3438
+  },
+  {
+    "pack_id": "8b913c2a-a0d1-4190-95c5-87d6b12cc7ff",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000012",
+    "criterion_code": "CRIT-2",
+    "coverage": {
+      "criterion_code": "CRIT-2",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 6511
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "79a4c895-9943-4ede-9615-5cf817ffd073",
+    "source_type": "submission_block",
+    "text_snapshot": "Quy trình đặt vế được thiết kế nhằm tối ưu hóa trải nghiệm người dùng và đảm bảo tính toàn vện dữ liệu trong môi trường đa người dùng.",
+    "location": {
+      "page_no": 13,
+      "block_type": "text",
+      "section_title": "8.1.2 Quy trình nghiệp vụ Đặt vé (Booking Workflow)"
+    },
+    "retrieval_score": 0.3438
+  },
+  {
+    "pack_id": "8b913c2a-a0d1-4190-95c5-87d6b12cc7ff",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000012",
+    "criterion_code": "CRIT-2",
+    "coverage": {
+      "criterion_code": "CRIT-2",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 6511
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "d54f8e20-47ef-4a24-a20e-ce40c2f0d7c5",
+    "source_type": "submission_block",
+    "text_snapshot": "8.2.1 Phân tích quy trình vận hành",
+    "location": {
+      "page_no": 15,
+      "block_type": "text",
+      "section_title": "8.2.1 Phân tích quy trình vận hành"
+    },
+    "retrieval_score": 0.3438
+  },
+  {
+    "pack_id": "8b913c2a-a0d1-4190-95c5-87d6b12cc7ff",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000012",
+    "criterion_code": "CRIT-2",
+    "coverage": {
+      "criterion_code": "CRIT-2",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 6511
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "0c7b19d0-00b1-4f5e-ab65-e4ec5d448095",
+    "source_type": "submission_block",
+    "text_snapshot": "- phoneNumbers: Danh sách các số điện thoại liên lạc (thuộc tính đa trị).",
+    "location": {
+      "page_no": 18,
+      "block_type": "text",
+      "section_title": "9.2.1 Phân hệ Cinema (Quản lý Rap)"
+    },
+    "retrieval_score": 0.3438
+  },
+  {
+    "pack_id": "8b913c2a-a0d1-4190-95c5-87d6b12cc7ff",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000012",
+    "criterion_code": "CRIT-2",
+    "coverage": {
+      "criterion_code": "CRIT-2",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 6511
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "89728e0c-839f-4819-94a6-fa6029e08c6a",
+    "source_type": "submission_block",
+    "text_snapshot": "TÀI LIỆU THAM KHẢO",
+    "location": {
+      "page_no": 36,
+      "block_type": "text",
+      "section_title": "TÀI LIỆU THAM KHẢO"
+    },
+    "retrieval_score": 0.3438
+  },
+  {
+    "pack_id": "8b913c2a-a0d1-4190-95c5-87d6b12cc7ff",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000012",
+    "criterion_code": "CRIT-2",
+    "coverage": {
+      "criterion_code": "CRIT-2",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 6511
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "441ff5ba-6247-4d7e-8592-583c591c3789",
+    "source_type": "submission_block",
+    "text_snapshot": "1.2 Mục tiêu tài liệu",
+    "location": {
+      "page_no": 4,
+      "block_type": "text",
+      "section_title": "1.2 Mục tiêu tài liệu"
+    },
+    "retrieval_score": 0.3125
+  },
+  {
+    "pack_id": "8189b0ae-cc6b-4cd9-ace0-f71d50f8e8bb",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000013",
+    "criterion_code": "CRIT-3",
+    "coverage": {
+      "criterion_code": "CRIT-3",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 4625
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "5340f243-8f13-4bd2-aae4-568874efb905",
+    "source_type": "submission_block",
+    "text_snapshot": "9.2 Mô tả thực thể chi tiết",
+    "location": {
+      "page_no": 18,
+      "block_type": "text",
+      "section_title": "9.2 Mô tả thực thể chi tiết"
+    },
+    "retrieval_score": 0.3269
+  },
+  {
+    "pack_id": "8189b0ae-cc6b-4cd9-ace0-f71d50f8e8bb",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000013",
+    "criterion_code": "CRIT-3",
+    "coverage": {
+      "criterion_code": "CRIT-3",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 4625
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "f43a5c84-ca66-487a-993c-abe9dd70efb6",
+    "source_type": "submission_block",
+    "text_snapshot": "Hệ thống CMS tập trung vào việc quản lý nghiệp vụ cốt lõi của một hoặc nhiều rạp chiếu phim, bao gồm: quản lý phim, phòng chiếu, lịch chiếu, bán vé, thanh toán, người dùng và báo cáo. Các chức năng ngoài phạm vi như sản xuất phim hoặc phân phối phim không được xem xét trong đề tài này.",
+    "location": {
+      "page_no": 4,
+      "block_type": "text",
+      "section_title": "1.3 Phạm vi hệ thống"
+    },
+    "retrieval_score": 0.4038
+  },
+  {
+    "pack_id": "8189b0ae-cc6b-4cd9-ace0-f71d50f8e8bb",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000013",
+    "criterion_code": "CRIT-3",
+    "coverage": {
+      "criterion_code": "CRIT-3",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 4625
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "d051dde1-15ab-47dd-837f-c2b15c35d77f",
+    "source_type": "submission_block",
+    "text_snapshot": "5 Kiến trúc hệ thống đề xuất",
+    "location": {
+      "page_no": 6,
+      "block_type": "text",
+      "section_title": "5 Kiến trúc hệ thống đề xuất"
+    },
+    "retrieval_score": 0.4038
+  },
+  {
+    "pack_id": "8189b0ae-cc6b-4cd9-ace0-f71d50f8e8bb",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000013",
+    "criterion_code": "CRIT-3",
+    "coverage": {
+      "criterion_code": "CRIT-3",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 4625
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "fcc2fc0f-f1da-4728-8c64-25ee02bb0a8f",
+    "source_type": "submission_block",
+    "text_snapshot": "<table><tr><td>Loại kiểm thử</td><td>Phạm vi</td><td>Đề xuất công cụ</td></tr><tr><td>Unit Test</td><td>Service &amp; Repository</td><td>JUnit 5, Mockito</td></tr><tr><td>Integration Test</td><td>API Endpoints, DB</td><td>Spring Boot Test</td></tr><tr><td>Performance Test</td><td>Load &amp; Stress test</td><td>Apache JMeter</td></tr><tr><td>Security Test</td><td>OWASP Top 10</td><td>OWASP ZAP</td></tr></table>",
+    "location": {
+      "page_no": 31,
+      "block_type": "table",
+      "section_title": "10.1 Chiến lược kiểm thử"
+    },
+    "retrieval_score": 0.3885
+  },
+  {
+    "pack_id": "8189b0ae-cc6b-4cd9-ace0-f71d50f8e8bb",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000013",
+    "criterion_code": "CRIT-3",
+    "coverage": {
+      "criterion_code": "CRIT-3",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 4625
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "2afaf198-7fbf-4141-832f-4d75165c500f",
+    "source_type": "submission_block",
+    "text_snapshot": "4.2 Giải pháp đề xuất (To-Be)",
+    "location": {
+      "page_no": 6,
+      "block_type": "text",
+      "section_title": "4.2 Giải pháp đề xuất (To-Be)"
+    },
+    "retrieval_score": 0.3654
+  },
+  {
+    "pack_id": "8189b0ae-cc6b-4cd9-ace0-f71d50f8e8bb",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000013",
+    "criterion_code": "CRIT-3",
+    "coverage": {
+      "criterion_code": "CRIT-3",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 4625
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "63b18f71-da55-40e7-af33-522c9f673d8d",
+    "source_type": "submission_block",
+    "text_snapshot": "9 Thiết Kế Chi Tiết",
+    "location": {
+      "page_no": 18,
+      "block_type": "text",
+      "section_title": "9 Thiết Kế Chi Tiết"
+    },
+    "retrieval_score": 0.3654
+  },
+  {
+    "pack_id": "8189b0ae-cc6b-4cd9-ace0-f71d50f8e8bb",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000013",
+    "criterion_code": "CRIT-3",
+    "coverage": {
+      "criterion_code": "CRIT-3",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 4625
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "db485908-59b9-45e8-a6cd-d1a4d6ec6c91",
+    "source_type": "submission_block",
+    "text_snapshot": "Trường Đại Học Bách Khoa Tp. Hồ Chí Minh Khoa Khoa Học và Kỹ Thuật Máy Tính",
+    "location": {
+      "page_no": 5,
+      "block_type": "text",
+      "section_title": "2.1 Mô tả hệ thống"
+    },
+    "retrieval_score": 0.3269
+  },
+  {
+    "pack_id": "8189b0ae-cc6b-4cd9-ace0-f71d50f8e8bb",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000013",
+    "criterion_code": "CRIT-3",
+    "coverage": {
+      "criterion_code": "CRIT-3",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 4625
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "9d0371dd-3293-4d51-a3a6-733e6555c79d",
+    "source_type": "submission_block",
+    "text_snapshot": "5.1 Tổng quan kiến trúc",
+    "location": {
+      "page_no": 6,
+      "block_type": "text",
+      "section_title": "5.1 Tổng quan kiến trúc"
+    },
+    "retrieval_score": 0.3269
+  },
+  {
+    "pack_id": "8189b0ae-cc6b-4cd9-ace0-f71d50f8e8bb",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000013",
+    "criterion_code": "CRIT-3",
+    "coverage": {
+      "criterion_code": "CRIT-3",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 4625
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "4a7c1645-3414-483e-a6a9-5ce762050944",
+    "source_type": "submission_block",
+    "text_snapshot": "Phần thiết kế dữ liệu được chia theo các phân hệ chính để dễ quản lý, mở rộng và triển khai độc lập giữa các nhóm chức năng.",
+    "location": {
+      "page_no": 18,
+      "block_type": "text",
+      "section_title": "9.2 Mô tả thực thể chi tiết"
+    },
+    "retrieval_score": 0.3269
+  },
+  {
+    "pack_id": "8189b0ae-cc6b-4cd9-ace0-f71d50f8e8bb",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000013",
+    "criterion_code": "CRIT-3",
+    "coverage": {
+      "criterion_code": "CRIT-3",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 4625
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "1bf35cea-0136-4d32-b5fc-a52aa3f1bebe",
+    "source_type": "submission_block",
+    "text_snapshot": "10.2.4 Xem báo cáo chi tiết",
+    "location": {
+      "page_no": 32,
+      "block_type": "text",
+      "section_title": "10.2.4 Xem báo cáo chi tiết"
+    },
+    "retrieval_score": 0.3269
+  },
+  {
+    "pack_id": "8189b0ae-cc6b-4cd9-ace0-f71d50f8e8bb",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000013",
+    "criterion_code": "CRIT-3",
+    "coverage": {
+      "criterion_code": "CRIT-3",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 4625
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "a50bff5c-924d-4654-a1fd-7d103942f2af",
+    "source_type": "submission_block",
+    "text_snapshot": "Sau khi chạy test, báo cáo chi tiết (HTML) được tạo tại đường dẫn: cms-backend/target/site/surefire-report.htm",
+    "location": {
+      "page_no": 32,
+      "block_type": "text",
+      "section_title": "10.2.4 Xem báo cáo chi tiết"
+    },
+    "retrieval_score": 0.3269
+  },
+  {
+    "pack_id": "8189b0ae-cc6b-4cd9-ace0-f71d50f8e8bb",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000013",
+    "criterion_code": "CRIT-3",
+    "coverage": {
+      "criterion_code": "CRIT-3",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 4625
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "d42fec0d-278a-4aea-a6aa-e81282f6034c",
+    "source_type": "submission_block",
+    "text_snapshot": "Đồ án đã trình bày toàn diện quá trình phân tích, thiết kế và đề xuất giải pháp cho Hệ thống quản lý rập chiếu phim CMS. Hệ thống được xây dựng trên kiến thức phân tầng hiện đại (Spring Boot + React/Next.js + RDBMS + Redis), đáp ứng đầy đủ các yêu cầu nghiệp vụ cốt lôi: quản lý phim, lịch chiếu, phòng chiếu, đặt vẻ trực tuyến, thanh toán điện tử và báo cáo doanh thu. Các yêu cầu phi chức năng về hiệu năng, bảo mật, khả năng mở rộng và trải nghiệm người dùng đều được thiết kế bám sát các tiêu chuẩn công nghiệp (OWASP, WCAG 2.1, JWT/RBAC). Đồ án không chỉ giúp nhóm rèn luyện kỹ năng phân tích – thiết kế phần mềm theo hướng CNPM mà còn cung cấp một sản phẩm có khả năng triển khai thực tế cho các rập chiếu phim quy mô vừa và nhỏ tại Việt Nam.",
+    "location": {
+      "page_no": 35,
+      "block_type": "text",
+      "section_title": "15.1 Kết luận"
+    },
+    "retrieval_score": 0.3077
+  },
+  {
+    "pack_id": "8189b0ae-cc6b-4cd9-ace0-f71d50f8e8bb",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000013",
+    "criterion_code": "CRIT-3",
+    "coverage": {
+      "criterion_code": "CRIT-3",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 4625
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "7b460f56-bf38-4802-96ff-99ab2f23b043",
+    "source_type": "submission_block",
+    "text_snapshot": "<table><tr><td>Steps</td><td>1. Khách hàng chọn phim muốn xem.\n2. Hệ thống hiển thị danh sách suất chiếu (rạp, phòng, giở chiếu, định dạng).\n3. Khách hàng chọn suất chiếu.\n4. Hệ thống hiển thị sơ đồ ghế (Standard, VIP, Sweetbox) theo thời gian thực.\n5. Khách hàng chọn ghế và bấm &quot;Tiếp tục&quot;.\n6. Hệ thống hiển thị danh sách dịch vụ kèm theo (combo bắp nước, snack).\n7. Khách hàng chọn dịch vụ (tùy chọn) và áp dụng mã giảm giá (nếu có).\n8. Hệ thống tính tổng tiền và chuyển sang trang thanh toán.\n9. Khách hàng chọn phương thức thanh toán (VNPay, Momo, Za-loPay, thẻ tín dụng).\n10. Hệ thống xử lý giao dịch qua cổng thanh toán.\n11. Hệ thống xác nhận đặt vé thành công, sinh mã QR và gửi email xác nhận.</td></tr><tr><td>Post conditions</td><td>Vé được lưu trong hệ thống và gắn mã QR. Khách hàng có thể xem vế trong &quot;Vé của tôi&quot;. Doanh thu được ghi nhận vào báo cáo.</td></tr><tr><td>Exception flow</td><td>EF5a: Ghế đã được người khác đặt.\n5a1. Hệ thống thông báo &quot;Ghế đã được đặt, vui lòng chọn ghế khác&quot;.\n5a2. Khách hàng chọn lại ghế. Use-case tiếp tục từ bước 5.\nEF8a: Thanh toán thất bại.\n8a1. Cổng thanh toán trả về lỗi (số dự không đủ, kết nối lỗi,...).\n8a2. Hệ thống hiển thị thông báo lỗi và giữ ghế trong thời gian chờ.\nEF9a: Hết thời gian giữ ghế.\n9a1. Quá 5-10 phút khách hàng chưa thanh toán.\n9a2. Hệ thống tự động hủy đơn và giải phóng ghế.</td></tr><tr><td>Alternative flow</td><td>AF7a: Khách hàng nhập mã giảm giá không hợp lệ.\n7a1. Hệ thống thông báo &quot;Mã giảm giá không hợp lệ hoặc đã hết hạn&quot;.\n7a2. Khách hàng có thể nhập lại hoặc bỏ qua.</td></tr></table>",
+    "location": {
+      "page_no": 12,
+      "block_type": "table",
+      "section_title": "7.6 Bảo trì & hỗ trợ (Maintainability)"
+    },
+    "retrieval_score": 0.2923
+  },
+  {
+    "pack_id": "8189b0ae-cc6b-4cd9-ace0-f71d50f8e8bb",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000013",
+    "criterion_code": "CRIT-3",
+    "coverage": {
+      "criterion_code": "CRIT-3",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 4625
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "568d4cd3-90dc-4ef6-bc60-42db2e58371a",
+    "source_type": "submission_block",
+    "text_snapshot": "Hệ thống rap phim CMS",
+    "location": {
+      "page_no": 1,
+      "block_type": "text",
+      "section_title": "Hệ thống rap phim CMS"
+    },
+    "retrieval_score": 0.2885
+  },
+  {
+    "pack_id": "8189b0ae-cc6b-4cd9-ace0-f71d50f8e8bb",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000013",
+    "criterion_code": "CRIT-3",
+    "coverage": {
+      "criterion_code": "CRIT-3",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 4625
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "75994c65-1f76-4d9f-a312-99266c59f64b",
+    "source_type": "submission_block",
+    "text_snapshot": "TP. HỒ CHÍ MINH, 2026",
+    "location": {
+      "page_no": 1,
+      "block_type": "text",
+      "section_title": "Hệ thống rap phim CMS"
+    },
+    "retrieval_score": 0.2885
+  },
+  {
+    "pack_id": "7f458105-cc73-43c8-b7b0-315e0ed8b972",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000014",
+    "criterion_code": "CRIT-4",
+    "coverage": {
+      "criterion_code": "CRIT-4",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 8866
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "773134c4-018a-4b7a-be86-1908a08b011a",
+    "source_type": "submission_block",
+    "text_snapshot": "Đồ án đã trình bày toàn diện quá trình phân tích, thiết kế và đề xuất giải pháp cho Hệ thống quản lý rập chiếu phim CMS. Hệ thống được xây dựng trên kiến thức phân tầng hiện đại (Spring Boot + React/Next.js + RDBMS + Redis), đáp ứng đầy đủ các yêu cầu nghiệp vụ cốt lôi: quản lý phim, lịch chiếu, phòng chiếu, đặt vẻ trực tuyến, thanh toán điện tử và báo cáo doanh thu. Các yêu cầu phi chức năng về hiệu năng, bảo mật, khả năng mở rộng và trải nghiệm người dùng đều được thiết kế bám sát các tiêu chuẩn công nghiệp (OWASP, WCAG 2.1, JWT/RBAC). Đồ án không chỉ giúp nhóm rèn luyện kỹ năng phân tích – thiết kế phần mềm theo hướng CNPM mà còn cung cấp một sản phẩm có khả năng triển khai thực tế cho các rập chiếu phim quy mô vừa và nhỏ tại Việt Nam.",
+    "location": {
+      "page_no": 35,
+      "block_type": "text",
+      "section_title": "15.1 Kết luận"
+    },
+    "retrieval_score": 0.6346
+  },
+  {
+    "pack_id": "7f458105-cc73-43c8-b7b0-315e0ed8b972",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000014",
+    "criterion_code": "CRIT-4",
+    "coverage": {
+      "criterion_code": "CRIT-4",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 8866
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "241acc98-bb38-4bfc-9c50-c419bc873e11",
+    "source_type": "submission_block",
+    "text_snapshot": "<table><tr><td>TC ID</td><td>Mô tả</td><td>Kết quả mong đợi</td><td>Trạng thái</td></tr><tr><td>TC-UNIT-01</td><td>Lấy danh sách phim thành công</td><td>Trả về List&lt;MovieResponse&gt; đầy đủ</td><td>Pass</td></tr><tr><td>TC-UNIT-02</td><td>Lấy phim theo ID không tồn tại</td><td>Ném lỗi AppException (404)</td><td>Pass</td></tr><tr><td>TC-UNIT-03</td><td>Xóa phim tồn tại</td><td>Xóa trong DB và đồng bộ\\nElasticsearch</td><td>Pass</td></tr><tr><td>TC-UNIT-04</td><td>Xóa phim không tồn tại</td><td>Ném lỗi 404, không gọi xóa DB</td><td>Pass</td></tr></table>",
+    "location": {
+      "page_no": 31,
+      "block_type": "table",
+      "section_title": "10.2.1 Unit Test (Kiểm thử đơn vị)"
+    },
+    "retrieval_score": 0.5038
+  },
+  {
+    "pack_id": "7f458105-cc73-43c8-b7b0-315e0ed8b972",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000014",
+    "criterion_code": "CRIT-4",
+    "coverage": {
+      "criterion_code": "CRIT-4",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 8866
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "7065be6c-5ed8-49b3-a650-62a3acd2beba",
+    "source_type": "submission_block",
+    "text_snapshot": "<table><tr><td>Rǔi ro</td><td>Biện pháp giảm thiểu</td></tr><tr><td>Race condition khi đặt ghế đồng thời</td><td>Sử dụng Redis distributed lock và transaction database.</td></tr><tr><td>Tấn công SQL Injection / XSS</td><td>Sử dụng prepared statement, validate input, thoát ký tự đầu ra.</td></tr><tr><td>Gián đoạn cổng thanh toán</td><td>Tích hợp nhiều cổng dự phòng (VNPay, Momo, ZaloPay), retry và rollback.</td></tr><tr><td>Trễ tiến độ phát triển</td><td>Áp dụng Scrum, theo dõi tiến độ qua Trello / Jira hàng tuần.</td></tr><tr><td>Mất dữ liệu</td><td>Backup hàng ngày, replication database, lưu trữ off-site.</td></tr></table>",
+    "location": {
+      "page_no": 32,
+      "block_type": "table",
+      "section_title": "Quản lý rủi ro"
+    },
+    "retrieval_score": 0.5038
+  },
+  {
+    "pack_id": "7f458105-cc73-43c8-b7b0-315e0ed8b972",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000014",
+    "criterion_code": "CRIT-4",
+    "coverage": {
+      "criterion_code": "CRIT-4",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 8866
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "207c50cd-30bf-4a22-9b49-22a18d7166d8",
+    "source_type": "submission_block",
+    "text_snapshot": "Phần thiết kế dữ liệu được chia theo các phân hệ chính để dễ quản lý, mở rộng và triển khai độc lập giữa các nhóm chức năng.",
+    "location": {
+      "page_no": 18,
+      "block_type": "text",
+      "section_title": "9.2 Mô tả thực thể chi tiết"
+    },
+    "retrieval_score": 0.4808
+  },
+  {
+    "pack_id": "7f458105-cc73-43c8-b7b0-315e0ed8b972",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000014",
+    "criterion_code": "CRIT-4",
+    "coverage": {
+      "criterion_code": "CRIT-4",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 8866
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "d873546e-0659-4584-a16a-c250d10f2061",
+    "source_type": "submission_block",
+    "text_snapshot": "<table><tr><td>TC ID</td><td>Mô tả</td><td>Kết quả mong đợi</td><td>Trạng thái</td></tr><tr><td>TC-INTEG-01</td><td>GET /api/v1/movies</td><td>Trả về 200 OK và JSON hợp lệ</td><td>Pass</td></tr><tr><td>TC-INTEG-02</td><td>POST /api/v1/movies (Admin)</td><td>Trả về 201 Created</td><td>Pass</td></tr><tr><td>TC-INTEG-03</td><td>Truy cấp API bảo mật không token</td><td>Trả về 401 Unauthorized</td><td>Pass</td></tr></table>",
+    "location": {
+      "page_no": 31,
+      "block_type": "table",
+      "section_title": "10.2.2 Integration Test (Kiểm thử tích hợp)"
+    },
+    "retrieval_score": 0.4654
+  },
+  {
+    "pack_id": "7f458105-cc73-43c8-b7b0-315e0ed8b972",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000014",
+    "criterion_code": "CRIT-4",
+    "coverage": {
+      "criterion_code": "CRIT-4",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 8866
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "abe8b7d9-2641-4030-bbd7-13ff7e575e86",
+    "source_type": "submission_block",
+    "text_snapshot": "• Phân quyền thực thi: Quy trình này chỉ dành cho vai trò quản lý nhằm ngăn người dùng không đủ quyền can thiệp vào kế hoạch vận hành của chi nhánh.",
+    "location": {
+      "page_no": 15,
+      "block_type": "text",
+      "section_title": "8.2.3 Quản trị trạng thái và bảo toàn giao dịch"
+    },
+    "retrieval_score": 0.4423
+  },
+  {
+    "pack_id": "7f458105-cc73-43c8-b7b0-315e0ed8b972",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000014",
+    "criterion_code": "CRIT-4",
+    "coverage": {
+      "criterion_code": "CRIT-4",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 8866
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "d19769f3-82e1-4058-bd67-3578e2ff8168",
+    "source_type": "submission_block",
+    "text_snapshot": "<table><tr><td>Thành viên</td><td>MSSV</td><td>Nhiệm vụ chính</td></tr><tr><td>Nguyễn Văn Bảo</td><td>2433037</td><td>Triển khai Backend API, Thiết kế Database, Thiết kế giao diện Dashboard, Mockup FE/API.</td></tr><tr><td>Nguyễn Vũ Mai Anh</td><td>2310133</td><td>Thiết kế Database, Mockup FE theo figma Dashboard, Mockup API Dashboard.</td></tr><tr><td>Mai Trịnh Thiên Ân</td><td>2310182</td><td>Thiết kế giao diện Customer, Mockup FE theo figma Dashboard, Mockup API Dashboard.</td></tr></table>",
+    "location": {
+      "page_no": 32,
+      "block_type": "table",
+      "section_title": "12.1 Phân công nhiệm vụ"
+    },
+    "retrieval_score": 0.4269
+  },
+  {
+    "pack_id": "7f458105-cc73-43c8-b7b0-315e0ed8b972",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000014",
+    "criterion_code": "CRIT-4",
+    "coverage": {
+      "criterion_code": "CRIT-4",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 8866
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "961054f9-79a1-43de-baaa-8c6060f7c3a2",
+    "source_type": "submission_block",
+    "text_snapshot": "9 Thiết Kế Chi Tiết\n9.1 Class Diagram..... 17\n9.2 Mô tả thực thể chi tiết..... 17\n9.2.1 Phân hệ Cinema (Quản lý Rập)..... 17\n9.2.2 Phân hệ Movie (Quản lý Phim)..... 18\n9.2.3 Phân hệ Screening & Booking (Suất chiếu & Đặt vế)..... 19\n9.2.4 Phân hệ Staff & Customer (Nhân sự & Khách hàng)..... 20\n9.2.5 Phân hệ Products (Sản phẩm phụ trợ)..... 21\n9.3 Thiết kế API..... 21\n9.3.1 Quy ước API..... 21\n9.3.2 Các nhóm API chính..... 21\n9.4 Thiết kế giao diện (UI/UX)..... 24\n9.4.1 Wireframe chính Front-end Customer..... 24\n9.4.2 Wireframe chính Front-end Dashboard..... 25\n9.5 Sơ đồ tuần tự (Sequence Diagrams)..... 29\n9.5.1 Sequence Diagram: Đặt vế trực tuyến..... 29\n10 Kế hoạch kiểm thủ\n10.1 Chiến lược kiểm thủ..... 30\n10.2 Test Cases mẫu..... 30\n10.2.1 Unit Test (Kiểm thủ đơn vị)..... 30\n10.2.2 Integration Test (Kiểm thủ tích hợp)..... 30\n10.2.3 Performance & Security (Kế hoạch)..... 31\n10.2.4 Xem báo cáo chi tiết..... 31\n11 Quản lý rủi ro\n12 Kế hoạch dự án\n12.1 Phân công nhiệm vụ..... 31\n12.2 Tiến độ dự án và đóng góp..... 32\n12.3 Công cụ và quy trình làm việc..... 32\n13 Mã nguồn dự án\n14 Khai báo sử dụng AI trong dự án\n14.1 Mục đích sử dụng..... 33\n14.2 Phạm vi đóng góp..... 33\n14.3 Giới hạn..... 33\n14.4 Trách nhiệm..... 33\n15 Kết luận và hướng phát triển\n15.1 Kết luận..... 34\n15.2 Hướng phát triển trong tương lai..... 34\nTÀI LIỆU THAM KHẢO",
+    "location": {
+      "page_no": 3,
+      "block_type": "text",
+      "section_title": "Mục lục"
+    },
+    "retrieval_score": 0.4231
+  },
+  {
+    "pack_id": "7f458105-cc73-43c8-b7b0-315e0ed8b972",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000014",
+    "criterion_code": "CRIT-4",
+    "coverage": {
+      "criterion_code": "CRIT-4",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 8866
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "5d45bf63-d793-4ba7-93f5-b6443d2bf522",
+    "source_type": "submission_block",
+    "text_snapshot": "<table><tr><td>Nhóm API</td><td>Mô tả</td></tr><tr><td>/auth</td><td>Đăng ký, đăng nhập (Local &amp; Google), làm mới token (Refresh Token), đăng xuất và lấy thông tin tài khoản đang đăng nhập.</td></tr><tr><td>/movies</td><td>Quản lý phim (CRUD), tìm kiếm, lọc theo thể loại, danh sách phim đang chiếu/sắp chiếu.</td></tr><tr><td>/showtimes</td><td>Quản lý suất chiếu, lịch chiếu theo phim hoặc chi nhánh, xem sơ đồ ghế và trạng thái đặt chỗ của suất chiếu.</td></tr><tr><td>/orders</td><td>Quy trình đặt vẻ, tạo đơn hàng, quản lý và cấp nhất trạng thái đơn hàng (Booking flow).</td></tr><tr><td>/branches</td><td>Quản lý danh sách các chi nhánh rạp phim trong hệ thống.</td></tr><tr><td>/rooms</td><td>Quản lý các phòng chiếu (Screen Room) và cấu hình loại phòng.</td></tr><tr><td>/seats</td><td>Quản lý sơ đồ ghế ngồi, loại ghế (Standard, VIP, Sweetbox) và giá vẻ tương ứng.</td></tr><tr><td>/customers</td><td>Quản lý thông tin khách hàng, tra cứu hàng thành viên và điểm tích lũy.</td></tr><tr><td>/employees</td><td>Quản lý danh sách nhân viên, thông tin cá nhân và phân quyền theo chi nhánh.</td></tr><tr><td>/food-drinks</td><td>Quản lý danh mục các sản phẩm đồ ăn, thực uống và combo bán kèm.</td></tr><tr><td>/coupons</td><td>Quản lý mã giảm giá, chương trình khuyến mãi và kiểm tra tính hợp lệ của coupon.</td></tr><tr><td>/payments</td><td>Xử lý thanh toán qua các cổng như VNPAY, quản lý giao dịch và phản hồi thanh toán.</td></tr><tr><td>/statistics</td><td>Các API thống kê doanh thu, số lượng vẻ, tỷ lệ lấp đầy phòng chiếu phục vụ Dashboard.</td></tr><tr><td>/catalogs</td><td>Quản lý các danh mục dùng chung: Thể loại (Genres), Định dạng (Formats), Ngôn ngữ.</td></tr><tr><td>/users</td><td>Các tiện ích người dùng như đổi mặt khẩu và quản lý hỗ sơ cá nhân.</td></tr><tr><td>/files</td><td>API hỗ trợ tài lên (upload) và quản lý các tập tin, hình ảnh (Poster phim, Avatar...).</td></tr><tr><td>/work-shifts</td><td>Quản lý phân của vùng lâm việc của nhân viên tại rạp.</td></tr><tr><td>/system-settings</td><td>Cấu hình các tham số vận hành hệ thống.</td></tr></table>",
+    "location": {
+      "page_no": 23,
+      "block_type": "table",
+      "section_title": "9.3.2 Các nhóm API chính"
+    },
+    "retrieval_score": 0.4077
+  },
+  {
+    "pack_id": "7f458105-cc73-43c8-b7b0-315e0ed8b972",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000014",
+    "criterion_code": "CRIT-4",
+    "coverage": {
+      "criterion_code": "CRIT-4",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 8866
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "3c6e00a3-f8e2-4abf-adee-d0f0a515df70",
+    "source_type": "submission_block",
+    "text_snapshot": "Làm cơ sở cho các giai đoạn thiết kế kiến trúc, thiết kế chi tiết và triển khai.",
+    "location": {
+      "page_no": 4,
+      "block_type": "text",
+      "section_title": "1.2 Mục tiêu tài liệu"
+    },
+    "retrieval_score": 0.4038
+  },
+  {
+    "pack_id": "7f458105-cc73-43c8-b7b0-315e0ed8b972",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000014",
+    "criterion_code": "CRIT-4",
+    "coverage": {
+      "criterion_code": "CRIT-4",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 8866
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "ad34b9e3-b813-4d35-a29c-6698ca4e55a2",
+    "source_type": "submission_block",
+    "text_snapshot": "Đồng bộ hóa hạ tầng: Quy trình quản lý phụ thuộc vào cấu trúc phòng chiếu và sơ đồ ghế đã được thiết lập sẵn, bảo đảm mọi suất chiếu đều có không gian vật lý tương ứng.",
+    "location": {
+      "page_no": 15,
+      "block_type": "text",
+      "section_title": "8.2.1 Phân tích quy trình vận hành"
+    },
+    "retrieval_score": 0.4038
+  },
+  {
+    "pack_id": "7f458105-cc73-43c8-b7b0-315e0ed8b972",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000014",
+    "criterion_code": "CRIT-4",
+    "coverage": {
+      "criterion_code": "CRIT-4",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 8866
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "e7cb7d73-1727-4e12-8d36-dc2c4601ff2c",
+    "source_type": "submission_block",
+    "text_snapshot": "Trong quá trình thực hiện đồ án, nhóm có sử dụng công cụ Trí tuệ Nhân tạo (AI) như một nguồn hỗ trợ. Việc sử dụng AI được khai báo minh bạch và cụ thể như sau:",
+    "location": {
+      "page_no": 34,
+      "block_type": "text",
+      "section_title": "14 Khai báo sử dụng AI trong dự án"
+    },
+    "retrieval_score": 0.4038
+  },
+  {
+    "pack_id": "7f458105-cc73-43c8-b7b0-315e0ed8b972",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000014",
+    "criterion_code": "CRIT-4",
+    "coverage": {
+      "criterion_code": "CRIT-4",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 8866
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "f5ef2846-8134-42ab-82e5-c1db227f2dc7",
+    "source_type": "submission_block",
+    "text_snapshot": "<table><tr><td>Loại kiểm thử</td><td>Phạm vi</td><td>Đề xuất công cụ</td></tr><tr><td>Unit Test</td><td>Service &amp; Repository</td><td>JUnit 5, Mockito</td></tr><tr><td>Integration Test</td><td>API Endpoints, DB</td><td>Spring Boot Test</td></tr><tr><td>Performance Test</td><td>Load &amp; Stress test</td><td>Apache JMeter</td></tr><tr><td>Security Test</td><td>OWASP Top 10</td><td>OWASP ZAP</td></tr></table>",
+    "location": {
+      "page_no": 31,
+      "block_type": "table",
+      "section_title": "10.1 Chiến lược kiểm thử"
+    },
+    "retrieval_score": 0.3885
+  },
+  {
+    "pack_id": "7f458105-cc73-43c8-b7b0-315e0ed8b972",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000014",
+    "criterion_code": "CRIT-4",
+    "coverage": {
+      "criterion_code": "CRIT-4",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 8866
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "05f01afc-1438-4a6c-8b75-3ec6d8b2fdbe",
+    "source_type": "submission_block",
+    "text_snapshot": "Khóa dữ liệu vận hành: Ngay khi suất chiếu phát sinh vẻ bán đầu tiên, hệ thống sẽ khóa các thông tin trọng yếu của suất chiếu để bảo toàn tính nhất quán cho đơn hàng.",
+    "location": {
+      "page_no": 15,
+      "block_type": "text",
+      "section_title": "8.2.3 Quản trị trạng thái và bảo toàn giao dịch"
+    },
+    "retrieval_score": 0.3654
+  },
+  {
+    "pack_id": "7f458105-cc73-43c8-b7b0-315e0ed8b972",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000014",
+    "criterion_code": "CRIT-4",
+    "coverage": {
+      "criterion_code": "CRIT-4",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 8866
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "b60d7b01-dfbd-4c10-a894-2a965f32c217",
+    "source_type": "submission_block",
+    "text_snapshot": "Cấp nhất hiện thị thời gian thực: Mọi thay đổi của lịch chiếu phải được phản hồi ngay lên giao diện đặt vẻ của khách hàng và giao diện bán vẻ của nhân viên tại quầy.",
+    "location": {
+      "page_no": 16,
+      "block_type": "text",
+      "section_title": "8.2.3 Quản trị trạng thái và bảo toàn giao dịch"
+    },
+    "retrieval_score": 0.3654
+  },
+  {
+    "pack_id": "0a0bfce6-5ced-4627-bd2e-4b09d6cd25dc",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000015",
+    "criterion_code": "CRIT-5",
+    "coverage": {
+      "criterion_code": "CRIT-5",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 5742
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "4d58eef5-5385-4ac2-858a-33e354b0eb59",
+    "source_type": "submission_block",
+    "text_snapshot": "<table><tr><td>Nhóm API</td><td>Mô tả</td></tr><tr><td>/auth</td><td>Đăng ký, đăng nhập (Local &amp; Google), làm mới token (Refresh Token), đăng xuất và lấy thông tin tài khoản đang đăng nhập.</td></tr><tr><td>/movies</td><td>Quản lý phim (CRUD), tìm kiếm, lọc theo thể loại, danh sách phim đang chiếu/sắp chiếu.</td></tr><tr><td>/showtimes</td><td>Quản lý suất chiếu, lịch chiếu theo phim hoặc chi nhánh, xem sơ đồ ghế và trạng thái đặt chỗ của suất chiếu.</td></tr><tr><td>/orders</td><td>Quy trình đặt vẻ, tạo đơn hàng, quản lý và cấp nhất trạng thái đơn hàng (Booking flow).</td></tr><tr><td>/branches</td><td>Quản lý danh sách các chi nhánh rạp phim trong hệ thống.</td></tr><tr><td>/rooms</td><td>Quản lý các phòng chiếu (Screen Room) và cấu hình loại phòng.</td></tr><tr><td>/seats</td><td>Quản lý sơ đồ ghế ngồi, loại ghế (Standard, VIP, Sweetbox) và giá vẻ tương ứng.</td></tr><tr><td>/customers</td><td>Quản lý thông tin khách hàng, tra cứu hàng thành viên và điểm tích lũy.</td></tr><tr><td>/employees</td><td>Quản lý danh sách nhân viên, thông tin cá nhân và phân quyền theo chi nhánh.</td></tr><tr><td>/food-drinks</td><td>Quản lý danh mục các sản phẩm đồ ăn, thực uống và combo bán kèm.</td></tr><tr><td>/coupons</td><td>Quản lý mã giảm giá, chương trình khuyến mãi và kiểm tra tính hợp lệ của coupon.</td></tr><tr><td>/payments</td><td>Xử lý thanh toán qua các cổng như VNPAY, quản lý giao dịch và phản hồi thanh toán.</td></tr><tr><td>/statistics</td><td>Các API thống kê doanh thu, số lượng vẻ, tỷ lệ lấp đầy phòng chiếu phục vụ Dashboard.</td></tr><tr><td>/catalogs</td><td>Quản lý các danh mục dùng chung: Thể loại (Genres), Định dạng (Formats), Ngôn ngữ.</td></tr><tr><td>/users</td><td>Các tiện ích người dùng như đổi mặt khẩu và quản lý hỗ sơ cá nhân.</td></tr><tr><td>/files</td><td>API hỗ trợ tài lên (upload) và quản lý các tập tin, hình ảnh (Poster phim, Avatar...).</td></tr><tr><td>/work-shifts</td><td>Quản lý phân của vùng lâm việc của nhân viên tại rạp.</td></tr><tr><td>/system-settings</td><td>Cấu hình các tham số vận hành hệ thống.</td></tr></table>",
+    "location": {
+      "page_no": 23,
+      "block_type": "table",
+      "section_title": "9.3.2 Các nhóm API chính"
+    },
+    "retrieval_score": 0.5687
+  },
+  {
+    "pack_id": "0a0bfce6-5ced-4627-bd2e-4b09d6cd25dc",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000015",
+    "criterion_code": "CRIT-5",
+    "coverage": {
+      "criterion_code": "CRIT-5",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 5742
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "f57010ca-b673-4ca5-ad84-42262182f1e1",
+    "source_type": "submission_block",
+    "text_snapshot": "<table><tr><td>Nghiệp vụ</td><td>Quy tắc và Điều kiện áp dụng</td></tr><tr><td>Độ tuổi xem phim</td><td>Hệ thống bắt buộc hiển thị cảnh báo và yêu cầu xác nhận độ tuổi đối với các phim gắn nhân T13, T16, T18. Nhân viên sẽ kiểm tra CCCD khi soát vé.</td></tr><tr><td>Hủy vé và Hoàn tiền</td><td>Khách hàng chỉ được phép hủy vé trước giờ chiếu ít nhất 60 phút. Tiền sẽ được hoàn lại dưới dạng điểm thành viên hoặc hoàn về tài khoản gốc tùy chính sách rạp.</td></tr><tr><td>Tích lũy điểm</td><td>Điểm thành viên được tính dựa trên tổng giá trị hóa đơn (sau khi trừ khuyến mãi). Tỷ lệ tích điểm mặc định là 5% cho khách hàng thường và 10% cho khách hàng VIP.</td></tr><tr><td>Xác thực vé (Check-in)</td><td>Mỗi vé tương ứng với một mã QR duy nhất. Sau khi mã QR đã được nhân viên quét xác nhận vào phòng, trạng thái vé sẽ chuyển thành &quot;Used&quot; và không thể sử dụng lại.</td></tr></table>",
+    "location": {
+      "page_no": 14,
+      "block_type": "table",
+      "section_title": "8.1.2 Quy trình nghiệp vụ Đặt vé (Booking Workflow)"
+    },
+    "retrieval_score": 0.475
+  },
+  {
+    "pack_id": "0a0bfce6-5ced-4627-bd2e-4b09d6cd25dc",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000015",
+    "criterion_code": "CRIT-5",
+    "coverage": {
+      "criterion_code": "CRIT-5",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 5742
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "8e9b12b2-fb27-4f79-b50f-5e33c737d928",
+    "source_type": "submission_block",
+    "text_snapshot": "<table><tr><td>Thành viên</td><td>MSSV</td><td>Nhiệm vụ chính</td></tr><tr><td>Nguyễn Văn Bảo</td><td>2433037</td><td>Triển khai Backend API, Thiết kế Database, Thiết kế giao diện Dashboard, Mockup FE/API.</td></tr><tr><td>Nguyễn Vũ Mai Anh</td><td>2310133</td><td>Thiết kế Database, Mockup FE theo figma Dashboard, Mockup API Dashboard.</td></tr><tr><td>Mai Trịnh Thiên Ân</td><td>2310182</td><td>Thiết kế giao diện Customer, Mockup FE theo figma Dashboard, Mockup API Dashboard.</td></tr></table>",
+    "location": {
+      "page_no": 32,
+      "block_type": "table",
+      "section_title": "12.1 Phân công nhiệm vụ"
+    },
+    "retrieval_score": 0.4125
+  },
+  {
+    "pack_id": "0a0bfce6-5ced-4627-bd2e-4b09d6cd25dc",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000015",
+    "criterion_code": "CRIT-5",
+    "coverage": {
+      "criterion_code": "CRIT-5",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 5742
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "1d209419-851f-4ca4-9cd6-eb2f2f2c54b0",
+    "source_type": "submission_block",
+    "text_snapshot": "8.1.3 Bảng quy tắc nghiệp vụ (Business Rules)",
+    "location": {
+      "page_no": 14,
+      "block_type": "text",
+      "section_title": "8.1.2 Quy trình nghiệp vụ Đặt vé (Booking Workflow)"
+    },
+    "retrieval_score": 0.3438
+  },
+  {
+    "pack_id": "0a0bfce6-5ced-4627-bd2e-4b09d6cd25dc",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000015",
+    "criterion_code": "CRIT-5",
+    "coverage": {
+      "criterion_code": "CRIT-5",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 5742
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "ee61a16d-e793-4d21-970c-ef487d6a41f6",
+    "source_type": "submission_block",
+    "text_snapshot": "- currency, currencyFormat: Đơn vị và định dạng tiền tệ.",
+    "location": {
+      "page_no": 19,
+      "block_type": "text",
+      "section_title": "9.2.1.4 SystemSetting (Cấu hình hệ thống) Lưu trữ các cải đặt chung cho toàn bộ hệ thống cinema."
+    },
+    "retrieval_score": 0.3438
+  },
+  {
+    "pack_id": "0a0bfce6-5ced-4627-bd2e-4b09d6cd25dc",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000015",
+    "criterion_code": "CRIT-5",
+    "coverage": {
+      "criterion_code": "CRIT-5",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 5742
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "7e8948c2-f255-4807-bcd0-452ffd1095f7",
+    "source_type": "submission_block",
+    "text_snapshot": "12.3 Công cụ và quy trình làm việc",
+    "location": {
+      "page_no": 33,
+      "block_type": "text",
+      "section_title": "12.3 Công cụ và quy trình làm việc"
+    },
+    "retrieval_score": 0.3438
+  },
+  {
+    "pack_id": "0a0bfce6-5ced-4627-bd2e-4b09d6cd25dc",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000015",
+    "criterion_code": "CRIT-5",
+    "coverage": {
+      "criterion_code": "CRIT-5",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 5742
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "d31d2380-31e9-43b9-a2fd-600fce98260e",
+    "source_type": "submission_block",
+    "text_snapshot": "Trường Đại Học Bách Khoa Tp. Hồ Chí Minh Khoa Khoa Học và Kỹ Thuật Máy Tính",
+    "location": {
+      "page_no": 7,
+      "block_type": "text",
+      "section_title": "5.2 Mô hình phân tầng"
+    },
+    "retrieval_score": 0.3125
+  },
+  {
+    "pack_id": "0a0bfce6-5ced-4627-bd2e-4b09d6cd25dc",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000015",
+    "criterion_code": "CRIT-5",
+    "coverage": {
+      "criterion_code": "CRIT-5",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 5742
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "b1af741a-4659-43f0-8502-3c3a4fe8c7e2",
+    "source_type": "submission_block",
+    "text_snapshot": "8.1.2 Quy trình nghiệp vụ Đặt vé (Booking Workflow)",
+    "location": {
+      "page_no": 13,
+      "block_type": "text",
+      "section_title": "8.1.2 Quy trình nghiệp vụ Đặt vé (Booking Workflow)"
+    },
+    "retrieval_score": 0.3125
+  },
+  {
+    "pack_id": "0a0bfce6-5ced-4627-bd2e-4b09d6cd25dc",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000015",
+    "criterion_code": "CRIT-5",
+    "coverage": {
+      "criterion_code": "CRIT-5",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 5742
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "db2b9347-d10b-4f56-bdda-d19ee3e79359",
+    "source_type": "submission_block",
+    "text_snapshot": "Quy trình đặt vế được thiết kế nhằm tối ưu hóa trải nghiệm người dùng và đảm bảo tính toàn vện dữ liệu trong môi trường đa người dùng.",
+    "location": {
+      "page_no": 13,
+      "block_type": "text",
+      "section_title": "8.1.2 Quy trình nghiệp vụ Đặt vé (Booking Workflow)"
+    },
+    "retrieval_score": 0.3125
+  },
+  {
+    "pack_id": "0a0bfce6-5ced-4627-bd2e-4b09d6cd25dc",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000015",
+    "criterion_code": "CRIT-5",
+    "coverage": {
+      "criterion_code": "CRIT-5",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 5742
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "3885236b-f0c8-4838-ab74-4790dbee937b",
+    "source_type": "submission_block",
+    "text_snapshot": "Hệ thống cho phép người dùng lọc phim theo chi nhánh rạp, ngày chiếu và định dạng (2D/3D).",
+    "location": {
+      "page_no": 13,
+      "block_type": "text",
+      "section_title": "8.1.2 Quy trình nghiệp vụ Đặt vé (Booking Workflow)"
+    },
+    "retrieval_score": 0.3125
+  },
+  {
+    "pack_id": "0a0bfce6-5ced-4627-bd2e-4b09d6cd25dc",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000015",
+    "criterion_code": "CRIT-5",
+    "coverage": {
+      "criterion_code": "CRIT-5",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 5742
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "da6efa14-32f7-4b42-956a-3328d0179a4c",
+    "source_type": "submission_block",
+    "text_snapshot": "Trường Đại Học Bách Khoa Tp. Hồ Chí Minh Khoa Khoa Học và Kỹ Thuật Máy Tính",
+    "location": {
+      "page_no": 14,
+      "block_type": "text",
+      "section_title": "8.1.2 Quy trình nghiệp vụ Đặt vé (Booking Workflow)"
+    },
+    "retrieval_score": 0.3125
+  },
+  {
+    "pack_id": "0a0bfce6-5ced-4627-bd2e-4b09d6cd25dc",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000015",
+    "criterion_code": "CRIT-5",
+    "coverage": {
+      "criterion_code": "CRIT-5",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 5742
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "d3a6fbfa-87a0-471c-b6ec-8c5daeb19164",
+    "source_type": "submission_block",
+    "text_snapshot": "8.2.1 Phân tích quy trình vận hành",
+    "location": {
+      "page_no": 15,
+      "block_type": "text",
+      "section_title": "8.2.1 Phân tích quy trình vận hành"
+    },
+    "retrieval_score": 0.3125
+  },
+  {
+    "pack_id": "0a0bfce6-5ced-4627-bd2e-4b09d6cd25dc",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000015",
+    "criterion_code": "CRIT-5",
+    "coverage": {
+      "criterion_code": "CRIT-5",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 5742
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "a31f2a56-f355-4105-93a6-0b569bf5d13b",
+    "source_type": "submission_block",
+    "text_snapshot": "Ràng buộc với thực thể phim: Lịch chiếu chỉ được khởi tạo thành công nếu ngày chiếu năm trong khoảng thời gian công chiếu của phim.",
+    "location": {
+      "page_no": 15,
+      "block_type": "text",
+      "section_title": "8.2.1 Phân tích quy trình vận hành"
+    },
+    "retrieval_score": 0.3125
+  },
+  {
+    "pack_id": "0a0bfce6-5ced-4627-bd2e-4b09d6cd25dc",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000015",
+    "criterion_code": "CRIT-5",
+    "coverage": {
+      "criterion_code": "CRIT-5",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 5742
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "490a626c-b1c6-4ea0-8d55-24ca19b023d9",
+    "source_type": "submission_block",
+    "text_snapshot": "Đồng bộ hóa hạ tầng: Quy trình quản lý phụ thuộc vào cấu trúc phòng chiếu và sơ đồ ghế đã được thiết lập sẵn, bảo đảm mọi suất chiếu đều có không gian vật lý tương ứng.",
+    "location": {
+      "page_no": 15,
+      "block_type": "text",
+      "section_title": "8.2.1 Phân tích quy trình vận hành"
+    },
+    "retrieval_score": 0.3125
+  },
+  {
+    "pack_id": "0a0bfce6-5ced-4627-bd2e-4b09d6cd25dc",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000015",
+    "criterion_code": "CRIT-5",
+    "coverage": {
+      "criterion_code": "CRIT-5",
+      "evidence_count": 15,
+      "scoring_method": "geval",
+      "synthesized_length": 5742
+    },
+    "created_at": "2026-10-30 09:45:52.383581+00:00",
+    "item_id": "49926b76-6c10-430a-8d64-de825d041caa",
+    "source_type": "submission_block",
+    "text_snapshot": "RESTful API, dữ liệu trao đổi ở định dạng JSON.",
+    "location": {
+      "page_no": 22,
+      "block_type": "text",
+      "section_title": "9.3.1 Quy ước API"
+    },
+    "retrieval_score": 0.3125
+  }
+]

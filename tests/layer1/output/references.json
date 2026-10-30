@@ -1,0 +1,156 @@
+[
+  {
+    "id": "ed53dad9-d0f5-4d23-9fb5-2e51832d7ae8",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "marker": "[10]",
+    "raw_citation": "Docker Documentation. https://docs.docker.com/",
+    "reference_document_id": null,
+    "resolver_status": "unresolved",
+    "resolver_confidence": null,
+    "resolver_version": null,
+    "metadata": {
+      "source_block_external_id": "p36-b12"
+    },
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "ae2a7057-f95c-437d-966b-265cfe09dd14",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "marker": "[11]",
+    "raw_citation": "WebSocket Protocol – RFC 6455. https://datatracker.ietf.org/doc/html/rfc6455",
+    "reference_document_id": null,
+    "resolver_status": "unresolved",
+    "resolver_confidence": null,
+    "resolver_version": null,
+    "metadata": {
+      "source_block_external_id": "p36-b13"
+    },
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "9dfdeb13-2fbd-44ce-b4c1-036bcd04040b",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "marker": "[1]",
+    "raw_citation": "Sommerville, I. (2016). Software Engineering (10th ed.). Pearson Education.",
+    "reference_document_id": null,
+    "resolver_status": "unresolved",
+    "resolver_confidence": null,
+    "resolver_version": null,
+    "metadata": {
+      "source_block_external_id": "p36-b3"
+    },
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "16987c6d-f328-476b-bb35-336a81c3bb3b",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "marker": "[2]",
+    "raw_citation": "Martin, R. C. (2008). Clean Code: A Handbook of Agile Software Craftsmanship. Prentice Hall.",
+    "reference_document_id": null,
+    "resolver_status": "unresolved",
+    "resolver_confidence": null,
+    "resolver_version": null,
+    "metadata": {
+      "source_block_external_id": "p36-b4"
+    },
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "867e3c45-e722-4d9b-8fbf-f528082edca7",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "marker": "[3]",
+    "raw_citation": "Fowler, M. (2018). Refactoring: Improving the Design of Existing Code (2nd ed.). Addison-Wesley.",
+    "reference_document_id": null,
+    "resolver_status": "unresolved",
+    "resolver_confidence": null,
+    "resolver_version": null,
+    "metadata": {
+      "source_block_external_id": "p36-b5"
+    },
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "dae1c85d-b5ad-4039-aa12-65880b78ed61",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "marker": "[4]",
+    "raw_citation": "OWASP Foundation. (2021). OWASP Top Ten. https://owasp.org/www-project-top-ten/",
+    "reference_document_id": null,
+    "resolver_status": "unresolved",
+    "resolver_confidence": null,
+    "resolver_version": null,
+    "metadata": {
+      "source_block_external_id": "p36-b6"
+    },
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "dbb931e6-c0bb-45d9-8b47-e87e4d93683f",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "marker": "[5]",
+    "raw_citation": "Spring Framework Documentation. https://spring.io/projects/spring-boot",
+    "reference_document_id": null,
+    "resolver_status": "unresolved",
+    "resolver_confidence": null,
+    "resolver_version": null,
+    "metadata": {
+      "source_block_external_id": "p36-b7"
+    },
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "128174bd-cc98-44c4-a585-f90fb1165f9c",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "marker": "[6]",
+    "raw_citation": "React Documentation. https://react.dev/",
+    "reference_document_id": null,
+    "resolver_status": "unresolved",
+    "resolver_confidence": null,
+    "resolver_version": null,
+    "metadata": {
+      "source_block_external_id": "p36-b8"
+    },
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "478f1a22-a5fd-4b59-8530-6fe5117a35b3",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "marker": "[7]",
+    "raw_citation": "Next.js Documentation. https://nextjs.org/docs",
+    "reference_document_id": null,
+    "resolver_status": "unresolved",
+    "resolver_confidence": null,
+    "resolver_version": null,
+    "metadata": {
+      "source_block_external_id": "p36-b9"
+    },
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "20bf2328-5d2b-489b-a164-0b19a236060b",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "marker": "[8]",
+    "raw_citation": "Redis Documentation. https://redis.io/docs/",
+    "reference_document_id": null,
+    "resolver_status": "unresolved",
+    "resolver_confidence": null,
+    "resolver_version": null,
+    "metadata": {
+      "source_block_external_id": "p36-b10"
+    },
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  },
+  {
+    "id": "18a98d4b-55a2-4028-953c-f203b0f18fba",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "marker": "[9]",
+    "raw_citation": "MySQL Documentation. https://dev.mysql.com/doc/",
+    "reference_document_id": null,
+    "resolver_status": "unresolved",
+    "resolver_confidence": null,
+    "resolver_version": null,
+    "metadata": {
+      "source_block_external_id": "p36-b11"
+    },
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  }
+]

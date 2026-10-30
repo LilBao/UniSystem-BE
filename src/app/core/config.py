@@ -57,6 +57,13 @@ class Settings(BaseSettings):
     code_llm_model: str = ""
     code_judge_max_cards: int = 6
     code_judge_concurrency: int = 4
+    rubric_llm_url: str = ""
+    rubric_llm_api_key: str = ""
+    rubric_llm_model: str = ""
+    rubric_geval_runs: int = 3
+    rubric_variance_threshold: float = 0.15
+    rubric_max_evidence_blocks: int = 15
+    rubric_judge_max_input_chars: int = 24000
     cache_dir: Path = Path(".cache")
     cache_ttl_days: int = 7
     graphify_version: str = "0.9.55"
@@ -109,6 +116,10 @@ class Settings(BaseSettings):
             "citation_judge_confidence_threshold",
             "code_judge_max_cards",
             "code_judge_concurrency",
+            "rubric_geval_runs",
+            "rubric_variance_threshold",
+            "rubric_max_evidence_blocks",
+            "rubric_judge_max_input_chars",
             "cache_ttl_days",
             "graphify_timeout_seconds",
             "graphify_max_workers",

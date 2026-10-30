@@ -1,0 +1,574 @@
+{
+  "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+  "rubric_version_id": "00000000-0000-4000-8000-000000000005",
+  "pipeline_run_id": "94594f16-262d-44e4-8af1-994e2202caf0",
+  "status": "requires_review",
+  "scoring_method": "geval",
+  "total_raw_score": 7.417,
+  "total_max_score": 10.0,
+  "total_normalized_score": 0.7417,
+  "mean_variance": 0.0667,
+  "requires_human_review": true,
+  "executive_summary": "Đánh giá tổng quan học thuật toàn diện về bài nộp ĐỖ ĐẦN TỔNG HỢP HƯƠNG CNPM - CO3013 cho thấy bài nộp đã thể hiện sự cố gắng đáng kể trong việc trình bày thông tin chi tiết về hệ thống quản lý rạp chiếu phim. Trong phần Đặt vấn đề & Mục tiêu đề tài, bài nộp đã cung cấp thông tin về bối cảnh nghiên cứu, lý do chọn đề tài, mục tiêu tài liệu và phạm vi hệ thống, nhưng mục tiêu nghiên cứu và phạm vi đề tài còn thiếu sự cụ thể và rõ ràng. Phần Tổng quan tài liệu & Cơ sở lý thuyết đã nêu rõ mục tiêu tài liệu và tổng quan hệ thống, nhưng thiếu trích dẫn từ các công trình liên quan. Kiến trúc hệ thống & Phương pháp giải quyết đã đề cập đến các chức năng chính của hệ thống và chiến lược kiểm thử, nhưng thiếu minh họa sơ đồ hoặc mô hình. Hiện thực hóa & Đánh giá thực nghiệm đã cung cấp thông tin đầy đủ về triển khai mã nguồn và kết quả thử nghiệm, nhưng chưa đề cập đến kết quả thử nghiệm thực tế hoặc so sánh với baseline. Trình bày & Văn phong học thuật đã trình bày các bảng API, quy trình nghiệp vụ và phân công nhiệm vụ theo đúng chuẩn học thuật, nhưng có một số lỗi chính tả và định dạng không chuẩn mực. Tổng thể, bài nộp đã thể hiện sự cố gắng trong việc xây dựng một hệ thống quản lý rạp chiếu phim toàn diện, nhưng cần cải thiện về sự cụ thể và rõ ràng của mục tiêu nghiên cứu, trích dẫn từ các công trình liên quan, minh họa sơ đồ hoặc mô hình, và chi tiết về kết quả thử nghiệm thực tế.",
+  "criteria_results": [
+    {
+      "criterion_id": "00000000-0000-4000-8000-000000000011",
+      "criterion_code": "CRIT-1",
+      "criterion_title": "Đặt vấn đề & Mục tiêu đề tài",
+      "weight": 0.2,
+      "min_score": 0.0,
+      "max_score": 10.0,
+      "scoring_method": "geval",
+      "runs": [
+        {
+          "run_index": 1,
+          "raw_score": 7.5,
+          "normalized_score": 0.75,
+          "cot_steps": [
+            "<Bước 1: Phân tích yêu cầu tiêu chí và thang điểm>",
+            "<Bước 2: Đối chiếu sự hiện diện và mức độ sâu sắc của bằng chứng trong bài nộp>",
+            "<Bước 3: Xác định điểm mạnh cụ thể và các thiếu sót>",
+            "<Bước 4: Tổng hợp nhận định chất lượng và quyết định điểm số>"
+          ],
+          "rationale": "Bài nộp đã cung cấp thông tin về bối cảnh nghiên cứu, lý do chọn đề tài, mục tiêu tài liệu và phạm vi hệ thống. Tuy nhiên, mục tiêu nghiên cứu và phạm vi đề tài còn thiếu sự cụ thể và rõ ràng. Các thông tin về mục tiêu tổng quát và cụ thể đã được đề cập, nhưng không thể đánh giá được tính cấp thiết và khả thi của chúng. Bằng chứng về việc phân tích nghiệp vụ, thiết kế chi tiết và kế hoạch kiểm thử cũng được trình bày đầy đủ, nhưng không thể đánh giá được tính cấp thiết của chúng. Tuy nhiên, bài nộp đã cung cấp thông tin chi tiết về phạm vi hệ thống, các chức năng và yêu cầu, điều này cho thấy sự cố gắng của sinh viên trong việc xây dựng một hệ thống quản lý rạp chiếu phim toàn diện.",
+          "strengths": [
+            "Bài nộp đã cung cấp thông tin chi tiết về phạm vi hệ thống, các chức năng và yêu cầu",
+            "Bài nộp đã trình bày đầy đủ thông tin về phân tích nghiệp vụ, thiết kế chi tiết và kế hoạch kiểm thử"
+          ],
+          "weaknesses": [
+            "Mục tiêu nghiên cứu và phạm vi đề tài còn thiếu sự cụ thể và rõ ràng",
+            "Không thể đánh giá được tính cấp thiết và khả thi của mục tiêu nghiên cứu"
+          ],
+          "cited_evidence": []
+        },
+        {
+          "run_index": 2,
+          "raw_score": 7.5,
+          "normalized_score": 0.75,
+          "cot_steps": [
+            "<Bước 1: Phân tích yêu cầu tiêu chí và thang điểm>",
+            "<Bước 2: Đối chiếu sự hiện diện và mức độ sâu sắc của bằng chứng trong bài nộp>",
+            "<Bước 3: Xác định điểm mạnh cụ thể và các thiếu sót>",
+            "<Bước 4: Tổng hợp nhận định chất lượng và quyết định điểm số>"
+          ],
+          "rationale": "Bài nộp đã trình bày rõ ràng về bối cảnh nghiên cứu, lý do chọn đề tài, mục tiêu tài liệu và phạm vi hệ thống. Tuy nhiên, mục tiêu nghiên cứu và phạm vi đề tài chưa được trình bày đầy đủ và rõ ràng. Các thông tin về mục tiêu nghiên cứu và phạm vi đề tài cần được bổ sung và làm rõ hơn để nâng cao chất lượng của bài nộp.",
+          "strengths": [
+            "Bài nộp đã trình bày rõ ràng về bối cảnh nghiên cứu, lý do chọn đề tài, mục tiêu tài liệu và phạm vi hệ thống."
+          ],
+          "weaknesses": [
+            "Mục tiêu nghiên cứu và phạm vi đề tài chưa được trình bày đầy đủ và rõ ràng."
+          ],
+          "cited_evidence": [
+            "1.1 Bối cảnh nghiên cứu và lý do chọn đề tài",
+            "1.2 Mục tiêu tài liệu",
+            "1.3 Phạm vi hệ thống"
+          ]
+        },
+        {
+          "run_index": 3,
+          "raw_score": 7.5,
+          "normalized_score": 0.75,
+          "cot_steps": [
+            "<Bước 1: Phân tích yêu cầu tiêu chí và thang điểm>",
+            "<Bước 2: Đối chiếu sự hiện diện và mức độ sâu sắc của bằng chứng trong bài nộp>",
+            "<Bước 3: Xác định điểm mạnh cụ thể và các thiếu sót>",
+            "<Bước 4: Tổng hợp nhận định chất lượng và quyết định điểm số>"
+          ],
+          "rationale": "Bài nộp đã đề cập đến bối cảnh nghiên cứu và lý do chọn đề tài, mục tiêu tài liệu, và phạm vi hệ thống. Tuy nhiên, các mục này không được trình bày một cách rõ ràng và mạch lạc. Các mục tiêu cụ thể và tính cấp thiết của đề tài không được đề cập đầy đủ. Điều này làm giảm mức độ rõ ràng và sức thuyết phục của bài nộp. Tuy nhiên, bài nộp đã cung cấp thông tin về các chức năng và yêu cầu của hệ thống, điều này thể hiện sự hiểu biết về đề tài.",
+          "strengths": [
+            "Bài nộp đã cung cấp thông tin về bối cảnh, mục tiêu và phạm vi của hệ thống",
+            "Bài nộp đã đề cập đến các chức năng và yêu cầu của hệ thống"
+          ],
+          "weaknesses": [
+            "Các mục tiêu cụ thể và tính cấp thiết của đề tài không được đề cập đầy đủ",
+            "Cách trình bày không rõ ràng và mạch lạc"
+          ],
+          "cited_evidence": [
+            "1.1 Bối cảnh nghiên cứu và lý do chọn đề tài",
+            "1.2 Mục tiêu tài liệu",
+            "1.3 Phạm vi hệ thống"
+          ]
+        }
+      ],
+      "mean_raw_score": 7.5,
+      "mean_normalized_score": 0.75,
+      "variance": 0.0,
+      "std_dev": 0.0,
+      "uncertainty_flag": false,
+      "consensus_rationale": "Đánh giá đồng thuận (Điểm TB: 7.50/10 qua 3 lượt chấm G-EVAL (Độ ổn định cao, phương sai 0.000)):\nBài nộp đã cung cấp thông tin về bối cảnh nghiên cứu, lý do chọn đề tài, mục tiêu tài liệu và phạm vi hệ thống. Tuy nhiên, mục tiêu nghiên cứu và phạm vi đề tài còn thiếu sự cụ thể và rõ ràng. Các thông tin về mục tiêu tổng quát và cụ thể đã được đề cập, nhưng không thể đánh giá được tính cấp thiết và khả thi của chúng. Bằng chứng về việc phân tích nghiệp vụ, thiết kế chi tiết và kế hoạch kiểm thử cũng được trình bày đầy đủ, nhưng không thể đánh giá được tính cấp thiết của chúng. Tuy nhiên, bài nộp đã cung cấp thông tin chi tiết về phạm vi hệ thống, các chức năng và yêu cầu, điều này cho thấy sự cố gắng của sinh viên trong việc xây dựng một hệ thống quản lý rạp chiếu phim toàn diện.",
+      "strengths": [
+        "Bài nộp đã cung cấp thông tin chi tiết về phạm vi hệ thống, các chức năng và yêu cầu",
+        "Bài nộp đã trình bày đầy đủ thông tin về phân tích nghiệp vụ, thiết kế chi tiết và kế hoạch kiểm thử",
+        "Bài nộp đã trình bày rõ ràng về bối cảnh nghiên cứu, lý do chọn đề tài, mục tiêu tài liệu và phạm vi hệ thống.",
+        "Bài nộp đã cung cấp thông tin về bối cảnh, mục tiêu và phạm vi của hệ thống",
+        "Bài nộp đã đề cập đến các chức năng và yêu cầu của hệ thống"
+      ],
+      "weaknesses": [
+        "Mục tiêu nghiên cứu và phạm vi đề tài còn thiếu sự cụ thể và rõ ràng",
+        "Không thể đánh giá được tính cấp thiết và khả thi của mục tiêu nghiên cứu",
+        "Mục tiêu nghiên cứu và phạm vi đề tài chưa được trình bày đầy đủ và rõ ràng.",
+        "Các mục tiêu cụ thể và tính cấp thiết của đề tài không được đề cập đầy đủ",
+        "Cách trình bày không rõ ràng và mạch lạc"
+      ],
+      "improvement_suggestions": [
+        "Cần khắc phục: Mục tiêu nghiên cứu và phạm vi đề tài còn thiếu sự cụ thể và rõ ràng",
+        "Cần khắc phục: Không thể đánh giá được tính cấp thiết và khả thi của mục tiêu nghiên cứu",
+        "Cần khắc phục: Mục tiêu nghiên cứu và phạm vi đề tài chưa được trình bày đầy đủ và rõ ràng.",
+        "Cần khắc phục: Các mục tiêu cụ thể và tính cấp thiết của đề tài không được đề cập đầy đủ"
+      ]
+    },
+    {
+      "criterion_id": "00000000-0000-4000-8000-000000000012",
+      "criterion_code": "CRIT-2",
+      "criterion_title": "Tổng quan tài liệu & Cơ sở lý thuyết",
+      "weight": 0.2,
+      "min_score": 0.0,
+      "max_score": 10.0,
+      "scoring_method": "geval",
+      "runs": [
+        {
+          "run_index": 1,
+          "raw_score": 6.5,
+          "normalized_score": 0.65,
+          "cot_steps": [
+            "<Bước 1: Phân tích yêu cầu tiêu chí và thang điểm>",
+            "<Bước 2: Đối chiếu sự hiện diện và mức độ sâu sắc của bằng chứng trong bài nộp>",
+            "<Bước 3: Xác định điểm mạnh cụ thể và các thiếu sót>",
+            "<Bước 4: Tổng hợp nhận định chất lượng và quyết định điểm số>"
+          ],
+          "rationale": "Bài nộp đã cung cấp một số thông tin về bối cảnh nghiên cứu và lý do chọn đề tài, nhưng chưa đầy đủ về việc khảo sát các công trình liên quan. Các bằng chứng chỉ đề cập đến một số khía cạnh của đề tài, thiếu phân tích sâu rộng và trích dẫn từ các bài báo uy tín. Tuy nhiên, bài nộp đã nêu rõ mục tiêu tài liệu và tổng quan hệ thống, cho thấy một số nỗ lực trong việc trình bày thông tin.",
+          "strengths": [
+            "Bài nộp đã nêu rõ mục tiêu tài liệu và tổng quan hệ thống",
+            "Cung cấp một số thông tin về bối cảnh nghiên cứu và lý do chọn đề tài"
+          ],
+          "weaknesses": [
+            "Thiếu trích dẫn từ các công trình liên quan",
+            "Phân tích điểm mạnh/yếu của các giải pháp hiện có chưa sâu sắc"
+          ],
+          "cited_evidence": [
+            "Bài nộp đã nêu rõ mục tiêu tài liệu và tổng quan hệ thống",
+            "Cung cấp một số thông tin về bối cảnh nghiên cứu và lý do chọn đề tài"
+          ]
+        },
+        {
+          "run_index": 2,
+          "raw_score": 6.0,
+          "normalized_score": 0.6,
+          "cot_steps": [
+            "<Bước 1: Phân tích yêu cầu tiêu chí và thang điểm>",
+            "Tiêu chí CRIT-2 yêu cầu khảo sát các công trình liên quan, phân tích điểm mạnh/yếu của các giải pháp hiện có. Điểm tối đa là 10.0, điểm thấp nhất là 0.0.",
+            "<Bước 2: Đối chiếu sự hiện diện và mức độ sâu sắc của bằng chứng trong bài nộp>",
+            "Bài nộp cung cấp thông tin về bối cảnh nghiên cứu, lý do chọn đề tài, phân tích nghiệp vụ, và các yêu cầu chức năng. Tuy nhiên, không có trích dẫn từ các công trình liên quan hoặc phân tích sâu về điểm mạnh/yếu của các giải pháp hiện có.",
+            "<Bước 3: Xác định điểm mạnh cụ thể và các thiếu sót>",
+            "Điểm mạnh: Bài nộp đã cung cấp thông tin về bối cảnh nghiên cứu, lý do chọn đề tài, và phân tích nghiệp vụ. Các bảng và thông tin chi tiết về yêu cầu chức năng cũng được đề cập.",
+            "Thiếu sót: Bài nộp thiếu trích dẫn từ các công trình liên quan và phân tích sâu về điểm mạnh/yếu của các giải pháp hiện có.",
+            "<Bước 4: Tổng hợp nhận định chất lượng và quyết định điểm số>",
+            "Bài nộp đã cung cấp một số thông tin về bối cảnh và yêu cầu chức năng, nhưng thiếu trích dẫn từ các công trình liên quan và phân tích sâu về điểm mạnh/yếu của các giải pháp hiện có. Do đó, điểm số được gán là 6.0."
+          ],
+          "rationale": "Bài nộp đã cung cấp một số thông tin về bối cảnh nghiên cứu, lý do chọn đề tài, và phân tích nghiệp vụ. Các bảng và thông tin chi tiết về yêu cầu chức năng cũng được đề cập. Tuy nhiên, bài nộp thiếu trích dẫn từ các công trình liên quan và phân tích sâu về điểm mạnh/yếu của các giải pháp hiện có. Do đó, bài nộp được đánh giá là trung bình, đạt 6.0/10.0.",
+          "strengths": [
+            "Bài nộp đã cung cấp thông tin về bối cảnh nghiên cứu, lý do chọn đề tài, và phân tích nghiệp vụ.",
+            "Các bảng và thông tin chi tiết về yêu cầu chức năng cũng được đề cập."
+          ],
+          "weaknesses": [
+            "Bài nộp thiếu trích dẫn từ các công trình liên quan.",
+            "Phân tích sâu về điểm mạnh/yếu của các giải pháp hiện có chưa được thực hiện."
+          ],
+          "cited_evidence": [
+            "--- BẰNG CHỨNG [TEXT] (Trang 4 | Mục: 1.1 Bối cảnh nghiên cứu và lý do chọn đề tài) ---",
+            "--- BẰNG CHỨNG [TEXT] (Trang 4 | Mục: 1.4 Bối cảnh dự án) ---",
+            "--- BẰNG CHỨNG [TEXT] (Trang 2 | Mục: Mục lục) ---",
+            "--- BẰNG CHỨNG [TEXT] (Trang 4 | Mục: 1.2 Mục tiêu tài liệu) ---",
+            "--- BẰNG CHỨNG [TEXT] (Trang 4 | Mục: 2 Tổng quan hệ thống) ---"
+          ]
+        },
+        {
+          "run_index": 3,
+          "raw_score": 6.5,
+          "normalized_score": 0.65,
+          "cot_steps": [
+            "<Bước 1: Phân tích yêu cầu tiêu chí và thang điểm>",
+            "<Bước 2: Đối chiếu sự hiện diện và mức độ sâu sắc của bằng chứng trong bài nộp>",
+            "<Bước 3: Xác định điểm mạnh cụ thể và các thiếu sót>",
+            "<Bước 4: Tổng hợp nhận định chất lượng và quyết định điểm số>"
+          ],
+          "rationale": "Bài nộp đã cung cấp một số thông tin về bối cảnh nghiên cứu và lý do chọn đề tài, nhưng chưa khảo sát sâu rộng các công trình liên quan. Các bằng chứng chỉ đề cập đến một số khía cạnh của đề tài mà không phân tích điểm mạnh/yếu của các giải pháp hiện có. Điều này cho thấy bài nộp chỉ cung cấp thông tin cơ bản và chưa đủ để đánh giá một cách toàn diện.",
+          "strengths": [
+            "Bài nộp đã cung cấp một số thông tin về bối cảnh nghiên cứu và lý do chọn đề tài."
+          ],
+          "weaknesses": [
+            "Chưa khảo sát sâu rộng các công trình liên quan.",
+            "Chưa phân tích điểm mạnh/yếu của các giải pháp hiện có."
+          ],
+          "cited_evidence": [
+            "Ngành công nghiệp điện ảnh và giải trí đang chứng kiến sự tăng trưởng mạnh mẽ cùng với sự thay đổi trong hành vi tiêu dùng của khách hàng.",
+            "Xuất phát từ thực tế trên, đề tài Cinema Management System (CMS) được lựa chọn nhằm nghiên cứu, phân tích và xây dựng một hệ thống phần mềm quản lý rập chiếu phim hiện đại, toàn diện và có khả năng triển khai trong thực tế."
+          ]
+        }
+      ],
+      "mean_raw_score": 6.333,
+      "mean_normalized_score": 0.6333,
+      "variance": 0.0833,
+      "std_dev": 0.2887,
+      "uncertainty_flag": false,
+      "consensus_rationale": "Đánh giá đồng thuận (Điểm TB: 6.33/10 qua 3 lượt chấm G-EVAL (Độ ổn định cao, phương sai 0.083)):\nBài nộp đã cung cấp một số thông tin về bối cảnh nghiên cứu và lý do chọn đề tài, nhưng chưa đầy đủ về việc khảo sát các công trình liên quan. Các bằng chứng chỉ đề cập đến một số khía cạnh của đề tài, thiếu phân tích sâu rộng và trích dẫn từ các bài báo uy tín. Tuy nhiên, bài nộp đã nêu rõ mục tiêu tài liệu và tổng quan hệ thống, cho thấy một số nỗ lực trong việc trình bày thông tin.",
+      "strengths": [
+        "Bài nộp đã nêu rõ mục tiêu tài liệu và tổng quan hệ thống",
+        "Cung cấp một số thông tin về bối cảnh nghiên cứu và lý do chọn đề tài",
+        "Bài nộp đã cung cấp thông tin về bối cảnh nghiên cứu, lý do chọn đề tài, và phân tích nghiệp vụ.",
+        "Các bảng và thông tin chi tiết về yêu cầu chức năng cũng được đề cập.",
+        "Bài nộp đã cung cấp một số thông tin về bối cảnh nghiên cứu và lý do chọn đề tài."
+      ],
+      "weaknesses": [
+        "Thiếu trích dẫn từ các công trình liên quan",
+        "Phân tích điểm mạnh/yếu của các giải pháp hiện có chưa sâu sắc",
+        "Bài nộp thiếu trích dẫn từ các công trình liên quan.",
+        "Phân tích sâu về điểm mạnh/yếu của các giải pháp hiện có chưa được thực hiện.",
+        "Chưa khảo sát sâu rộng các công trình liên quan."
+      ],
+      "improvement_suggestions": [
+        "Cần khắc phục: Thiếu trích dẫn từ các công trình liên quan",
+        "Cần khắc phục: Phân tích điểm mạnh/yếu của các giải pháp hiện có chưa sâu sắc",
+        "Cần khắc phục: Bài nộp thiếu trích dẫn từ các công trình liên quan.",
+        "Cần khắc phục: Phân tích sâu về điểm mạnh/yếu của các giải pháp hiện có chưa được thực hiện.",
+        "Cần khắc phục: Chưa khảo sát sâu rộng các công trình liên quan."
+      ]
+    },
+    {
+      "criterion_id": "00000000-0000-4000-8000-000000000013",
+      "criterion_code": "CRIT-3",
+      "criterion_title": "Kiến trúc hệ thống & Phương pháp giải quyết",
+      "weight": 0.3,
+      "min_score": 0.0,
+      "max_score": 10.0,
+      "scoring_method": "geval",
+      "runs": [
+        {
+          "run_index": 1,
+          "raw_score": 6.5,
+          "normalized_score": 0.65,
+          "cot_steps": [
+            "<Bước 1: Phân tích yêu cầu tiêu chí và thang điểm>",
+            "<Bước 2: Đối chiếu sự hiện diện và mức độ sâu sắc của bằng chứng trong bài nộp>",
+            "<Bước 3: Xác định điểm mạnh cụ thể và các thiếu sót>",
+            "<Bước 4: Tổng hợp nhận định chất lượng và quyết định điểm số>"
+          ],
+          "rationale": "Bài nộp đã đề cập đến kiến trúc hệ thống và phương pháp giải quyết, nhưng thiếu minh họa sơ đồ hoặc mô hình. Các thông tin về giải pháp đề xuất được trình bày một cách mạch lạc, nhưng không đầy đủ. Các chiến lược kiểm thử được đề cập, nhưng không có sơ đồ luồng xử lý. Các bước của use-case được trình bày chi tiết, nhưng không có sơ đồ luồng xử lý. Bài nộp đã nêu rõ mục đích và phạm vi của hệ thống, nhưng thiếu minh họa sơ đồ hoặc mô hình. Các điểm mạnh bao gồm việc trình bày giải pháp một cách mạch lạc và chi tiết, nhưng điểm yếu là thiếu minh họa sơ đồ hoặc mô hình.",
+          "strengths": [
+            "Giải pháp đề xuất được trình bày một cách mạch lạc",
+            "Chi tiết về các bước của use-case được nêu rõ"
+          ],
+          "weaknesses": [
+            "Thiếu minh họa sơ đồ hoặc mô hình",
+            "Giải pháp đề xuất không đầy đủ"
+          ],
+          "cited_evidence": [
+            "Hệ thống CMS tập trung vào việc quản lý nghiệp vụ cốt lõi của một hoặc nhiều rạp chiếu phim, bao gồm: quản lý phim, phòng chiếu, lịch chiếu, bán vé, thanh toán, người dùng và báo cáo",
+            "5 Kiến trúc hệ thống đề xuất",
+            "10.2.4 Xem báo cáo chi tiết",
+            "10.2.4 Xem báo cáo chi tiết",
+            "Đồ án đã trình bày toàn diện quá trình phân tích, thiết kế và đề xuất giải pháp cho Hệ thống quản lý rập chiếu phim CMS"
+          ]
+        },
+        {
+          "run_index": 2,
+          "raw_score": 7.5,
+          "normalized_score": 0.75,
+          "cot_steps": [
+            "<Bước 1: Phân tích yêu cầu tiêu chí và thang điểm>",
+            "<Bước 2: Đối chiếu sự hiện diện và mức độ sâu sắc của bằng chứng trong bài nộp>",
+            "<Bước 3: Xác định điểm mạnh cụ thể và các thiếu sót>",
+            "<Bước 4: Tổng hợp nhận định chất lượng và quyết định điểm số>"
+          ],
+          "rationale": "Bài nộp đã đề cập đến một số khía cạnh của kiến trúc hệ thống và phương pháp giải quyết, nhưng chưa đầy đủ và mạch lạc. Bài nộp chỉ nêu tóm tắt về kiến trúc hệ thống, không có sơ đồ minh họa rõ ràng. Các giải pháp đề xuất và luồng xử lý được nêu, nhưng không chi tiết và mạch lạc. Các công cụ kiểm thử được đề cập, nhưng không có luồng xử lý chi tiết. Tuy nhiên, bài nộp đã nêu rõ các chức năng chính của hệ thống và một số luồng xử lý cơ bản.",
+          "strengths": [
+            "Bài nộp đã nêu rõ các chức năng chính của hệ thống",
+            "Đã đề cập đến một số công cụ kiểm thử"
+          ],
+          "weaknesses": [
+            "Thiếu sơ đồ minh họa kiến trúc hệ thống",
+            "Giải pháp đề xuất và luồng xử lý chưa chi tiết và mạch lạc"
+          ],
+          "cited_evidence": [
+            "Hệ thống CMS tập trung vào việc quản lý nghiệp vụ cốt lõi của một hoặc nhiều rạp chiếu phim",
+            "Kiến trúc hệ thống đề xuất",
+            "Phần thiết kế dữ liệu được chia theo các phân hệ chính để dễ quản lý, mở rộng và triển khai độc lập giữa các nhóm chức năng",
+            "Sau khi chạy test, báo cáo chi tiết (HTML) được tạo tại đường dẫn"
+          ]
+        },
+        {
+          "run_index": 3,
+          "raw_score": 7.0,
+          "normalized_score": 0.7,
+          "cot_steps": [
+            "<Bước 1: Phân tích yêu cầu tiêu chí và thang điểm>",
+            "<Bước 2: Đối chiếu sự hiện diện và mức độ sâu sắc của bằng chứng trong bài nộp>",
+            "<Bước 3: Xác định điểm mạnh cụ thể và các thiếu sót>",
+            "<Bước 4: Tổng hợp nhận định chất lượng và quyết định điểm số>"
+          ],
+          "rationale": "Bài nộp đã cung cấp một số thông tin về kiến trúc hệ thống và phương pháp giải quyết, nhưng chưa đầy đủ và mạch lạc. Các phần như 'Kiến trúc hệ thống đề xuất' và 'Giải pháp đề xuất (To-Be)' không được đề cập cụ thể. Tuy nhiên, bài nộp đã nêu rõ các chức năng chính của hệ thống, chiến lược kiểm thử, và luồng xử lý đặt vé. Điều này cho thấy bài nộp đã cố gắng mô tả chi tiết, nhưng cần cải thiện về mặt mạch lạc và chi tiết.",
+          "strengths": [
+            "Bài nộp đã nêu rõ các chức năng chính của hệ thống",
+            "Bài nộp đã đề cập đến chiến lược kiểm thử và luồng xử lý đặt vé"
+          ],
+          "weaknesses": [
+            "Kiến trúc hệ thống đề xuất và giải pháp đề xuất (To-Be) không được đề cập cụ thể",
+            "Bài nộp thiếu sơ đồ minh họa",
+            "Mạch lạc của bài nộp chưa rõ ràng"
+          ],
+          "cited_evidence": [
+            "Hệ thống CMS tập trung vào việc quản lý nghiệp vụ cốt lõi của một hoặc nhiều rạp chiếu phim",
+            "5 Kiến trúc hệ thống đề xuất",
+            "Phần thiết kế dữ liệu được chia theo các phân hệ chính để dễ quản lý, mở rộng và triển khai độc lập giữa các nhóm chức năng",
+            "Sau khi chạy test, báo cáo chi tiết (HTML) được tạo tại đường dẫn: cms-backend/target/site/surefire-report.htm",
+            "Hệ thống xử lý giao dịch qua cổng thanh toán",
+            "Hệ thống xác nhận đặt vé thành công, sinh mã QR và gửi email xác nhận"
+          ]
+        }
+      ],
+      "mean_raw_score": 7.0,
+      "mean_normalized_score": 0.7,
+      "variance": 0.25,
+      "std_dev": 0.5,
+      "uncertainty_flag": true,
+      "consensus_rationale": "Đánh giá đồng thuận (Điểm TB: 7.00/10 qua 3 lượt chấm G-EVAL (Có độ dao động giữa các lượt chấm, phương sai 0.250)):\nBài nộp đã đề cập đến kiến trúc hệ thống và phương pháp giải quyết, nhưng thiếu minh họa sơ đồ hoặc mô hình. Các thông tin về giải pháp đề xuất được trình bày một cách mạch lạc, nhưng không đầy đủ. Các chiến lược kiểm thử được đề cập, nhưng không có sơ đồ luồng xử lý. Các bước của use-case được trình bày chi tiết, nhưng không có sơ đồ luồng xử lý. Bài nộp đã nêu rõ mục đích và phạm vi của hệ thống, nhưng thiếu minh họa sơ đồ hoặc mô hình. Các điểm mạnh bao gồm việc trình bày giải pháp một cách mạch lạc và chi tiết, nhưng điểm yếu là thiếu minh họa sơ đồ hoặc mô hình.",
+      "strengths": [
+        "Giải pháp đề xuất được trình bày một cách mạch lạc",
+        "Chi tiết về các bước của use-case được nêu rõ",
+        "Bài nộp đã nêu rõ các chức năng chính của hệ thống",
+        "Đã đề cập đến một số công cụ kiểm thử",
+        "Bài nộp đã đề cập đến chiến lược kiểm thử và luồng xử lý đặt vé"
+      ],
+      "weaknesses": [
+        "Thiếu minh họa sơ đồ hoặc mô hình",
+        "Giải pháp đề xuất không đầy đủ",
+        "Thiếu sơ đồ minh họa kiến trúc hệ thống",
+        "Giải pháp đề xuất và luồng xử lý chưa chi tiết và mạch lạc",
+        "Kiến trúc hệ thống đề xuất và giải pháp đề xuất (To-Be) không được đề cập cụ thể"
+      ],
+      "improvement_suggestions": [
+        "Cần khắc phục: Thiếu minh họa sơ đồ hoặc mô hình",
+        "Cần khắc phục: Giải pháp đề xuất không đầy đủ",
+        "Cần khắc phục: Thiếu sơ đồ minh họa kiến trúc hệ thống",
+        "Cần khắc phục: Giải pháp đề xuất và luồng xử lý chưa chi tiết và mạch lạc",
+        "Cần khắc phục: Kiến trúc hệ thống đề xuất và giải pháp đề xuất (To-Be) không được đề cập cụ thể"
+      ]
+    },
+    {
+      "criterion_id": "00000000-0000-4000-8000-000000000014",
+      "criterion_code": "CRIT-4",
+      "criterion_title": "Hiện thực hóa & Đánh giá thực nghiệm",
+      "weight": 0.2,
+      "min_score": 0.0,
+      "max_score": 10.0,
+      "scoring_method": "geval",
+      "runs": [
+        {
+          "run_index": 1,
+          "raw_score": 8.5,
+          "normalized_score": 0.85,
+          "cot_steps": [
+            "<Bước 1: Phân tích yêu cầu tiêu chí và thang điểm>",
+            "<Bước 2: Đối chiếu sự hiện diện và mức độ sâu sắc của bằng chứng trong bài nộp>",
+            "<Bước 3: Xác định điểm mạnh cụ thể và các thiếu sót>",
+            "<Bước 4: Tổng hợp nhận định chất lượng và quyết định điểm số>"
+          ],
+          "rationale": "Bài nộp cung cấp đầy đủ thông tin về triển khai mã nguồn và kết quả thử nghiệm, bao gồm cả thông tin về kiểm thử đơn vị và tích hợp. Tuy nhiên, bài nộp chưa đề cập đến kết quả thử nghiệm thực tế hoặc so sánh với baseline, điều này làm giảm mức độ chi tiết và độ sâu của bằng chứng. Các phần khác như thiết kế API và phân tích quy trình vận hành cũng được trình bày rõ ràng.",
+          "strengths": [
+            "Bài nộp cung cấp thông tin đầy đủ về triển khai mã nguồn và kiểm thử tích hợp",
+            "Thông tin về phân tích quy trình vận hành và quản trị trạng thái được trình bày chi tiết"
+          ],
+          "weaknesses": [
+            "Bài nộp chưa đề cập đến kết quả thử nghiệm thực tế hoặc so sánh với baseline",
+            "Cần cung cấp thêm thông tin về kết quả thử nghiệm và đánh giá hiệu suất của hệ thống"
+          ],
+          "cited_evidence": []
+        },
+        {
+          "run_index": 2,
+          "raw_score": 8.5,
+          "normalized_score": 0.85,
+          "cot_steps": [
+            "<Bước 1: Phân tích yêu cầu tiêu chí và thang điểm>",
+            "<Bước 2: Đối chiếu sự hiện diện và mức độ sâu sắc của bằng chứng trong bài nộp>",
+            "<Bước 3: Xác định điểm mạnh cụ thể và các thiếu sót>",
+            "<Bước 4: Tổng hợp nhận định chất lượng và quyết định điểm số>"
+          ],
+          "rationale": "Bài nộp đã trình bày đầy đủ thông tin về quá trình phân tích, thiết kế và đề xuất giải pháp cho Hệ thống quản lý rập chiếu phim CMS. Các yêu cầu nghiệp vụ và phi chức năng đều được đề cập, cùng với việc triển khai mã nguồn và thực nghiệm. Tuy nhiên, bài nộp chưa đề cập đến việc so sánh kết quả thực nghiệm với baseline, điều này làm giảm mức độ chi tiết và chất lượng của bài nộp.",
+          "strengths": [
+            "Hệ thống được xây dựng trên kiến thức phân tầng hiện đại",
+            "Các yêu cầu phi chức năng về hiệu năng, bảo mật, khả năng mở rộng và trải nghiệm người dùng được thiết kế kỹ lưỡng",
+            "Đã thực hiện kiểm thử đơn vị và tích hợp",
+            "Thông tin về quy trình vận hành và quản trị trạng thái được cung cấp chi tiết"
+          ],
+          "weaknesses": [
+            "Vẫn chưa đề cập đến việc so sánh kết quả thực nghiệm với baseline",
+            "Một số thông tin chi tiết về quy trình kiểm thử và kết quả kiểm thử chưa được cung cấp"
+          ],
+          "cited_evidence": []
+        },
+        {
+          "run_index": 3,
+          "raw_score": 8.5,
+          "normalized_score": 0.85,
+          "cot_steps": [
+            "<Bước 1: Phân tích yêu cầu tiêu chí và thang điểm>",
+            "<Bước 2: Đối chiếu sự hiện diện và mức độ sâu sắc của bằng chứng trong bài nộp>",
+            "<Bước 3: Xác định điểm mạnh cụ thể và các thiếu sót>",
+            "<Bước 4: Tổng hợp nhận định chất lượng và quyết định điểm số>"
+          ],
+          "rationale": "Bài nộp đã cung cấp đầy đủ thông tin về quá trình triển khai mã nguồn và các thử nghiệm thực nghiệm. Tuy nhiên, việc trình bày và phân tích chi tiết kết quả thử nghiệm còn hạn chế. Các bảng kiểm thử đơn vị và tích hợp đều được trình bày chi tiết, nhưng thiếu phân tích sâu sắc về kết quả. Các biện pháp quản lý rủi ro và phân quyền thực thi cũng được đề cập, nhưng không có thông tin về việc thực hiện các biện pháp này trong quá trình triển khai.",
+          "strengths": [
+            "Cung cấp đầy đủ thông tin về quá trình triển khai mã nguồn",
+            "Có các bảng kiểm thử đơn vị và tích hợp chi tiết"
+          ],
+          "weaknesses": [
+            "Thiếu phân tích sâu sắc về kết quả thử nghiệm",
+            "Không có thông tin về việc thực hiện các biện pháp quản lý rủi ro và phân quyền thực thi"
+          ],
+          "cited_evidence": []
+        }
+      ],
+      "mean_raw_score": 8.5,
+      "mean_normalized_score": 0.85,
+      "variance": 0.0,
+      "std_dev": 0.0,
+      "uncertainty_flag": false,
+      "consensus_rationale": "Đánh giá đồng thuận (Điểm TB: 8.50/10 qua 3 lượt chấm G-EVAL (Độ ổn định cao, phương sai 0.000)):\nBài nộp cung cấp đầy đủ thông tin về triển khai mã nguồn và kết quả thử nghiệm, bao gồm cả thông tin về kiểm thử đơn vị và tích hợp. Tuy nhiên, bài nộp chưa đề cập đến kết quả thử nghiệm thực tế hoặc so sánh với baseline, điều này làm giảm mức độ chi tiết và độ sâu của bằng chứng. Các phần khác như thiết kế API và phân tích quy trình vận hành cũng được trình bày rõ ràng.",
+      "strengths": [
+        "Bài nộp cung cấp thông tin đầy đủ về triển khai mã nguồn và kiểm thử tích hợp",
+        "Thông tin về phân tích quy trình vận hành và quản trị trạng thái được trình bày chi tiết",
+        "Hệ thống được xây dựng trên kiến thức phân tầng hiện đại",
+        "Các yêu cầu phi chức năng về hiệu năng, bảo mật, khả năng mở rộng và trải nghiệm người dùng được thiết kế kỹ lưỡng",
+        "Đã thực hiện kiểm thử đơn vị và tích hợp"
+      ],
+      "weaknesses": [
+        "Bài nộp chưa đề cập đến kết quả thử nghiệm thực tế hoặc so sánh với baseline",
+        "Cần cung cấp thêm thông tin về kết quả thử nghiệm và đánh giá hiệu suất của hệ thống",
+        "Vẫn chưa đề cập đến việc so sánh kết quả thực nghiệm với baseline",
+        "Một số thông tin chi tiết về quy trình kiểm thử và kết quả kiểm thử chưa được cung cấp",
+        "Thiếu phân tích sâu sắc về kết quả thử nghiệm"
+      ],
+      "improvement_suggestions": [
+        "Cần khắc phục: Bài nộp chưa đề cập đến kết quả thử nghiệm thực tế hoặc so sánh với baseline",
+        "Cần khắc phục: Cần cung cấp thêm thông tin về kết quả thử nghiệm và đánh giá hiệu suất của hệ thống",
+        "Cần khắc phục: Vẫn chưa đề cập đến việc so sánh kết quả thực nghiệm với baseline",
+        "Cần khắc phục: Một số thông tin chi tiết về quy trình kiểm thử và kết quả kiểm thử chưa được cung cấp",
+        "Cần khắc phục: Thiếu phân tích sâu sắc về kết quả thử nghiệm"
+      ]
+    },
+    {
+      "criterion_id": "00000000-0000-4000-8000-000000000015",
+      "criterion_code": "CRIT-5",
+      "criterion_title": "Trình bày & Văn phong học thuật",
+      "weight": 0.1,
+      "min_score": 0.0,
+      "max_score": 10.0,
+      "scoring_method": "geval",
+      "runs": [
+        {
+          "run_index": 1,
+          "raw_score": 8.5,
+          "normalized_score": 0.85,
+          "cot_steps": [
+            "<Bước 1: Phân tích yêu cầu tiêu chí và thang điểm>",
+            "<Bước 2: Đối chiếu sự hiện diện và mức độ sâu sắc của bằng chứng trong bài nộp>",
+            "<Bước 3: Xác định điểm mạnh cụ thể và các thiếu sót>",
+            "<Bước 4: Tổng hợp nhận định chất lượng và quyết định điểm số>"
+          ],
+          "rationale": "Bài nộp này trình bày các bảng API, quy trình nghiệp vụ và phân công nhiệm vụ theo đúng chuẩn học thuật. Tuy nhiên, có một số lỗi chính tả và định dạng không chuẩn mực. Các bảng được trình bày rõ ràng, nhưng cần chú thích thêm để tăng độ hiểu rõ.",
+          "strengths": [
+            "Bài nộp trình bày các bảng API, quy trình nghiệp vụ và phân công nhiệm vụ theo đúng chuẩn học thuật.",
+            "Dữ liệu được trình bày rõ ràng và dễ hiểu."
+          ],
+          "weaknesses": [
+            "Có một số lỗi chính tả và định dạng không chuẩn mực.",
+            "Một số trích dẫn không rõ ràng và cần thêm chú thích."
+          ],
+          "cited_evidence": [
+            "Bảng API được trình bày (Trang 23 | Mục: 9.3.2 Các nhóm API chính)",
+            "Quy trình nghiệp vụ Đặt vé được trình bày (Trang 14 | Mục: 8.1.2 Quy trình nghiệp vụ Đặt vé (Booking Workflow))",
+            "Phân công nhiệm vụ được trình bày (Trang 32 | Mục: 12.1 Phân công nhiệm vụ)"
+          ]
+        },
+        {
+          "run_index": 2,
+          "raw_score": 8.5,
+          "normalized_score": 0.85,
+          "cot_steps": [
+            "<Bước 1: Phân tích yêu cầu tiêu chí và thang điểm>",
+            "<Bước 2: Đối chiếu sự hiện diện và mức độ sâu sắc của bằng chứng trong bài nộp>",
+            "<Bước 3: Xác định điểm mạnh cụ thể và các thiếu sót>",
+            "<Bước 4: Tổng hợp nhận định chất lượng và quyết định điểm số>"
+          ],
+          "rationale": "Bài nộp này trình bày các bảng API, quy trình nghiệp vụ và phân công nhiệm vụ một cách rõ ràng. Các bảng được trình bày trong định dạng bảng và được chú thích rõ ràng. Tuy nhiên, có nhiều trích dẫn không liên quan và lặp lại, gây rối mắt. Các bảng cũng không được chú thích chi tiết về mục đích và cách sử dụng.",
+          "strengths": [
+            "Bài nộp trình bày các bảng API, quy trình nghiệp vụ và phân công nhiệm vụ một cách rõ ràng",
+            "Các bảng được trình bày trong định dạng bảng và được chú thích rõ ràng"
+          ],
+          "weaknesses": [
+            "Có nhiều trích dẫn không liên quan và lặp lại, gây rối mắt",
+            "Các bảng không được chú thích chi tiết về mục đích và cách sử dụng"
+          ],
+          "cited_evidence": [
+            "--- BẰNG CHỨNG [TABLE] (Trang 23 | Mục: 9.3.2 Các nhóm API chính)",
+            "--- BẰNG CHỨNG [TABLE] (Trang 14 | Mục: 8.1.2 Quy trình nghiệp vụ Đặt vé (Booking Workflow))",
+            "--- BẰNG CHỨNG [TABLE] (Trang 32 | Mục: 12.1 Phân công nhiệm vụ)"
+          ]
+        },
+        {
+          "run_index": 3,
+          "raw_score": 8.5,
+          "normalized_score": 0.85,
+          "cot_steps": [
+            "<Bước 1: Phân tích yêu cầu tiêu chí và thang điểm>",
+            "<Bước 2: Đối chiếu sự hiện diện và mức độ sâu sắc của bằng chứng trong bài nộp>",
+            "<Bước 3: Xác định điểm mạnh cụ thể và các thiếu sót>",
+            "<Bước 4: Tổng hợp nhận định chất lượng và quyết định điểm số>"
+          ],
+          "rationale": "Bài nộp này trình bày một cách chi tiết và đầy đủ các bảng biểu, API, quy trình nghiệp vụ và phân công nhiệm vụ. Tuy nhiên, có một số điểm cần cải thiện về định dạng văn bản và trích dẫn không chính xác.",
+          "strengths": [
+            "Bài nộp cung cấp thông tin chi tiết về API, quy trình nghiệp vụ và phân công nhiệm vụ",
+            "Sử dụng bảng biểu để trình bày thông tin một cách rõ ràng và dễ hiểu"
+          ],
+          "weaknesses": [
+            "Định dạng văn bản không nhất quán, có nhiều trích dẫn không chính xác",
+            "Trích dẫn không rõ ràng, thiếu thông tin về nguồn gốc"
+          ],
+          "cited_evidence": [
+            "--- BẰNG CHỨNG [TABLE] (Trang 23 | Mục: 9.3.2 Các nhóm API chính) ---",
+            "--- BẰNG CHỨNG [TABLE] (Trang 14 | Mục: 8.1.2 Quy trình nghiệp vụ Đặt vé (Booking Workflow)) ---",
+            "--- BẰNG CHỨNG [TABLE] (Trang 32 | Mục: 12.1 Phân công nhiệm vụ) ---"
+          ]
+        }
+      ],
+      "mean_raw_score": 8.5,
+      "mean_normalized_score": 0.85,
+      "variance": 0.0,
+      "std_dev": 0.0,
+      "uncertainty_flag": false,
+      "consensus_rationale": "Đánh giá đồng thuận (Điểm TB: 8.50/10 qua 3 lượt chấm G-EVAL (Độ ổn định cao, phương sai 0.000)):\nBài nộp này trình bày các bảng API, quy trình nghiệp vụ và phân công nhiệm vụ theo đúng chuẩn học thuật. Tuy nhiên, có một số lỗi chính tả và định dạng không chuẩn mực. Các bảng được trình bày rõ ràng, nhưng cần chú thích thêm để tăng độ hiểu rõ.",
+      "strengths": [
+        "Bài nộp trình bày các bảng API, quy trình nghiệp vụ và phân công nhiệm vụ theo đúng chuẩn học thuật.",
+        "Dữ liệu được trình bày rõ ràng và dễ hiểu.",
+        "Bài nộp trình bày các bảng API, quy trình nghiệp vụ và phân công nhiệm vụ một cách rõ ràng",
+        "Các bảng được trình bày trong định dạng bảng và được chú thích rõ ràng",
+        "Bài nộp cung cấp thông tin chi tiết về API, quy trình nghiệp vụ và phân công nhiệm vụ"
+      ],
+      "weaknesses": [
+        "Có một số lỗi chính tả và định dạng không chuẩn mực.",
+        "Một số trích dẫn không rõ ràng và cần thêm chú thích.",
+        "Có nhiều trích dẫn không liên quan và lặp lại, gây rối mắt",
+        "Các bảng không được chú thích chi tiết về mục đích và cách sử dụng",
+        "Định dạng văn bản không nhất quán, có nhiều trích dẫn không chính xác"
+      ],
+      "improvement_suggestions": [
+        "Cần khắc phục: Có một số lỗi chính tả và định dạng không chuẩn mực.",
+        "Cần khắc phục: Một số trích dẫn không rõ ràng và cần thêm chú thích.",
+        "Cần khắc phục: Có nhiều trích dẫn không liên quan và lặp lại, gây rối mắt",
+        "Cần khắc phục: Các bảng không được chú thích chi tiết về mục đích và cách sử dụng",
+        "Cần khắc phục: Định dạng văn bản không nhất quán, có nhiều trích dẫn không chính xác"
+      ]
+    }
+  ]
+}

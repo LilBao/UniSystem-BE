@@ -1,0 +1,33 @@
+{
+  "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+  "pipeline_run": {
+    "id": "94594f16-262d-44e4-8af1-994e2202caf0",
+    "status": "requires_review",
+    "code_version": "p1-geval-1",
+    "model_version": "qwen2.5:7b",
+    "prompt_version": "qwen2.5:7b:geval-cot-2",
+    "started_at": "2026-10-30 09:45:52.097593+00:00",
+    "finished_at": "2026-10-30 09:47:59.325232+00:00",
+    "config": {
+      "num_runs": 3,
+      "temperature": 0.3,
+      "scoring_method": "geval",
+      "variance_threshold": 0.15
+    }
+  },
+  "evaluation_summary": {
+    "scoring_method": "geval",
+    "total_raw_score": 7.417,
+    "total_max_score": 10.0,
+    "total_normalized_score": 0.7417,
+    "mean_variance": 0.0667,
+    "requires_human_review": true,
+    "status": "requires_review"
+  },
+  "executive_summary": "Đánh giá tổng quan học thuật toàn diện về bài nộp ĐỖ ĐẦN TỔNG HỢP HƯƠNG CNPM - CO3013 cho thấy bài nộp đã thể hiện sự cố gắng đáng kể trong việc trình bày thông tin chi tiết về hệ thống quản lý rạp chiếu phim. Trong phần Đặt vấn đề & Mục tiêu đề tài, bài nộp đã cung cấp thông tin về bối cảnh nghiên cứu, lý do chọn đề tài, mục tiêu tài liệu và phạm vi hệ thống, nhưng mục tiêu nghiên cứu và phạm vi đề tài còn thiếu sự cụ thể và rõ ràng. Phần Tổng quan tài liệu & Cơ sở lý thuyết đã nêu rõ mục tiêu tài liệu và tổng quan hệ thống, nhưng thiếu trích dẫn từ các công trình liên quan. Kiến trúc hệ thống & Phương pháp giải quyết đã đề cập đến các chức năng chính của hệ thống và chiến lược kiểm thử, nhưng thiếu minh họa sơ đồ hoặc mô hình. Hiện thực hóa & Đánh giá thực nghiệm đã cung cấp thông tin đầy đủ về triển khai mã nguồn và kết quả thử nghiệm, nhưng chưa đề cập đến kết quả thử nghiệm thực tế hoặc so sánh với baseline. Trình bày & Văn phong học thuật đã trình bày các bảng API, quy trình nghiệp vụ và phân công nhiệm vụ theo đúng chuẩn học thuật, nhưng có một số lỗi chính tả và định dạng không chuẩn mực. Tổng thể, bài nộp đã thể hiện sự cố gắng trong việc xây dựng một hệ thống quản lý rạp chiếu phim toàn diện, nhưng cần cải thiện về sự cụ thể và rõ ràng của mục tiêu nghiên cứu, trích dẫn từ các công trình liên quan, minh họa sơ đồ hoặc mô hình, và chi tiết về kết quả thử nghiệm thực tế.",
+  "statistics": {
+    "total_criteria_evaluated": 5,
+    "total_score_runs": 15,
+    "total_evidence_items": 75
+  }
+}

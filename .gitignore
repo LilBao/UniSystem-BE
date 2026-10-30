@@ -8,3 +8,7 @@ __pycache__/
 coverage.xml
 htmlcov/
 .cache/
+
+z-note/
+z-run-test/
+z-scripts/

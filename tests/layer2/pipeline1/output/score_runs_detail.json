@@ -1,0 +1,167 @@
+[
+  {
+    "id": "fdfcc9fd-333d-47ab-aa38-0bd6fe4f50cb",
+    "pipeline_result_id": "4fb9ee18-f3b4-427d-be55-06f5eeaa08b2",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000011",
+    "code": "CRIT-1",
+    "run_index": 1,
+    "raw_score": 7.5,
+    "normalized_score": 0.75,
+    "rationale": "Bài nộp đã cung cấp thông tin về bối cảnh nghiên cứu, lý do chọn đề tài, mục tiêu tài liệu và phạm vi hệ thống. Tuy nhiên, mục tiêu nghiên cứu và phạm vi đề tài còn thiếu sự cụ thể và rõ ràng. Các thông tin về mục tiêu tổng quát và cụ thể đã được đề cập, nhưng không thể đánh giá được tính cấp thiết và khả thi của chúng. Bằng chứng về việc phân tích nghiệp vụ, thiết kế chi tiết và kế hoạch kiểm thử cũng được trình bày đầy đủ, nhưng không thể đánh giá được tính cấp thiết của chúng. Tuy nhiên, bài nộp đã cung cấp thông tin chi tiết về phạm vi hệ thống, các chức năng và yêu cầu, điều này cho thấy sự cố gắng của sinh viên trong việc xây dựng một hệ thống quản lý rạp chiếu phim toàn diện.",
+    "variance": 0.0
+  },
+  {
+    "id": "c1ceb5ba-73dd-4c72-8299-c831c95453a6",
+    "pipeline_result_id": "4fb9ee18-f3b4-427d-be55-06f5eeaa08b2",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000011",
+    "code": "CRIT-1",
+    "run_index": 2,
+    "raw_score": 7.5,
+    "normalized_score": 0.75,
+    "rationale": "Bài nộp đã trình bày rõ ràng về bối cảnh nghiên cứu, lý do chọn đề tài, mục tiêu tài liệu và phạm vi hệ thống. Tuy nhiên, mục tiêu nghiên cứu và phạm vi đề tài chưa được trình bày đầy đủ và rõ ràng. Các thông tin về mục tiêu nghiên cứu và phạm vi đề tài cần được bổ sung và làm rõ hơn để nâng cao chất lượng của bài nộp.",
+    "variance": 0.0
+  },
+  {
+    "id": "d0a4a42a-88d4-4a6b-937d-712c93e87a5f",
+    "pipeline_result_id": "4fb9ee18-f3b4-427d-be55-06f5eeaa08b2",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000011",
+    "code": "CRIT-1",
+    "run_index": 3,
+    "raw_score": 7.5,
+    "normalized_score": 0.75,
+    "rationale": "Bài nộp đã đề cập đến bối cảnh nghiên cứu và lý do chọn đề tài, mục tiêu tài liệu, và phạm vi hệ thống. Tuy nhiên, các mục này không được trình bày một cách rõ ràng và mạch lạc. Các mục tiêu cụ thể và tính cấp thiết của đề tài không được đề cập đầy đủ. Điều này làm giảm mức độ rõ ràng và sức thuyết phục của bài nộp. Tuy nhiên, bài nộp đã cung cấp thông tin về các chức năng và yêu cầu của hệ thống, điều này thể hiện sự hiểu biết về đề tài.",
+    "variance": 0.0
+  },
+  {
+    "id": "af6df830-1c1c-4d8f-a652-6c6ee93a9a42",
+    "pipeline_result_id": "0fef8520-8336-4b01-a703-f0f2760c9a55",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000012",
+    "code": "CRIT-2",
+    "run_index": 1,
+    "raw_score": 6.5,
+    "normalized_score": 0.65,
+    "rationale": "Bài nộp đã cung cấp một số thông tin về bối cảnh nghiên cứu và lý do chọn đề tài, nhưng chưa đầy đủ về việc khảo sát các công trình liên quan. Các bằng chứng chỉ đề cập đến một số khía cạnh của đề tài, thiếu phân tích sâu rộng và trích dẫn từ các bài báo uy tín. Tuy nhiên, bài nộp đã nêu rõ mục tiêu tài liệu và tổng quan hệ thống, cho thấy một số nỗ lực trong việc trình bày thông tin.",
+    "variance": 0.0833
+  },
+  {
+    "id": "9c59a637-5a3f-4dfe-9fef-72cc57ce108c",
+    "pipeline_result_id": "0fef8520-8336-4b01-a703-f0f2760c9a55",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000012",
+    "code": "CRIT-2",
+    "run_index": 2,
+    "raw_score": 6.0,
+    "normalized_score": 0.6,
+    "rationale": "Bài nộp đã cung cấp một số thông tin về bối cảnh nghiên cứu, lý do chọn đề tài, và phân tích nghiệp vụ. Các bảng và thông tin chi tiết về yêu cầu chức năng cũng được đề cập. Tuy nhiên, bài nộp thiếu trích dẫn từ các công trình liên quan và phân tích sâu về điểm mạnh/yếu của các giải pháp hiện có. Do đó, bài nộp được đánh giá là trung bình, đạt 6.0/10.0.",
+    "variance": 0.0833
+  },
+  {
+    "id": "9bb0187d-de3e-4fcf-8901-0f657ab47d42",
+    "pipeline_result_id": "0fef8520-8336-4b01-a703-f0f2760c9a55",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000012",
+    "code": "CRIT-2",
+    "run_index": 3,
+    "raw_score": 6.5,
+    "normalized_score": 0.65,
+    "rationale": "Bài nộp đã cung cấp một số thông tin về bối cảnh nghiên cứu và lý do chọn đề tài, nhưng chưa khảo sát sâu rộng các công trình liên quan. Các bằng chứng chỉ đề cập đến một số khía cạnh của đề tài mà không phân tích điểm mạnh/yếu của các giải pháp hiện có. Điều này cho thấy bài nộp chỉ cung cấp thông tin cơ bản và chưa đủ để đánh giá một cách toàn diện.",
+    "variance": 0.0833
+  },
+  {
+    "id": "66dedc6a-e8b0-4b83-9e11-37bf6e5eacf0",
+    "pipeline_result_id": "c7c6f448-acc0-4807-afaf-d7bda5ebcbf4",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000013",
+    "code": "CRIT-3",
+    "run_index": 1,
+    "raw_score": 6.5,
+    "normalized_score": 0.65,
+    "rationale": "Bài nộp đã đề cập đến kiến trúc hệ thống và phương pháp giải quyết, nhưng thiếu minh họa sơ đồ hoặc mô hình. Các thông tin về giải pháp đề xuất được trình bày một cách mạch lạc, nhưng không đầy đủ. Các chiến lược kiểm thử được đề cập, nhưng không có sơ đồ luồng xử lý. Các bước của use-case được trình bày chi tiết, nhưng không có sơ đồ luồng xử lý. Bài nộp đã nêu rõ mục đích và phạm vi của hệ thống, nhưng thiếu minh họa sơ đồ hoặc mô hình. Các điểm mạnh bao gồm việc trình bày giải pháp một cách mạch lạc và chi tiết, nhưng điểm yếu là thiếu minh họa sơ đồ hoặc mô hình.",
+    "variance": 0.25
+  },
+  {
+    "id": "69a0b542-a956-4dab-bb7a-b83bf0ca679b",
+    "pipeline_result_id": "c7c6f448-acc0-4807-afaf-d7bda5ebcbf4",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000013",
+    "code": "CRIT-3",
+    "run_index": 2,
+    "raw_score": 7.5,
+    "normalized_score": 0.75,
+    "rationale": "Bài nộp đã đề cập đến một số khía cạnh của kiến trúc hệ thống và phương pháp giải quyết, nhưng chưa đầy đủ và mạch lạc. Bài nộp chỉ nêu tóm tắt về kiến trúc hệ thống, không có sơ đồ minh họa rõ ràng. Các giải pháp đề xuất và luồng xử lý được nêu, nhưng không chi tiết và mạch lạc. Các công cụ kiểm thử được đề cập, nhưng không có luồng xử lý chi tiết. Tuy nhiên, bài nộp đã nêu rõ các chức năng chính của hệ thống và một số luồng xử lý cơ bản.",
+    "variance": 0.25
+  },
+  {
+    "id": "9299e6df-2723-4a0b-a834-1a5aeef8acfb",
+    "pipeline_result_id": "c7c6f448-acc0-4807-afaf-d7bda5ebcbf4",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000013",
+    "code": "CRIT-3",
+    "run_index": 3,
+    "raw_score": 7.0,
+    "normalized_score": 0.7,
+    "rationale": "Bài nộp đã cung cấp một số thông tin về kiến trúc hệ thống và phương pháp giải quyết, nhưng chưa đầy đủ và mạch lạc. Các phần như 'Kiến trúc hệ thống đề xuất' và 'Giải pháp đề xuất (To-Be)' không được đề cập cụ thể. Tuy nhiên, bài nộp đã nêu rõ các chức năng chính của hệ thống, chiến lược kiểm thử, và luồng xử lý đặt vé. Điều này cho thấy bài nộp đã cố gắng mô tả chi tiết, nhưng cần cải thiện về mặt mạch lạc và chi tiết.",
+    "variance": 0.25
+  },
+  {
+    "id": "2f4e873e-0482-4650-b245-b914ab468387",
+    "pipeline_result_id": "21848657-728b-4229-9da1-9f679c2a9539",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000014",
+    "code": "CRIT-4",
+    "run_index": 1,
+    "raw_score": 8.5,
+    "normalized_score": 0.85,
+    "rationale": "Bài nộp cung cấp đầy đủ thông tin về triển khai mã nguồn và kết quả thử nghiệm, bao gồm cả thông tin về kiểm thử đơn vị và tích hợp. Tuy nhiên, bài nộp chưa đề cập đến kết quả thử nghiệm thực tế hoặc so sánh với baseline, điều này làm giảm mức độ chi tiết và độ sâu của bằng chứng. Các phần khác như thiết kế API và phân tích quy trình vận hành cũng được trình bày rõ ràng.",
+    "variance": 0.0
+  },
+  {
+    "id": "bcd923d7-abcc-4cbc-9829-09940ca1a8fc",
+    "pipeline_result_id": "21848657-728b-4229-9da1-9f679c2a9539",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000014",
+    "code": "CRIT-4",
+    "run_index": 2,
+    "raw_score": 8.5,
+    "normalized_score": 0.85,
+    "rationale": "Bài nộp đã trình bày đầy đủ thông tin về quá trình phân tích, thiết kế và đề xuất giải pháp cho Hệ thống quản lý rập chiếu phim CMS. Các yêu cầu nghiệp vụ và phi chức năng đều được đề cập, cùng với việc triển khai mã nguồn và thực nghiệm. Tuy nhiên, bài nộp chưa đề cập đến việc so sánh kết quả thực nghiệm với baseline, điều này làm giảm mức độ chi tiết và chất lượng của bài nộp.",
+    "variance": 0.0
+  },
+  {
+    "id": "1e5a4189-7c28-46fa-becf-92ea21fed18e",
+    "pipeline_result_id": "21848657-728b-4229-9da1-9f679c2a9539",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000014",
+    "code": "CRIT-4",
+    "run_index": 3,
+    "raw_score": 8.5,
+    "normalized_score": 0.85,
+    "rationale": "Bài nộp đã cung cấp đầy đủ thông tin về quá trình triển khai mã nguồn và các thử nghiệm thực nghiệm. Tuy nhiên, việc trình bày và phân tích chi tiết kết quả thử nghiệm còn hạn chế. Các bảng kiểm thử đơn vị và tích hợp đều được trình bày chi tiết, nhưng thiếu phân tích sâu sắc về kết quả. Các biện pháp quản lý rủi ro và phân quyền thực thi cũng được đề cập, nhưng không có thông tin về việc thực hiện các biện pháp này trong quá trình triển khai.",
+    "variance": 0.0
+  },
+  {
+    "id": "85bb4fc8-e10f-4539-9565-e23e36361073",
+    "pipeline_result_id": "001b5898-ee46-4498-8795-1b6327330f9e",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000015",
+    "code": "CRIT-5",
+    "run_index": 1,
+    "raw_score": 8.5,
+    "normalized_score": 0.85,
+    "rationale": "Bài nộp này trình bày các bảng API, quy trình nghiệp vụ và phân công nhiệm vụ theo đúng chuẩn học thuật. Tuy nhiên, có một số lỗi chính tả và định dạng không chuẩn mực. Các bảng được trình bày rõ ràng, nhưng cần chú thích thêm để tăng độ hiểu rõ.",
+    "variance": 0.0
+  },
+  {
+    "id": "81d89224-c42b-4148-8bdb-6893e0973982",
+    "pipeline_result_id": "001b5898-ee46-4498-8795-1b6327330f9e",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000015",
+    "code": "CRIT-5",
+    "run_index": 2,
+    "raw_score": 8.5,
+    "normalized_score": 0.85,
+    "rationale": "Bài nộp này trình bày các bảng API, quy trình nghiệp vụ và phân công nhiệm vụ một cách rõ ràng. Các bảng được trình bày trong định dạng bảng và được chú thích rõ ràng. Tuy nhiên, có nhiều trích dẫn không liên quan và lặp lại, gây rối mắt. Các bảng cũng không được chú thích chi tiết về mục đích và cách sử dụng.",
+    "variance": 0.0
+  },
+  {
+    "id": "aae8331f-e551-4ec4-8475-359c8952cf49",
+    "pipeline_result_id": "001b5898-ee46-4498-8795-1b6327330f9e",
+    "rubric_criterion_id": "00000000-0000-4000-8000-000000000015",
+    "code": "CRIT-5",
+    "run_index": 3,
+    "raw_score": 8.5,
+    "normalized_score": 0.85,
+    "rationale": "Bài nộp này trình bày một cách chi tiết và đầy đủ các bảng biểu, API, quy trình nghiệp vụ và phân công nhiệm vụ. Tuy nhiên, có một số điểm cần cải thiện về định dạng văn bản và trích dẫn không chính xác.",
+    "variance": 0.0
+  }
+]

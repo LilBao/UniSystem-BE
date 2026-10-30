@@ -1,0 +1,1279 @@
+[
+  {
+    "id": "5b573e0b-c647-4028-bff7-49647c1e5fbe",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": null,
+    "title": "ĐỖ ĐẦN TỔNG HỢP HƯƠNG CNPM - CO3013",
+    "level": 1,
+    "ordinal": 0,
+    "page_start": 1,
+    "page_end": 1,
+    "section_path": [
+      "ĐỖ ĐẦN TỔNG HỢP HƯƠNG CNPM - CO3013"
+    ]
+  },
+  {
+    "id": "b5f849da-12ec-43a4-a25e-6c54c9c27f1a",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": null,
+    "title": "Hệ thống rap phim CMS",
+    "level": 1,
+    "ordinal": 1,
+    "page_start": 1,
+    "page_end": 1,
+    "section_path": [
+      "Hệ thống rap phim CMS"
+    ]
+  },
+  {
+    "id": "9bc3708d-6dbe-4f71-b0e3-dd34c2ea2d87",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": null,
+    "title": "Mục lục",
+    "level": 1,
+    "ordinal": 2,
+    "page_start": 2,
+    "page_end": 4,
+    "section_path": [
+      "Mục lục"
+    ]
+  },
+  {
+    "id": "66331d34-f56c-4081-a197-c17ada018d4b",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": null,
+    "title": "1 Giới thiệu chung",
+    "level": 1,
+    "ordinal": 3,
+    "page_start": 4,
+    "page_end": 4,
+    "section_path": [
+      "1 Giới thiệu chung"
+    ]
+  },
+  {
+    "id": "b0657c22-488b-4d07-aa77-ea902607edce",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "66331d34-f56c-4081-a197-c17ada018d4b",
+    "title": "1.1 Bối cảnh nghiên cứu và lý do chọn đề tài",
+    "level": 2,
+    "ordinal": 4,
+    "page_start": 4,
+    "page_end": 4,
+    "section_path": [
+      "1 Giới thiệu chung",
+      "1.1 Bối cảnh nghiên cứu và lý do chọn đề tài"
+    ]
+  },
+  {
+    "id": "1d405dff-977c-4c26-a726-e2067e413f26",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "66331d34-f56c-4081-a197-c17ada018d4b",
+    "title": "1.2 Mục tiêu tài liệu",
+    "level": 2,
+    "ordinal": 5,
+    "page_start": 4,
+    "page_end": 4,
+    "section_path": [
+      "1 Giới thiệu chung",
+      "1.2 Mục tiêu tài liệu"
+    ]
+  },
+  {
+    "id": "35a192dd-5e89-4310-a9b0-8dd19c21ae4c",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "66331d34-f56c-4081-a197-c17ada018d4b",
+    "title": "1.3 Phạm vi hệ thống",
+    "level": 2,
+    "ordinal": 6,
+    "page_start": 4,
+    "page_end": 4,
+    "section_path": [
+      "1 Giới thiệu chung",
+      "1.3 Phạm vi hệ thống"
+    ]
+  },
+  {
+    "id": "aedd01b9-8013-496c-bf15-4d847264915e",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "66331d34-f56c-4081-a197-c17ada018d4b",
+    "title": "1.4 Bối cảnh dự án",
+    "level": 2,
+    "ordinal": 7,
+    "page_start": 4,
+    "page_end": 4,
+    "section_path": [
+      "1 Giới thiệu chung",
+      "1.4 Bối cảnh dự án"
+    ]
+  },
+  {
+    "id": "9001a10a-ae2e-4213-a062-fec3f42d8f4f",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": null,
+    "title": "2 Tổng quan hệ thống",
+    "level": 1,
+    "ordinal": 8,
+    "page_start": 4,
+    "page_end": 5,
+    "section_path": [
+      "2 Tổng quan hệ thống"
+    ]
+  },
+  {
+    "id": "d646a8b2-2269-4b11-a2c6-b76f4725cf97",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "9001a10a-ae2e-4213-a062-fec3f42d8f4f",
+    "title": "2.1 Mô tả hệ thống",
+    "level": 2,
+    "ordinal": 9,
+    "page_start": 4,
+    "page_end": 5,
+    "section_path": [
+      "2 Tổng quan hệ thống",
+      "2.1 Mô tả hệ thống"
+    ]
+  },
+  {
+    "id": "f6d770eb-3a05-454b-a093-3f936d8eebb3",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "9001a10a-ae2e-4213-a062-fec3f42d8f4f",
+    "title": "2.2 Đối tượng sử dụng (Stakeholders & Users)",
+    "level": 2,
+    "ordinal": 10,
+    "page_start": 5,
+    "page_end": 5,
+    "section_path": [
+      "2 Tổng quan hệ thống",
+      "2.2 Đối tượng sử dụng (Stakeholders & Users)"
+    ]
+  },
+  {
+    "id": "3971ff88-1732-4992-a4ae-fefe668fc0e7",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": null,
+    "title": "3 Mục tiêu dự án (Project Goals)",
+    "level": 1,
+    "ordinal": 11,
+    "page_start": 5,
+    "page_end": 6,
+    "section_path": [
+      "3 Mục tiêu dự án (Project Goals)"
+    ]
+  },
+  {
+    "id": "4c459e3c-3f52-4d3e-9dce-3e1c695bb81b",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "3971ff88-1732-4992-a4ae-fefe668fc0e7",
+    "title": "3.1 Mục tiêu tổng quát",
+    "level": 2,
+    "ordinal": 12,
+    "page_start": 5,
+    "page_end": 5,
+    "section_path": [
+      "3 Mục tiêu dự án (Project Goals)",
+      "3.1 Mục tiêu tổng quát"
+    ]
+  },
+  {
+    "id": "c98a948e-5e8d-4217-babc-c16ab447cbd0",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "3971ff88-1732-4992-a4ae-fefe668fc0e7",
+    "title": "3.2 Mục tiêu cụ thể",
+    "level": 2,
+    "ordinal": 13,
+    "page_start": 5,
+    "page_end": 6,
+    "section_path": [
+      "3 Mục tiêu dự án (Project Goals)",
+      "3.2 Mục tiêu cụ thể"
+    ]
+  },
+  {
+    "id": "50c77c24-33d9-48b2-a4bb-d242305ddb01",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": null,
+    "title": "4 Phân tích nghiệp vụ (Business Analysis)",
+    "level": 1,
+    "ordinal": 14,
+    "page_start": 6,
+    "page_end": 6,
+    "section_path": [
+      "4 Phân tích nghiệp vụ (Business Analysis)"
+    ]
+  },
+  {
+    "id": "bc908dce-4e27-4766-8aa3-fdec384577fc",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "50c77c24-33d9-48b2-a4bb-d242305ddb01",
+    "title": "4.1 Hiện trạng (As-Is)",
+    "level": 2,
+    "ordinal": 15,
+    "page_start": 6,
+    "page_end": 6,
+    "section_path": [
+      "4 Phân tích nghiệp vụ (Business Analysis)",
+      "4.1 Hiện trạng (As-Is)"
+    ]
+  },
+  {
+    "id": "dda748f6-287f-485c-8d6e-07cdeabf6e91",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "50c77c24-33d9-48b2-a4bb-d242305ddb01",
+    "title": "4.2 Giải pháp đề xuất (To-Be)",
+    "level": 2,
+    "ordinal": 16,
+    "page_start": 6,
+    "page_end": 6,
+    "section_path": [
+      "4 Phân tích nghiệp vụ (Business Analysis)",
+      "4.2 Giải pháp đề xuất (To-Be)"
+    ]
+  },
+  {
+    "id": "8c9dc420-1c7b-4d5d-8256-c24f9e3b61cf",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": null,
+    "title": "5 Kiến trúc hệ thống đề xuất",
+    "level": 1,
+    "ordinal": 17,
+    "page_start": 6,
+    "page_end": 7,
+    "section_path": [
+      "5 Kiến trúc hệ thống đề xuất"
+    ]
+  },
+  {
+    "id": "9693ba91-ab84-4750-aeb2-c95b6c834e10",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "8c9dc420-1c7b-4d5d-8256-c24f9e3b61cf",
+    "title": "5.1 Tổng quan kiến trúc",
+    "level": 2,
+    "ordinal": 18,
+    "page_start": 6,
+    "page_end": 6,
+    "section_path": [
+      "5 Kiến trúc hệ thống đề xuất",
+      "5.1 Tổng quan kiến trúc"
+    ]
+  },
+  {
+    "id": "205030cd-c622-49fa-a69f-c2f9146c60d8",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "8c9dc420-1c7b-4d5d-8256-c24f9e3b61cf",
+    "title": "5.2 Mô hình phân tầng",
+    "level": 2,
+    "ordinal": 19,
+    "page_start": 6,
+    "page_end": 7,
+    "section_path": [
+      "5 Kiến trúc hệ thống đề xuất",
+      "5.2 Mô hình phân tầng"
+    ]
+  },
+  {
+    "id": "076d2ea8-f166-4987-bde5-86944d0411e0",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": null,
+    "title": "6 Yêu cầu chức năng (Functional Requirements)",
+    "level": 1,
+    "ordinal": 20,
+    "page_start": 7,
+    "page_end": 7,
+    "section_path": [
+      "6 Yêu cầu chức năng (Functional Requirements)"
+    ]
+  },
+  {
+    "id": "e08170f7-164d-42fe-a64c-67564276bada",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "076d2ea8-f166-4987-bde5-86944d0411e0",
+    "title": "6.1 Chức năng cho Khách hàng",
+    "level": 2,
+    "ordinal": 21,
+    "page_start": 7,
+    "page_end": 7,
+    "section_path": [
+      "6 Yêu cầu chức năng (Functional Requirements)",
+      "6.1 Chức năng cho Khách hàng"
+    ]
+  },
+  {
+    "id": "58a1d6f2-3f02-4400-9dd8-dc311a5bfe3f",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "076d2ea8-f166-4987-bde5-86944d0411e0",
+    "title": "6.2 Chức năng cho Nhân viên",
+    "level": 2,
+    "ordinal": 22,
+    "page_start": 7,
+    "page_end": 7,
+    "section_path": [
+      "6 Yêu cầu chức năng (Functional Requirements)",
+      "6.2 Chức năng cho Nhân viên"
+    ]
+  },
+  {
+    "id": "95275244-571b-42b1-9bd6-e98ee82e28c0",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "076d2ea8-f166-4987-bde5-86944d0411e0",
+    "title": "6.3 Chức năng cho Quản trị viên",
+    "level": 2,
+    "ordinal": 23,
+    "page_start": 7,
+    "page_end": 7,
+    "section_path": [
+      "6 Yêu cầu chức năng (Functional Requirements)",
+      "6.3 Chức năng cho Quản trị viên"
+    ]
+  },
+  {
+    "id": "e4404547-c0ee-4ecb-bb2f-8de32c295f60",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "076d2ea8-f166-4987-bde5-86944d0411e0",
+    "title": "6.4 Chức năng hệ thống",
+    "level": 2,
+    "ordinal": 24,
+    "page_start": 7,
+    "page_end": 7,
+    "section_path": [
+      "6 Yêu cầu chức năng (Functional Requirements)",
+      "6.4 Chức năng hệ thống"
+    ]
+  },
+  {
+    "id": "0dcf5956-9024-49c8-aae4-a298bde0664c",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": null,
+    "title": "7 Yêu cầu phi chức năng (Non-Functional Requirements)",
+    "level": 1,
+    "ordinal": 25,
+    "page_start": 7,
+    "page_end": 18,
+    "section_path": [
+      "7 Yêu cầu phi chức năng (Non-Functional Requirements)"
+    ]
+  },
+  {
+    "id": "53956ee6-2ede-4b28-9cbb-0ed1e8a5668b",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "0dcf5956-9024-49c8-aae4-a298bde0664c",
+    "title": "7.1 Hiệu năng (Performance)",
+    "level": 2,
+    "ordinal": 26,
+    "page_start": 7,
+    "page_end": 8,
+    "section_path": [
+      "7 Yêu cầu phi chức năng (Non-Functional Requirements)",
+      "7.1 Hiệu năng (Performance)"
+    ]
+  },
+  {
+    "id": "f031c7fa-495c-4b7d-9b9a-748e2461897a",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "0dcf5956-9024-49c8-aae4-a298bde0664c",
+    "title": "7.2 Độ tin cậy & sẵn sàng (Reliability & Availability)",
+    "level": 2,
+    "ordinal": 27,
+    "page_start": 8,
+    "page_end": 8,
+    "section_path": [
+      "7 Yêu cầu phi chức năng (Non-Functional Requirements)",
+      "7.2 Độ tin cậy & sẵn sàng (Reliability & Availability)"
+    ]
+  },
+  {
+    "id": "629a3716-142a-4132-9aad-88ad4956f26b",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "0dcf5956-9024-49c8-aae4-a298bde0664c",
+    "title": "7.3 Bảo mật (Security)",
+    "level": 2,
+    "ordinal": 28,
+    "page_start": 8,
+    "page_end": 8,
+    "section_path": [
+      "7 Yêu cầu phi chức năng (Non-Functional Requirements)",
+      "7.3 Bảo mật (Security)"
+    ]
+  },
+  {
+    "id": "a62660a0-7e86-49d4-91bc-250bc5e02f27",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "0dcf5956-9024-49c8-aae4-a298bde0664c",
+    "title": "7.4 Khả năng mở rộng (Scalability)",
+    "level": 2,
+    "ordinal": 29,
+    "page_start": 8,
+    "page_end": 8,
+    "section_path": [
+      "7 Yêu cầu phi chức năng (Non-Functional Requirements)",
+      "7.4 Khả năng mở rộng (Scalability)"
+    ]
+  },
+  {
+    "id": "3c2b2470-1ce6-4cd3-ae1b-3d71eb80a51b",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "0dcf5956-9024-49c8-aae4-a298bde0664c",
+    "title": "7.5 Khả dụng & UX (Usability)",
+    "level": 2,
+    "ordinal": 30,
+    "page_start": 8,
+    "page_end": 8,
+    "section_path": [
+      "7 Yêu cầu phi chức năng (Non-Functional Requirements)",
+      "7.5 Khả dụng & UX (Usability)"
+    ]
+  },
+  {
+    "id": "22693649-6707-4a63-8ba2-a45f2d4f7cee",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "0dcf5956-9024-49c8-aae4-a298bde0664c",
+    "title": "7.6 Bảo trì & hỗ trợ (Maintainability)",
+    "level": 2,
+    "ordinal": 31,
+    "page_start": 8,
+    "page_end": 14,
+    "section_path": [
+      "7 Yêu cầu phi chức năng (Non-Functional Requirements)",
+      "7.6 Bảo trì & hỗ trợ (Maintainability)"
+    ]
+  },
+  {
+    "id": "d1691686-2630-499d-9461-fccd7aaecf7c",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "22693649-6707-4a63-8ba2-a45f2d4f7cee",
+    "title": "8.1.1 Phân tích nghiệp vụ phía người dùng",
+    "level": 3,
+    "ordinal": 32,
+    "page_start": 13,
+    "page_end": 13,
+    "section_path": [
+      "7 Yêu cầu phi chức năng (Non-Functional Requirements)",
+      "7.6 Bảo trì & hỗ trợ (Maintainability)",
+      "8.1.1 Phân tích nghiệp vụ phía người dùng"
+    ]
+  },
+  {
+    "id": "9ed47f5e-71fb-470e-8622-b79b4538828f",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "22693649-6707-4a63-8ba2-a45f2d4f7cee",
+    "title": "8.1.2 Quy trình nghiệp vụ Đặt vé (Booking Workflow)",
+    "level": 3,
+    "ordinal": 33,
+    "page_start": 13,
+    "page_end": 14,
+    "section_path": [
+      "7 Yêu cầu phi chức năng (Non-Functional Requirements)",
+      "7.6 Bảo trì & hỗ trợ (Maintainability)",
+      "8.1.2 Quy trình nghiệp vụ Đặt vé (Booking Workflow)"
+    ]
+  },
+  {
+    "id": "7504217e-47e9-4d93-bff4-42e83a329147",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "0dcf5956-9024-49c8-aae4-a298bde0664c",
+    "title": "8.2 Use-case diagram and Use-case scenario Staff and Manager",
+    "level": 2,
+    "ordinal": 34,
+    "page_start": 14,
+    "page_end": 16,
+    "section_path": [
+      "7 Yêu cầu phi chức năng (Non-Functional Requirements)",
+      "8.2 Use-case diagram and Use-case scenario Staff and Manager"
+    ]
+  },
+  {
+    "id": "50c3d497-fb73-40e0-8582-77ccd95584b8",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "7504217e-47e9-4d93-bff4-42e83a329147",
+    "title": "8.2.1 Phân tích quy trình vận hành",
+    "level": 3,
+    "ordinal": 35,
+    "page_start": 15,
+    "page_end": 15,
+    "section_path": [
+      "7 Yêu cầu phi chức năng (Non-Functional Requirements)",
+      "8.2 Use-case diagram and Use-case scenario Staff and Manager",
+      "8.2.1 Phân tích quy trình vận hành"
+    ]
+  },
+  {
+    "id": "f9f16baf-1369-4850-b968-cd3b39e22d1e",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "7504217e-47e9-4d93-bff4-42e83a329147",
+    "title": "8.2.3 Quản trị trạng thái và bảo toàn giao dịch",
+    "level": 3,
+    "ordinal": 36,
+    "page_start": 15,
+    "page_end": 16,
+    "section_path": [
+      "7 Yêu cầu phi chức năng (Non-Functional Requirements)",
+      "8.2 Use-case diagram and Use-case scenario Staff and Manager",
+      "8.2.3 Quản trị trạng thái và bảo toàn giao dịch"
+    ]
+  },
+  {
+    "id": "01929e60-bb00-4557-9f71-fb5fd58fb62b",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "0dcf5956-9024-49c8-aae4-a298bde0664c",
+    "title": "8.3 Use-case diagram and Use-case scenario Admin",
+    "level": 2,
+    "ordinal": 37,
+    "page_start": 16,
+    "page_end": 18,
+    "section_path": [
+      "7 Yêu cầu phi chức năng (Non-Functional Requirements)",
+      "8.3 Use-case diagram and Use-case scenario Admin"
+    ]
+  },
+  {
+    "id": "b0661c36-1c85-4919-a8d8-3b1f8dca2b93",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": null,
+    "title": "9 Thiết Kế Chi Tiết",
+    "level": 1,
+    "ordinal": 38,
+    "page_start": 18,
+    "page_end": 20,
+    "section_path": [
+      "9 Thiết Kế Chi Tiết"
+    ]
+  },
+  {
+    "id": "29603668-9ff6-433f-be33-59a0dc12b840",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "b0661c36-1c85-4919-a8d8-3b1f8dca2b93",
+    "title": "9.1 Class Diagram",
+    "level": 2,
+    "ordinal": 39,
+    "page_start": 18,
+    "page_end": 18,
+    "section_path": [
+      "9 Thiết Kế Chi Tiết",
+      "9.1 Class Diagram"
+    ]
+  },
+  {
+    "id": "1a1d73d5-8cc9-4539-aed2-5a6e70203adf",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "b0661c36-1c85-4919-a8d8-3b1f8dca2b93",
+    "title": "9.2 Mô tả thực thể chi tiết",
+    "level": 2,
+    "ordinal": 40,
+    "page_start": 18,
+    "page_end": 20,
+    "section_path": [
+      "9 Thiết Kế Chi Tiết",
+      "9.2 Mô tả thực thể chi tiết"
+    ]
+  },
+  {
+    "id": "59609ade-ca35-4209-9651-f1f8adb823ae",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "1a1d73d5-8cc9-4539-aed2-5a6e70203adf",
+    "title": "9.2.1 Phân hệ Cinema (Quản lý Rap)",
+    "level": 3,
+    "ordinal": 41,
+    "page_start": 18,
+    "page_end": 19,
+    "section_path": [
+      "9 Thiết Kế Chi Tiết",
+      "9.2 Mô tả thực thể chi tiết",
+      "9.2.1 Phân hệ Cinema (Quản lý Rap)"
+    ]
+  },
+  {
+    "id": "8bad00e2-b877-4337-a3b6-0d474420f20e",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "59609ade-ca35-4209-9651-f1f8adb823ae",
+    "title": "9.2.1.3 Seat (Ghế) Đại diện cho một vị trí ngồi trong phòng chiếu.",
+    "level": 4,
+    "ordinal": 42,
+    "page_start": 19,
+    "page_end": 19,
+    "section_path": [
+      "9 Thiết Kế Chi Tiết",
+      "9.2 Mô tả thực thể chi tiết",
+      "9.2.1 Phân hệ Cinema (Quản lý Rap)",
+      "9.2.1.3 Seat (Ghế) Đại diện cho một vị trí ngồi trong phòng chiếu."
+    ]
+  },
+  {
+    "id": "12e8889e-f110-45f5-b974-b22267f69886",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "59609ade-ca35-4209-9651-f1f8adb823ae",
+    "title": "9.2.1.4 SystemSetting (Cấu hình hệ thống) Lưu trữ các cải đặt chung cho toàn bộ hệ thống cinema.",
+    "level": 4,
+    "ordinal": 43,
+    "page_start": 19,
+    "page_end": 19,
+    "section_path": [
+      "9 Thiết Kế Chi Tiết",
+      "9.2 Mô tả thực thể chi tiết",
+      "9.2.1 Phân hệ Cinema (Quản lý Rap)",
+      "9.2.1.4 SystemSetting (Cấu hình hệ thống) Lưu trữ các cải đặt chung cho toàn bộ hệ thống cinema."
+    ]
+  },
+  {
+    "id": "a6ea5e36-d9d5-4ab3-ae09-069a3d27927c",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "1a1d73d5-8cc9-4539-aed2-5a6e70203adf",
+    "title": "9.2.2 Phân hệ Movie (Quản lý Phim)",
+    "level": 3,
+    "ordinal": 44,
+    "page_start": 19,
+    "page_end": 20,
+    "section_path": [
+      "9 Thiết Kế Chi Tiết",
+      "9.2 Mô tả thực thể chi tiết",
+      "9.2.2 Phân hệ Movie (Quản lý Phim)"
+    ]
+  },
+  {
+    "id": "2d07332c-c619-4fb3-b7a5-1c81d3cf1260",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": null,
+    "title": "Quan hệ:",
+    "level": 1,
+    "ordinal": 45,
+    "page_start": 20,
+    "page_end": 20,
+    "section_path": [
+      "Quan hệ:"
+    ]
+  },
+  {
+    "id": "58ae5d69-6f6c-45bb-9ff4-e72e94348838",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "2d07332c-c619-4fb3-b7a5-1c81d3cf1260",
+    "title": "9.2.2.2 Review (Đánh giá) Lưu trữ nhận xét của khách hàng về phim.",
+    "level": 4,
+    "ordinal": 46,
+    "page_start": 20,
+    "page_end": 20,
+    "section_path": [
+      "Quan hệ:",
+      "9.2.2.2 Review (Đánh giá) Lưu trữ nhận xét của khách hàng về phim."
+    ]
+  },
+  {
+    "id": "e05011ec-8194-4c96-8d79-cc315256a2f1",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "2d07332c-c619-4fb3-b7a5-1c81d3cf1260",
+    "title": "9.2.3 Phân hệ Screening & Booking (Suất chiếu & Đặt vé)",
+    "level": 3,
+    "ordinal": 47,
+    "page_start": 20,
+    "page_end": 20,
+    "section_path": [
+      "Quan hệ:",
+      "9.2.3 Phân hệ Screening & Booking (Suất chiếu & Đặt vé)"
+    ]
+  },
+  {
+    "id": "dc05f069-b7a0-4112-9f73-aaa6f5b88930",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "e05011ec-8194-4c96-8d79-cc315256a2f1",
+    "title": "9.2.3.1 Showtime (Suất chiếu) Đại diện cho một lần chiếu phim cụ thể.",
+    "level": 4,
+    "ordinal": 48,
+    "page_start": 20,
+    "page_end": 20,
+    "section_path": [
+      "Quan hệ:",
+      "9.2.3 Phân hệ Screening & Booking (Suất chiếu & Đặt vé)",
+      "9.2.3.1 Showtime (Suất chiếu) Đại diện cho một lần chiếu phim cụ thể."
+    ]
+  },
+  {
+    "id": "820b0428-549a-4982-a659-0aaa6e9e4efe",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": null,
+    "title": "Quan hệ:",
+    "level": 1,
+    "ordinal": 49,
+    "page_start": 20,
+    "page_end": 20,
+    "section_path": [
+      "Quan hệ:"
+    ]
+  },
+  {
+    "id": "9f21ea7f-e023-4e36-8ffd-51665afc0956",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "820b0428-549a-4982-a659-0aaa6e9e4efe",
+    "title": "9.2.3.2 Ticket (Vé) Đại diện cho một vé đã được bán.",
+    "level": 4,
+    "ordinal": 50,
+    "page_start": 20,
+    "page_end": 20,
+    "section_path": [
+      "Quan hệ:",
+      "9.2.3.2 Ticket (Vé) Đại diện cho một vé đã được bán."
+    ]
+  },
+  {
+    "id": "7367d1ae-8e1f-413c-ba24-3019379c77e4",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": null,
+    "title": "Quan hệ:",
+    "level": 1,
+    "ordinal": 51,
+    "page_start": 20,
+    "page_end": 21,
+    "section_path": [
+      "Quan hệ:"
+    ]
+  },
+  {
+    "id": "e2d2d71b-d30e-4959-b1b9-675fe263f694",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "7367d1ae-8e1f-413c-ba24-3019379c77e4",
+    "title": "9.2.3.3 Order (Đơn hàng/Hóa đơn) Lưu trữ thông tin giao dịch tổng quát.",
+    "level": 4,
+    "ordinal": 52,
+    "page_start": 21,
+    "page_end": 21,
+    "section_path": [
+      "Quan hệ:",
+      "9.2.3.3 Order (Đơn hàng/Hóa đơn) Lưu trữ thông tin giao dịch tổng quát."
+    ]
+  },
+  {
+    "id": "97c4b643-1f5c-4111-9bf1-c69f063fddc9",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": null,
+    "title": "Thuộc tính:",
+    "level": 1,
+    "ordinal": 53,
+    "page_start": 21,
+    "page_end": 31,
+    "section_path": [
+      "Thuộc tính:"
+    ]
+  },
+  {
+    "id": "e3a1d6ec-7e90-42c1-907f-871ae64a4fa6",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "97c4b643-1f5c-4111-9bf1-c69f063fddc9",
+    "title": "9.2.4 Phân hệ Staff & Customer (Nhân sự & Khách hàng)",
+    "level": 3,
+    "ordinal": 54,
+    "page_start": 21,
+    "page_end": 22,
+    "section_path": [
+      "Thuộc tính:",
+      "9.2.4 Phân hệ Staff & Customer (Nhân sự & Khách hàng)"
+    ]
+  },
+  {
+    "id": "2c21bb72-d23a-40f6-bcb0-fd49936ce39f",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "e3a1d6ec-7e90-42c1-907f-871ae64a4fa6",
+    "title": "9.2.4.1 Employee (Nhân viên)",
+    "level": 4,
+    "ordinal": 55,
+    "page_start": 21,
+    "page_end": 21,
+    "section_path": [
+      "Thuộc tính:",
+      "9.2.4 Phân hệ Staff & Customer (Nhân sự & Khách hàng)",
+      "9.2.4.1 Employee (Nhân viên)"
+    ]
+  },
+  {
+    "id": "00df4939-7815-4ac1-b9d1-365ddabfe180",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "e3a1d6ec-7e90-42c1-907f-871ae64a4fa6",
+    "title": "9.2.4.2 Customer (Khách hàng)",
+    "level": 4,
+    "ordinal": 56,
+    "page_start": 21,
+    "page_end": 21,
+    "section_path": [
+      "Thuộc tính:",
+      "9.2.4 Phân hệ Staff & Customer (Nhân sự & Khách hàng)",
+      "9.2.4.2 Customer (Khách hàng)"
+    ]
+  },
+  {
+    "id": "98bea396-1efc-470e-a32f-777e5dcc0e9f",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "e3a1d6ec-7e90-42c1-907f-871ae64a4fa6",
+    "title": "9.2.4.3 Membership (Thành viên)",
+    "level": 4,
+    "ordinal": 57,
+    "page_start": 21,
+    "page_end": 22,
+    "section_path": [
+      "Thuộc tính:",
+      "9.2.4 Phân hệ Staff & Customer (Nhân sự & Khách hàng)",
+      "9.2.4.3 Membership (Thành viên)"
+    ]
+  },
+  {
+    "id": "ea31272e-2c20-4e12-8ee7-a1415cc31657",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "97c4b643-1f5c-4111-9bf1-c69f063fddc9",
+    "title": "9.2.5 Phân hệ Products (Sản phẩm phụ trợ)",
+    "level": 3,
+    "ordinal": 58,
+    "page_start": 22,
+    "page_end": 22,
+    "section_path": [
+      "Thuộc tính:",
+      "9.2.5 Phân hệ Products (Sản phẩm phụ trợ)"
+    ]
+  },
+  {
+    "id": "a1d5a027-8d82-4fd1-a7ea-17d9d4c898f3",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "ea31272e-2c20-4e12-8ee7-a1415cc31657",
+    "title": "9.2.5.2 FoodDrink (Đồ ăn thức uống)",
+    "level": 4,
+    "ordinal": 59,
+    "page_start": 22,
+    "page_end": 22,
+    "section_path": [
+      "Thuộc tính:",
+      "9.2.5 Phân hệ Products (Sản phẩm phụ trợ)",
+      "9.2.5.2 FoodDrink (Đồ ăn thức uống)"
+    ]
+  },
+  {
+    "id": "5d0eecd9-2c41-4172-9e0c-2409a9a762bc",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "ea31272e-2c20-4e12-8ee7-a1415cc31657",
+    "title": "9.2.5.3 Merchandise (Hàng hóa lưu niệm)",
+    "level": 4,
+    "ordinal": 60,
+    "page_start": 22,
+    "page_end": 22,
+    "section_path": [
+      "Thuộc tính:",
+      "9.2.5 Phân hệ Products (Sản phẩm phụ trợ)",
+      "9.2.5.3 Merchandise (Hàng hóa lưu niệm)"
+    ]
+  },
+  {
+    "id": "6dc11823-275d-4881-a380-5106178356da",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "97c4b643-1f5c-4111-9bf1-c69f063fddc9",
+    "title": "9.3 Thiết kế API",
+    "level": 2,
+    "ordinal": 61,
+    "page_start": 22,
+    "page_end": 25,
+    "section_path": [
+      "Thuộc tính:",
+      "9.3 Thiết kế API"
+    ]
+  },
+  {
+    "id": "7bbcd046-07cb-4f72-b06e-aa10ed08f4d1",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "6dc11823-275d-4881-a380-5106178356da",
+    "title": "9.3.1 Quy ước API",
+    "level": 3,
+    "ordinal": 62,
+    "page_start": 22,
+    "page_end": 22,
+    "section_path": [
+      "Thuộc tính:",
+      "9.3 Thiết kế API",
+      "9.3.1 Quy ước API"
+    ]
+  },
+  {
+    "id": "59525830-9356-4a1f-a555-159cecddcb60",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "6dc11823-275d-4881-a380-5106178356da",
+    "title": "9.3.2 Các nhóm API chính",
+    "level": 3,
+    "ordinal": 63,
+    "page_start": 22,
+    "page_end": 25,
+    "section_path": [
+      "Thuộc tính:",
+      "9.3 Thiết kế API",
+      "9.3.2 Các nhóm API chính"
+    ]
+  },
+  {
+    "id": "72b1cf8e-6d13-404d-9060-6aec104f65a5",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "97c4b643-1f5c-4111-9bf1-c69f063fddc9",
+    "title": "9.4 Thiết kế giao diện (UI/UX)",
+    "level": 2,
+    "ordinal": 64,
+    "page_start": 25,
+    "page_end": 30,
+    "section_path": [
+      "Thuộc tính:",
+      "9.4 Thiết kế giao diện (UI/UX)"
+    ]
+  },
+  {
+    "id": "dfc3f421-7076-452c-b290-a2aa40b9484f",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "72b1cf8e-6d13-404d-9060-6aec104f65a5",
+    "title": "9.4.1 Wireframe chính Front-end Customer",
+    "level": 3,
+    "ordinal": 65,
+    "page_start": 25,
+    "page_end": 26,
+    "section_path": [
+      "Thuộc tính:",
+      "9.4 Thiết kế giao diện (UI/UX)",
+      "9.4.1 Wireframe chính Front-end Customer"
+    ]
+  },
+  {
+    "id": "cd8ea627-fbbf-46c6-b681-9b85836c96e3",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "72b1cf8e-6d13-404d-9060-6aec104f65a5",
+    "title": "9.4.2 Wireframe chính Front-end Dashboard",
+    "level": 3,
+    "ordinal": 66,
+    "page_start": 26,
+    "page_end": 30,
+    "section_path": [
+      "Thuộc tính:",
+      "9.4 Thiết kế giao diện (UI/UX)",
+      "9.4.2 Wireframe chính Front-end Dashboard"
+    ]
+  },
+  {
+    "id": "e08a023c-7bcc-4ad3-ba41-0b5e9b2d80e4",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "97c4b643-1f5c-4111-9bf1-c69f063fddc9",
+    "title": "9.5 Sơ đồ tuần tự (Sequence Diagrams)",
+    "level": 2,
+    "ordinal": 67,
+    "page_start": 30,
+    "page_end": 31,
+    "section_path": [
+      "Thuộc tính:",
+      "9.5 Sơ đồ tuần tự (Sequence Diagrams)"
+    ]
+  },
+  {
+    "id": "2d507890-f128-42b9-a2b3-cf7339c0a0b4",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "e08a023c-7bcc-4ad3-ba41-0b5e9b2d80e4",
+    "title": "9.5.1 Sequence Diagram: Đặt vé trực tuyến",
+    "level": 3,
+    "ordinal": 68,
+    "page_start": 30,
+    "page_end": 31,
+    "section_path": [
+      "Thuộc tính:",
+      "9.5 Sơ đồ tuần tự (Sequence Diagrams)",
+      "9.5.1 Sequence Diagram: Đặt vé trực tuyến"
+    ]
+  },
+  {
+    "id": "86021706-0ef2-4a46-b380-a630c1b1e2aa",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": null,
+    "title": "10 Kế hoạch kiểm thử",
+    "level": 1,
+    "ordinal": 69,
+    "page_start": 31,
+    "page_end": 32,
+    "section_path": [
+      "10 Kế hoạch kiểm thử"
+    ]
+  },
+  {
+    "id": "1104c4ef-11b4-442e-8bff-8d4a99ef1e82",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "86021706-0ef2-4a46-b380-a630c1b1e2aa",
+    "title": "10.1 Chiến lược kiểm thử",
+    "level": 2,
+    "ordinal": 70,
+    "page_start": 31,
+    "page_end": 31,
+    "section_path": [
+      "10 Kế hoạch kiểm thử",
+      "10.1 Chiến lược kiểm thử"
+    ]
+  },
+  {
+    "id": "1a175e73-d013-4cb3-9dfe-da4d93f28fc6",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "86021706-0ef2-4a46-b380-a630c1b1e2aa",
+    "title": "10.2 Test Cases mẫu",
+    "level": 2,
+    "ordinal": 71,
+    "page_start": 31,
+    "page_end": 32,
+    "section_path": [
+      "10 Kế hoạch kiểm thử",
+      "10.2 Test Cases mẫu"
+    ]
+  },
+  {
+    "id": "0abc73e6-2574-4ef5-aa9d-c63d16975506",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "1a175e73-d013-4cb3-9dfe-da4d93f28fc6",
+    "title": "10.2.1 Unit Test (Kiểm thử đơn vị)",
+    "level": 3,
+    "ordinal": 72,
+    "page_start": 31,
+    "page_end": 31,
+    "section_path": [
+      "10 Kế hoạch kiểm thử",
+      "10.2 Test Cases mẫu",
+      "10.2.1 Unit Test (Kiểm thử đơn vị)"
+    ]
+  },
+  {
+    "id": "dc72e3e5-1a26-4717-a0a2-914abc90e0c9",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "1a175e73-d013-4cb3-9dfe-da4d93f28fc6",
+    "title": "10.2.2 Integration Test (Kiểm thử tích hợp)",
+    "level": 3,
+    "ordinal": 73,
+    "page_start": 31,
+    "page_end": 32,
+    "section_path": [
+      "10 Kế hoạch kiểm thử",
+      "10.2 Test Cases mẫu",
+      "10.2.2 Integration Test (Kiểm thử tích hợp)"
+    ]
+  },
+  {
+    "id": "9a5eb0f1-e06b-494e-815f-a63c1c2e5ec9",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "1a175e73-d013-4cb3-9dfe-da4d93f28fc6",
+    "title": "10.2.3 Performance & Security (Kế hoạch)",
+    "level": 3,
+    "ordinal": 74,
+    "page_start": 32,
+    "page_end": 32,
+    "section_path": [
+      "10 Kế hoạch kiểm thử",
+      "10.2 Test Cases mẫu",
+      "10.2.3 Performance & Security (Kế hoạch)"
+    ]
+  },
+  {
+    "id": "601f6081-1677-4f8d-ae41-53a978dd2bfa",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "1a175e73-d013-4cb3-9dfe-da4d93f28fc6",
+    "title": "10.2.4 Xem báo cáo chi tiết",
+    "level": 3,
+    "ordinal": 75,
+    "page_start": 32,
+    "page_end": 32,
+    "section_path": [
+      "10 Kế hoạch kiểm thử",
+      "10.2 Test Cases mẫu",
+      "10.2.4 Xem báo cáo chi tiết"
+    ]
+  },
+  {
+    "id": "57a5b1c2-8bc3-402d-9a71-dd2283a066f0",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": null,
+    "title": "Quản lý rủi ro",
+    "level": 1,
+    "ordinal": 76,
+    "page_start": 32,
+    "page_end": 32,
+    "section_path": [
+      "Quản lý rủi ro"
+    ]
+  },
+  {
+    "id": "ca19931c-1ad7-409a-9e18-de6498d9f30f",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": null,
+    "title": "12 Kế hoạch dự án",
+    "level": 1,
+    "ordinal": 77,
+    "page_start": 32,
+    "page_end": 33,
+    "section_path": [
+      "12 Kế hoạch dự án"
+    ]
+  },
+  {
+    "id": "a1204cc5-52a4-46c7-a777-edfbcc741c12",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "ca19931c-1ad7-409a-9e18-de6498d9f30f",
+    "title": "12.1 Phân công nhiệm vụ",
+    "level": 2,
+    "ordinal": 78,
+    "page_start": 32,
+    "page_end": 33,
+    "section_path": [
+      "12 Kế hoạch dự án",
+      "12.1 Phân công nhiệm vụ"
+    ]
+  },
+  {
+    "id": "95975276-51a4-4739-858c-8267232923d1",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "ca19931c-1ad7-409a-9e18-de6498d9f30f",
+    "title": "12.2 Tiến độ dự án và đóng góp",
+    "level": 2,
+    "ordinal": 79,
+    "page_start": 33,
+    "page_end": 33,
+    "section_path": [
+      "12 Kế hoạch dự án",
+      "12.2 Tiến độ dự án và đóng góp"
+    ]
+  },
+  {
+    "id": "7762cc32-80c2-43fc-8bea-8e06617732f1",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "ca19931c-1ad7-409a-9e18-de6498d9f30f",
+    "title": "12.3 Công cụ và quy trình làm việc",
+    "level": 2,
+    "ordinal": 80,
+    "page_start": 33,
+    "page_end": 33,
+    "section_path": [
+      "12 Kế hoạch dự án",
+      "12.3 Công cụ và quy trình làm việc"
+    ]
+  },
+  {
+    "id": "cb1aa103-0f69-4db2-a13e-9285ef9b539f",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": null,
+    "title": "13 Mã nguồn dự án",
+    "level": 1,
+    "ordinal": 81,
+    "page_start": 33,
+    "page_end": 34,
+    "section_path": [
+      "13 Mã nguồn dự án"
+    ]
+  },
+  {
+    "id": "cfddd6db-92ce-4149-afec-55a11824cb15",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": null,
+    "title": "14 Khai báo sử dụng AI trong dự án",
+    "level": 1,
+    "ordinal": 82,
+    "page_start": 34,
+    "page_end": 35,
+    "section_path": [
+      "14 Khai báo sử dụng AI trong dự án"
+    ]
+  },
+  {
+    "id": "bfe7a638-a7eb-4240-94f4-7355be4f3ebd",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "cfddd6db-92ce-4149-afec-55a11824cb15",
+    "title": "14.1 Mục đích sử dụng",
+    "level": 2,
+    "ordinal": 83,
+    "page_start": 34,
+    "page_end": 34,
+    "section_path": [
+      "14 Khai báo sử dụng AI trong dự án",
+      "14.1 Mục đích sử dụng"
+    ]
+  },
+  {
+    "id": "29907120-dff9-44cc-8787-8c7cf154f5ee",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "cfddd6db-92ce-4149-afec-55a11824cb15",
+    "title": "14.2 Phạm vi đóng góp",
+    "level": 2,
+    "ordinal": 84,
+    "page_start": 34,
+    "page_end": 34,
+    "section_path": [
+      "14 Khai báo sử dụng AI trong dự án",
+      "14.2 Phạm vi đóng góp"
+    ]
+  },
+  {
+    "id": "5fe6e92c-43b6-4dca-8462-e2d4eaee0ce6",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "cfddd6db-92ce-4149-afec-55a11824cb15",
+    "title": "14.3 Giới hạn",
+    "level": 2,
+    "ordinal": 85,
+    "page_start": 34,
+    "page_end": 34,
+    "section_path": [
+      "14 Khai báo sử dụng AI trong dự án",
+      "14.3 Giới hạn"
+    ]
+  },
+  {
+    "id": "4f14e8a3-61c5-45d0-af14-3c960013c024",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "cfddd6db-92ce-4149-afec-55a11824cb15",
+    "title": "14.4 Trách nhiệm",
+    "level": 2,
+    "ordinal": 86,
+    "page_start": 34,
+    "page_end": 35,
+    "section_path": [
+      "14 Khai báo sử dụng AI trong dự án",
+      "14.4 Trách nhiệm"
+    ]
+  },
+  {
+    "id": "f0ab5a77-ca68-4047-92dd-1b04ba6c2169",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": null,
+    "title": "15 Kết luận và hướng phát triển",
+    "level": 1,
+    "ordinal": 87,
+    "page_start": 35,
+    "page_end": 36,
+    "section_path": [
+      "15 Kết luận và hướng phát triển"
+    ]
+  },
+  {
+    "id": "acf18658-1ca1-45c0-bd4a-b4597f8d86ae",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "f0ab5a77-ca68-4047-92dd-1b04ba6c2169",
+    "title": "15.1 Kết luận",
+    "level": 2,
+    "ordinal": 88,
+    "page_start": 35,
+    "page_end": 35,
+    "section_path": [
+      "15 Kết luận và hướng phát triển",
+      "15.1 Kết luận"
+    ]
+  },
+  {
+    "id": "0df6decd-015a-47e7-bf25-43ab809093f3",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": "f0ab5a77-ca68-4047-92dd-1b04ba6c2169",
+    "title": "15.2 Hướng phát triển trong tương lai",
+    "level": 2,
+    "ordinal": 89,
+    "page_start": 35,
+    "page_end": 36,
+    "section_path": [
+      "15 Kết luận và hướng phát triển",
+      "15.2 Hướng phát triển trong tương lai"
+    ]
+  },
+  {
+    "id": "8cad724d-0d94-4012-a291-d3fe0616163d",
+    "artifact_id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+    "parent_id": null,
+    "title": "TÀI LIỆU THAM KHẢO",
+    "level": 1,
+    "ordinal": 90,
+    "page_start": 36,
+    "page_end": 36,
+    "section_path": [
+      "TÀI LIỆU THAM KHẢO"
+    ]
+  }
+]

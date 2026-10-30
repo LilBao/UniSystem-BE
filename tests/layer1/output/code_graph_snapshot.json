@@ -1,0 +1,17 @@
+{
+  "id": "fcec5d0a-ba6f-481f-8547-7007273ba4fd",
+  "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+  "source_artifact_id": "e118107d-5168-4a83-a3cc-8d845b422608",
+  "graph_artifact_id": "d6e4b052-5c97-4cbf-ae93-97844ac36159",
+  "source_sha256": "6269df8b9c0f6d5f58566c1ad29924eae0dddfa0956dbb97a1fa67d52d77854b",
+  "graphify_version": "0.9.55",
+  "schema_version": "1.0",
+  "node_count": 1565,
+  "edge_count": 4815,
+  "provenance_summary": {
+    "INFERRED": 249,
+    "AMBIGUOUS": 508,
+    "EXTRACTED": 5623
+  },
+  "created_at": "2026-10-28 08:39:39.499723+00:00"
+}

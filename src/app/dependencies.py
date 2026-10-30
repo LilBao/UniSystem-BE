@@ -12,6 +12,7 @@ from app.adapters.crossref import CrossrefAdapter
 from app.adapters.graphify import GraphifyAdapter
 from app.adapters.llm_citation_judge import LLMCitationJudge
 from app.adapters.llm_code_judge import LLMCodeConsistencyJudge
+from app.adapters.llm_rubric_evaluator import LLMRubricEvaluator
 from app.adapters.local_parser import LocalParserAdapter
 from app.adapters.open_access import OpenAccessAdapter
 from app.adapters.parser import PaddleParserAdapter
@@ -21,6 +22,7 @@ from app.repositories.artifact_repository import ArtifactRepository, GraphArtifa
 from app.repositories.cloudinary_repository import CloudinaryRepository
 from app.repositories.code_repository import CodeRepository
 from app.repositories.document_repository import DocumentRepository
+from app.repositories.p1_repository import P1Repository
 from app.repositories.p2_repository import P2Repository
 from app.repositories.p3_repository import P3Repository
 from app.repositories.pipeline_repository import PipelineRepository
@@ -33,6 +35,11 @@ from app.services.layer1.layer1_service import Layer1Service
 from app.services.layer1.reference_extraction_service import ReferenceExtractionService
 from app.services.layer1.report_preprocessing_service import ReportPreprocessingService
 from app.services.layer1.source_code_preprocessing_service import SourceCodePreprocessingService
+from app.services.layer2.pipeline1.geval_scoring_service import GEvalScoringService
+from app.services.layer2.pipeline1.pipeline1_service import Pipeline1Service
+from app.services.layer2.pipeline1.section_understanding_service import (
+    SectionUnderstandingService,
+)
 from app.services.layer2.pipeline2.citation_verification_service import CitationVerificationService
 from app.services.layer2.pipeline2.pipeline2_service import Pipeline2Service
 from app.services.layer2.pipeline2.reference_resolution_service import ReferenceResolutionService
@@ -158,3 +165,32 @@ def get_pipeline3_service(
         CodeHighlightService(),
         semantic_concurrency=settings.code_judge_concurrency,
     )
+
+
+def get_p1_repository(
+    session: Annotated[AsyncSession, Depends(get_session)],
+) -> P1Repository:
+    return P1Repository(session)
+
+
+def get_pipeline1_service(
+    session: Annotated[AsyncSession, Depends(get_session)],
+) -> Pipeline1Service:
+    settings = get_settings()
+    evaluator = LLMRubricEvaluator(settings)
+    return Pipeline1Service(
+        submission_repository=SubmissionRepository(session),
+        pipeline_repository=PipelineRepository(session),
+        p1_repository=P1Repository(session),
+        section_service=SectionUnderstandingService(
+            max_evidence_items=settings.rubric_max_evidence_blocks
+        ),
+        scoring_service=GEvalScoringService(
+            evaluator=evaluator,
+            default_runs=settings.rubric_geval_runs,
+            default_variance_threshold=settings.rubric_variance_threshold,
+        ),
+        evaluator=evaluator,
+        settings=settings,
+    )
+

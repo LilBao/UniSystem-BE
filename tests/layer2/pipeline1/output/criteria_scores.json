@@ -1,0 +1,166 @@
+[
+  {
+    "code": "CRIT-1",
+    "title": "Đặt vấn đề & Mục tiêu đề tài",
+    "weight": 0.2,
+    "mean_raw_score": 7.5,
+    "mean_normalized_score": 0.75,
+    "variance": 0.0,
+    "uncertainty_flag": false,
+    "verdict": "PASS",
+    "consensus_rationale": "Đánh giá đồng thuận (Điểm TB: 7.50/10 qua 3 lượt chấm G-EVAL (Độ ổn định cao, phương sai 0.000)):\nBài nộp đã cung cấp thông tin về bối cảnh nghiên cứu, lý do chọn đề tài, mục tiêu tài liệu và phạm vi hệ thống. Tuy nhiên, mục tiêu nghiên cứu và phạm vi đề tài còn thiếu sự cụ thể và rõ ràng. Các thông tin về mục tiêu tổng quát và cụ thể đã được đề cập, nhưng không thể đánh giá được tính cấp thiết và khả thi của chúng. Bằng chứng về việc phân tích nghiệp vụ, thiết kế chi tiết và kế hoạch kiểm thử cũng được trình bày đầy đủ, nhưng không thể đánh giá được tính cấp thiết của chúng. Tuy nhiên, bài nộp đã cung cấp thông tin chi tiết về phạm vi hệ thống, các chức năng và yêu cầu, điều này cho thấy sự cố gắng của sinh viên trong việc xây dựng một hệ thống quản lý rạp chiếu phim toàn diện.",
+    "strengths": [
+      "Bài nộp đã cung cấp thông tin chi tiết về phạm vi hệ thống, các chức năng và yêu cầu",
+      "Bài nộp đã trình bày đầy đủ thông tin về phân tích nghiệp vụ, thiết kế chi tiết và kế hoạch kiểm thử",
+      "Bài nộp đã trình bày rõ ràng về bối cảnh nghiên cứu, lý do chọn đề tài, mục tiêu tài liệu và phạm vi hệ thống.",
+      "Bài nộp đã cung cấp thông tin về bối cảnh, mục tiêu và phạm vi của hệ thống",
+      "Bài nộp đã đề cập đến các chức năng và yêu cầu của hệ thống"
+    ],
+    "weaknesses": [
+      "Mục tiêu nghiên cứu và phạm vi đề tài còn thiếu sự cụ thể và rõ ràng",
+      "Không thể đánh giá được tính cấp thiết và khả thi của mục tiêu nghiên cứu",
+      "Mục tiêu nghiên cứu và phạm vi đề tài chưa được trình bày đầy đủ và rõ ràng.",
+      "Các mục tiêu cụ thể và tính cấp thiết của đề tài không được đề cập đầy đủ",
+      "Cách trình bày không rõ ràng và mạch lạc"
+    ],
+    "improvement_suggestions": [
+      "Cần khắc phục: Mục tiêu nghiên cứu và phạm vi đề tài còn thiếu sự cụ thể và rõ ràng",
+      "Cần khắc phục: Không thể đánh giá được tính cấp thiết và khả thi của mục tiêu nghiên cứu",
+      "Cần khắc phục: Mục tiêu nghiên cứu và phạm vi đề tài chưa được trình bày đầy đủ và rõ ràng.",
+      "Cần khắc phục: Các mục tiêu cụ thể và tính cấp thiết của đề tài không được đề cập đầy đủ"
+    ],
+    "runs_count": 3
+  },
+  {
+    "code": "CRIT-2",
+    "title": "Tổng quan tài liệu & Cơ sở lý thuyết",
+    "weight": 0.2,
+    "mean_raw_score": 6.333,
+    "mean_normalized_score": 0.6333,
+    "variance": 0.0833,
+    "uncertainty_flag": false,
+    "verdict": "PASS",
+    "consensus_rationale": "Đánh giá đồng thuận (Điểm TB: 6.33/10 qua 3 lượt chấm G-EVAL (Độ ổn định cao, phương sai 0.083)):\nBài nộp đã cung cấp một số thông tin về bối cảnh nghiên cứu và lý do chọn đề tài, nhưng chưa đầy đủ về việc khảo sát các công trình liên quan. Các bằng chứng chỉ đề cập đến một số khía cạnh của đề tài, thiếu phân tích sâu rộng và trích dẫn từ các bài báo uy tín. Tuy nhiên, bài nộp đã nêu rõ mục tiêu tài liệu và tổng quan hệ thống, cho thấy một số nỗ lực trong việc trình bày thông tin.",
+    "strengths": [
+      "Bài nộp đã nêu rõ mục tiêu tài liệu và tổng quan hệ thống",
+      "Cung cấp một số thông tin về bối cảnh nghiên cứu và lý do chọn đề tài",
+      "Bài nộp đã cung cấp thông tin về bối cảnh nghiên cứu, lý do chọn đề tài, và phân tích nghiệp vụ.",
+      "Các bảng và thông tin chi tiết về yêu cầu chức năng cũng được đề cập.",
+      "Bài nộp đã cung cấp một số thông tin về bối cảnh nghiên cứu và lý do chọn đề tài."
+    ],
+    "weaknesses": [
+      "Thiếu trích dẫn từ các công trình liên quan",
+      "Phân tích điểm mạnh/yếu của các giải pháp hiện có chưa sâu sắc",
+      "Bài nộp thiếu trích dẫn từ các công trình liên quan.",
+      "Phân tích sâu về điểm mạnh/yếu của các giải pháp hiện có chưa được thực hiện.",
+      "Chưa khảo sát sâu rộng các công trình liên quan."
+    ],
+    "improvement_suggestions": [
+      "Cần khắc phục: Thiếu trích dẫn từ các công trình liên quan",
+      "Cần khắc phục: Phân tích điểm mạnh/yếu của các giải pháp hiện có chưa sâu sắc",
+      "Cần khắc phục: Bài nộp thiếu trích dẫn từ các công trình liên quan.",
+      "Cần khắc phục: Phân tích sâu về điểm mạnh/yếu của các giải pháp hiện có chưa được thực hiện.",
+      "Cần khắc phục: Chưa khảo sát sâu rộng các công trình liên quan."
+    ],
+    "runs_count": 3
+  },
+  {
+    "code": "CRIT-3",
+    "title": "Kiến trúc hệ thống & Phương pháp giải quyết",
+    "weight": 0.3,
+    "mean_raw_score": 7.0,
+    "mean_normalized_score": 0.7,
+    "variance": 0.25,
+    "uncertainty_flag": true,
+    "verdict": "PASS",
+    "consensus_rationale": "Đánh giá đồng thuận (Điểm TB: 7.00/10 qua 3 lượt chấm G-EVAL (Có độ dao động giữa các lượt chấm, phương sai 0.250)):\nBài nộp đã đề cập đến kiến trúc hệ thống và phương pháp giải quyết, nhưng thiếu minh họa sơ đồ hoặc mô hình. Các thông tin về giải pháp đề xuất được trình bày một cách mạch lạc, nhưng không đầy đủ. Các chiến lược kiểm thử được đề cập, nhưng không có sơ đồ luồng xử lý. Các bước của use-case được trình bày chi tiết, nhưng không có sơ đồ luồng xử lý. Bài nộp đã nêu rõ mục đích và phạm vi của hệ thống, nhưng thiếu minh họa sơ đồ hoặc mô hình. Các điểm mạnh bao gồm việc trình bày giải pháp một cách mạch lạc và chi tiết, nhưng điểm yếu là thiếu minh họa sơ đồ hoặc mô hình.",
+    "strengths": [
+      "Giải pháp đề xuất được trình bày một cách mạch lạc",
+      "Chi tiết về các bước của use-case được nêu rõ",
+      "Bài nộp đã nêu rõ các chức năng chính của hệ thống",
+      "Đã đề cập đến một số công cụ kiểm thử",
+      "Bài nộp đã đề cập đến chiến lược kiểm thử và luồng xử lý đặt vé"
+    ],
+    "weaknesses": [
+      "Thiếu minh họa sơ đồ hoặc mô hình",
+      "Giải pháp đề xuất không đầy đủ",
+      "Thiếu sơ đồ minh họa kiến trúc hệ thống",
+      "Giải pháp đề xuất và luồng xử lý chưa chi tiết và mạch lạc",
+      "Kiến trúc hệ thống đề xuất và giải pháp đề xuất (To-Be) không được đề cập cụ thể"
+    ],
+    "improvement_suggestions": [
+      "Cần khắc phục: Thiếu minh họa sơ đồ hoặc mô hình",
+      "Cần khắc phục: Giải pháp đề xuất không đầy đủ",
+      "Cần khắc phục: Thiếu sơ đồ minh họa kiến trúc hệ thống",
+      "Cần khắc phục: Giải pháp đề xuất và luồng xử lý chưa chi tiết và mạch lạc",
+      "Cần khắc phục: Kiến trúc hệ thống đề xuất và giải pháp đề xuất (To-Be) không được đề cập cụ thể"
+    ],
+    "runs_count": 3
+  },
+  {
+    "code": "CRIT-4",
+    "title": "Hiện thực hóa & Đánh giá thực nghiệm",
+    "weight": 0.2,
+    "mean_raw_score": 8.5,
+    "mean_normalized_score": 0.85,
+    "variance": 0.0,
+    "uncertainty_flag": false,
+    "verdict": "PASS",
+    "consensus_rationale": "Đánh giá đồng thuận (Điểm TB: 8.50/10 qua 3 lượt chấm G-EVAL (Độ ổn định cao, phương sai 0.000)):\nBài nộp cung cấp đầy đủ thông tin về triển khai mã nguồn và kết quả thử nghiệm, bao gồm cả thông tin về kiểm thử đơn vị và tích hợp. Tuy nhiên, bài nộp chưa đề cập đến kết quả thử nghiệm thực tế hoặc so sánh với baseline, điều này làm giảm mức độ chi tiết và độ sâu của bằng chứng. Các phần khác như thiết kế API và phân tích quy trình vận hành cũng được trình bày rõ ràng.",
+    "strengths": [
+      "Bài nộp cung cấp thông tin đầy đủ về triển khai mã nguồn và kiểm thử tích hợp",
+      "Thông tin về phân tích quy trình vận hành và quản trị trạng thái được trình bày chi tiết",
+      "Hệ thống được xây dựng trên kiến thức phân tầng hiện đại",
+      "Các yêu cầu phi chức năng về hiệu năng, bảo mật, khả năng mở rộng và trải nghiệm người dùng được thiết kế kỹ lưỡng",
+      "Đã thực hiện kiểm thử đơn vị và tích hợp"
+    ],
+    "weaknesses": [
+      "Bài nộp chưa đề cập đến kết quả thử nghiệm thực tế hoặc so sánh với baseline",
+      "Cần cung cấp thêm thông tin về kết quả thử nghiệm và đánh giá hiệu suất của hệ thống",
+      "Vẫn chưa đề cập đến việc so sánh kết quả thực nghiệm với baseline",
+      "Một số thông tin chi tiết về quy trình kiểm thử và kết quả kiểm thử chưa được cung cấp",
+      "Thiếu phân tích sâu sắc về kết quả thử nghiệm"
+    ],
+    "improvement_suggestions": [
+      "Cần khắc phục: Bài nộp chưa đề cập đến kết quả thử nghiệm thực tế hoặc so sánh với baseline",
+      "Cần khắc phục: Cần cung cấp thêm thông tin về kết quả thử nghiệm và đánh giá hiệu suất của hệ thống",
+      "Cần khắc phục: Vẫn chưa đề cập đến việc so sánh kết quả thực nghiệm với baseline",
+      "Cần khắc phục: Một số thông tin chi tiết về quy trình kiểm thử và kết quả kiểm thử chưa được cung cấp",
+      "Cần khắc phục: Thiếu phân tích sâu sắc về kết quả thử nghiệm"
+    ],
+    "runs_count": 3
+  },
+  {
+    "code": "CRIT-5",
+    "title": "Trình bày & Văn phong học thuật",
+    "weight": 0.1,
+    "mean_raw_score": 8.5,
+    "mean_normalized_score": 0.85,
+    "variance": 0.0,
+    "uncertainty_flag": false,
+    "verdict": "PASS",
+    "consensus_rationale": "Đánh giá đồng thuận (Điểm TB: 8.50/10 qua 3 lượt chấm G-EVAL (Độ ổn định cao, phương sai 0.000)):\nBài nộp này trình bày các bảng API, quy trình nghiệp vụ và phân công nhiệm vụ theo đúng chuẩn học thuật. Tuy nhiên, có một số lỗi chính tả và định dạng không chuẩn mực. Các bảng được trình bày rõ ràng, nhưng cần chú thích thêm để tăng độ hiểu rõ.",
+    "strengths": [
+      "Bài nộp trình bày các bảng API, quy trình nghiệp vụ và phân công nhiệm vụ theo đúng chuẩn học thuật.",
+      "Dữ liệu được trình bày rõ ràng và dễ hiểu.",
+      "Bài nộp trình bày các bảng API, quy trình nghiệp vụ và phân công nhiệm vụ một cách rõ ràng",
+      "Các bảng được trình bày trong định dạng bảng và được chú thích rõ ràng",
+      "Bài nộp cung cấp thông tin chi tiết về API, quy trình nghiệp vụ và phân công nhiệm vụ"
+    ],
+    "weaknesses": [
+      "Có một số lỗi chính tả và định dạng không chuẩn mực.",
+      "Một số trích dẫn không rõ ràng và cần thêm chú thích.",
+      "Có nhiều trích dẫn không liên quan và lặp lại, gây rối mắt",
+      "Các bảng không được chú thích chi tiết về mục đích và cách sử dụng",
+      "Định dạng văn bản không nhất quán, có nhiều trích dẫn không chính xác"
+    ],
+    "improvement_suggestions": [
+      "Cần khắc phục: Có một số lỗi chính tả và định dạng không chuẩn mực.",
+      "Cần khắc phục: Một số trích dẫn không rõ ràng và cần thêm chú thích.",
+      "Cần khắc phục: Có nhiều trích dẫn không liên quan và lặp lại, gây rối mắt",
+      "Cần khắc phục: Các bảng không được chú thích chi tiết về mục đích và cách sử dụng",
+      "Cần khắc phục: Định dạng văn bản không nhất quán, có nhiều trích dẫn không chính xác"
+    ],
+    "runs_count": 3
+  }
+]

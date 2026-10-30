@@ -1,0 +1,77 @@
+{
+  "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+  "submission_status": "processing",
+  "pipeline_run": {
+    "id": "4d750523-284f-4320-8c81-bad0b483eebc",
+    "status": "succeeded",
+    "pipeline": "L1",
+    "started_at": "2026-10-28 08:39:39.448016+00:00",
+    "finished_at": "2026-10-28 08:43:18.513049+00:00",
+    "input_fingerprint": "6d11d089804162085267d7ed953fdf5503d8164b238f4f2294a9fb3eb9a563e8",
+    "output_fingerprint": "bbf504074d2b744aa81458eab3326aeb9664b0130f247f2fdef36b6a3ccb631b"
+  },
+  "statistics": {
+    "total_artifacts": 3,
+    "total_document_sections": 91,
+    "total_document_blocks": 559,
+    "total_extracted_claims": 99,
+    "total_references": 11,
+    "code_graph_nodes": 1565,
+    "code_graph_edges": 4815
+  },
+  "artifacts_registered": [
+    {
+      "id": "d6e4b052-5c97-4cbf-ae93-97844ac36159",
+      "kind": "code_graph",
+      "version_no": 1,
+      "object_uri": "cloudinary://raw/authenticated/dacn/submissions/2387a33f-cb2d-40ef-808b-291348cb17c9/code_graph/30469f6825316ae39f7540c1253ecaab3f2f6bdc50af5e389622ab8c12bde875.json",
+      "media_type": "application/json",
+      "byte_size": 2887939,
+      "sha256": "30469f6825316ae39f7540c1253ecaab3f2f6bdc50af5e389622ab8c12bde875",
+      "metadata": {
+        "schema_version": "1.0",
+        "graphify_version": "0.9.55"
+      },
+      "created_at": "2026-10-28 08:39:39.499723+00:00"
+    },
+    {
+      "id": "df59a7a4-af74-42ef-8549-a6d6637fa02c",
+      "kind": "report_pdf",
+      "version_no": 1,
+      "object_uri": "cloudinary://raw/authenticated/dacn/submissions/2387a33f-cb2d-40ef-808b-291348cb17c9/report_pdf/7c322014a34748248d5c57a6100921de",
+      "media_type": "application/pdf",
+      "byte_size": 9901573,
+      "sha256": "a76f8427c7068365abca9f8452ab55f618fee7d0e4cdc9ed09e67496b558eaf5",
+      "metadata": {},
+      "created_at": "2026-10-28 08:39:37.704434+00:00"
+    },
+    {
+      "id": "e118107d-5168-4a83-a3cc-8d845b422608",
+      "kind": "source_archive",
+      "version_no": 1,
+      "object_uri": "cloudinary://raw/authenticated/dacn/submissions/2387a33f-cb2d-40ef-808b-291348cb17c9/source_archive/9bcf9780a44f45b09c585329cb5b0803",
+      "media_type": "application/zip",
+      "byte_size": 1832329,
+      "sha256": "6269df8b9c0f6d5f58566c1ad29924eae0dddfa0956dbb97a1fa67d52d77854b",
+      "metadata": {},
+      "created_at": "2026-10-28 08:39:39.468336+00:00"
+    }
+  ],
+  "code_graph_summary": {
+    "id": "fcec5d0a-ba6f-481f-8547-7007273ba4fd",
+    "submission_id": "2387a33f-cb2d-40ef-808b-291348cb17c9",
+    "source_artifact_id": "e118107d-5168-4a83-a3cc-8d845b422608",
+    "graph_artifact_id": "d6e4b052-5c97-4cbf-ae93-97844ac36159",
+    "source_sha256": "6269df8b9c0f6d5f58566c1ad29924eae0dddfa0956dbb97a1fa67d52d77854b",
+    "graphify_version": "0.9.55",
+    "schema_version": "1.0",
+    "node_count": 1565,
+    "edge_count": 4815,
+    "provenance_summary": {
+      "INFERRED": 249,
+      "AMBIGUOUS": 508,
+      "EXTRACTED": 5623
+    },
+    "created_at": "2026-10-28 08:39:39.499723+00:00"
+  }
+}
