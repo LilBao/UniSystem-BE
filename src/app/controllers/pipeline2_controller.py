@@ -5,7 +5,7 @@ from fastapi import APIRouter, Depends
 
 from app.dependencies import get_pipeline2_service
 from app.schemas.pipeline_schema import PipelineRunResponse
-from app.services.pipeline2_service import Pipeline2Service
+from app.services.layer2.pipeline2.pipeline2_service import Pipeline2Service
 
 router = APIRouter(prefix="/api/v1/submissions", tags=["Pipeline 2"])
 

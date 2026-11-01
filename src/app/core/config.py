@@ -45,6 +45,18 @@ class Settings(BaseSettings):
     claim_llm_api_key: str = ""
     claim_llm_model: str = ""
     claim_max_input_chars: int = 24000
+    citation_llm_url: str = ""
+    citation_llm_api_key: str = ""
+    citation_llm_model: str = ""
+    citation_judge_max_input_chars: int = 24000
+    citation_judge_max_evidence_items: int = 12
+    citation_judge_max_atomic_claims: int = 8
+    citation_judge_confidence_threshold: float = 0.8
+    code_llm_url: str = ""
+    code_llm_api_key: str = ""
+    code_llm_model: str = ""
+    code_judge_max_cards: int = 6
+    code_judge_concurrency: int = 4
     cache_dir: Path = Path(".cache")
     cache_ttl_days: int = 7
     graphify_version: str = "0.9.55"
@@ -69,6 +81,14 @@ class Settings(BaseSettings):
     reference_resolver_concurrency: int = 4
     reference_resolver_version: str = "crossref-1"
 
+    jwt_secret_key: str = "unisystem-dev-jwt-secret-key-change-in-production-32b"
+    jwt_algorithm: Literal["HS256", "HS384", "HS512"] = "HS256"
+    jwt_access_token_expire_minutes: int = 60
+    jwt_refresh_token_expire_days: int = 7
+    jwt_issuer: str = "unisystem-api"
+    password_bcrypt_rounds: int = 12
+    auth_enforced: bool = False
+
     @model_validator(mode="after")
     def validate_processing_limits(self) -> "Settings":
         for name in (
@@ -91,6 +111,12 @@ class Settings(BaseSettings):
             "source_extract_max_ratio",
             "source_parse_max_file_bytes",
             "claim_max_input_chars",
+            "citation_judge_max_input_chars",
+            "citation_judge_max_evidence_items",
+            "citation_judge_max_atomic_claims",
+            "citation_judge_confidence_threshold",
+            "code_judge_max_cards",
+            "code_judge_concurrency",
             "cache_ttl_days",
             "graphify_timeout_seconds",
             "graphify_max_workers",
@@ -101,6 +127,9 @@ class Settings(BaseSettings):
             "reference_resolver_match_threshold",
             "reference_resolver_margin_threshold",
             "reference_resolver_concurrency",
+            "jwt_access_token_expire_minutes",
+            "jwt_refresh_token_expire_days",
+            "password_bcrypt_rounds",
         ):
             value = float(getattr(self, name))
             if not 0 < value < float("inf"):
@@ -109,6 +138,12 @@ class Settings(BaseSettings):
             raise ValueError("reference_resolver_match_threshold must be at most 1")
         if self.reference_resolver_margin_threshold > 1:
             raise ValueError("reference_resolver_margin_threshold must be at most 1")
+        if self.citation_judge_confidence_threshold > 1:
+            raise ValueError("citation_judge_confidence_threshold must be at most 1")
+        if not 4 <= self.password_bcrypt_rounds <= 31:
+            raise ValueError("password_bcrypt_rounds must be between 4 and 31")
+        if len(self.jwt_secret_key.strip()) < 16:
+            raise ValueError("jwt_secret_key must be at least 16 characters long")
         return self
 
 

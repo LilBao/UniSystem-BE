@@ -20,16 +20,10 @@ class PipelineRepository:
         return run
 
     async def get_run_for_update(self, run_id: UUID) -> PipelineRun | None:
-        statement = (
-            select(PipelineRun)
-            .where(PipelineRun.id == run_id)
-            .with_for_update()
-        )
+        statement = select(PipelineRun).where(PipelineRun.id == run_id).with_for_update()
         return (await self.session.scalars(statement)).one_or_none()
 
-    async def get_latest_succeeded(
-        self, submission_id: UUID, pipeline: str
-    ) -> PipelineRun | None:
+    async def get_latest_succeeded(self, submission_id: UUID, pipeline: str) -> PipelineRun | None:
         statement = (
             select(PipelineRun)
             .where(

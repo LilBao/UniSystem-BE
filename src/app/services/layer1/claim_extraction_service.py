@@ -94,9 +94,7 @@ class ClaimExtractionService:
                     # 2. Sanitize context blocks (filter to existing blocks in current section)
                     contexts = item.get("context_block_external_ids")
                     if isinstance(contexts, list):
-                        item["context_block_external_ids"] = [
-                            c for c in contexts if c in block_ids
-                        ]
+                        item["context_block_external_ids"] = [c for c in contexts if c in block_ids]
                     else:
                         item["context_block_external_ids"] = []
 

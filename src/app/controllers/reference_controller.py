@@ -6,7 +6,7 @@ from fastapi import APIRouter, Depends
 from app.dependencies import (
     get_reference_resolution_service,
 )
-from app.services.reference_resolution_service import (
+from app.services.layer2.pipeline2.reference_resolution_service import (
     ReferenceResolutionService,
 )
 

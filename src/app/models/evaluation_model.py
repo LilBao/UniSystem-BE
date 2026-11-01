@@ -25,9 +25,7 @@ class ClaimReference(Base):
     __table_args__ = (PrimaryKeyConstraint("claim_id", "submission_reference_id"),)
 
     claim_id: Mapped[UUID] = mapped_column(ForeignKey("claims.id"))
-    submission_reference_id: Mapped[UUID] = mapped_column(
-        ForeignKey("submission_references.id")
-    )
+    submission_reference_id: Mapped[UUID] = mapped_column(ForeignKey("submission_references.id"))
 
 
 class PipelineResult(CreatedAtMixin, Base):
@@ -57,9 +55,7 @@ class EvidencePack(CreatedAtMixin, Base):
     id: Mapped[UUID] = mapped_column(primary_key=True, default=uuid4)
     submission_id: Mapped[UUID] = mapped_column(ForeignKey("submissions.id"))
     claim_id: Mapped[UUID | None] = mapped_column(ForeignKey("claims.id"))
-    rubric_criterion_id: Mapped[UUID | None] = mapped_column(
-        ForeignKey("rubric_criteria.id")
-    )
+    rubric_criterion_id: Mapped[UUID | None] = mapped_column(ForeignKey("rubric_criteria.id"))
     pipeline_run_id: Mapped[UUID] = mapped_column(ForeignKey("pipeline_runs.id"))
     coverage: Mapped[dict[str, Any]] = mapped_column(
         JSONB, default=dict, server_default=text("'{}'::jsonb")
@@ -103,9 +99,7 @@ class PipelineResultEvidence(Base):
 
 class RubricCriterionScore(CreatedAtMixin, Base):
     __tablename__ = "rubric_criterion_scores"
-    __table_args__ = (
-        UniqueConstraint("pipeline_result_id", "rubric_criterion_id", "run_index"),
-    )
+    __table_args__ = (UniqueConstraint("pipeline_result_id", "rubric_criterion_id", "run_index"),)
 
     id: Mapped[UUID] = mapped_column(primary_key=True, default=uuid4)
     pipeline_result_id: Mapped[UUID] = mapped_column(ForeignKey("pipeline_results.id"))
@@ -121,9 +115,7 @@ class CitationVerdict(CreatedAtMixin, Base):
     __tablename__ = "citation_verdicts"
 
     id: Mapped[UUID] = mapped_column(primary_key=True, default=uuid4)
-    pipeline_result_id: Mapped[UUID] = mapped_column(
-        ForeignKey("pipeline_results.id"), unique=True
-    )
+    pipeline_result_id: Mapped[UUID] = mapped_column(ForeignKey("pipeline_results.id"), unique=True)
     claim_id: Mapped[UUID] = mapped_column(ForeignKey("claims.id"))
     verdict: Mapped[str] = mapped_column(Text)
     confidence: Mapped[Decimal] = mapped_column(Numeric(5, 4))
@@ -135,13 +127,9 @@ class CodeConsistencyVerdict(CreatedAtMixin, Base):
     __tablename__ = "code_consistency_verdicts"
 
     id: Mapped[UUID] = mapped_column(primary_key=True, default=uuid4)
-    pipeline_result_id: Mapped[UUID] = mapped_column(
-        ForeignKey("pipeline_results.id"), unique=True
-    )
+    pipeline_result_id: Mapped[UUID] = mapped_column(ForeignKey("pipeline_results.id"), unique=True)
     claim_id: Mapped[UUID] = mapped_column(ForeignKey("claims.id"))
-    graph_snapshot_id: Mapped[UUID | None] = mapped_column(
-        ForeignKey("code_graph_snapshots.id")
-    )
+    graph_snapshot_id: Mapped[UUID | None] = mapped_column(ForeignKey("code_graph_snapshots.id"))
     verdict: Mapped[str] = mapped_column(Text)
     verification_stage: Mapped[str] = mapped_column(Text)
     confidence: Mapped[Decimal] = mapped_column(Numeric(5, 4))
@@ -152,9 +140,7 @@ class AISignal(CreatedAtMixin, Base):
     __tablename__ = "ai_signals"
 
     id: Mapped[UUID] = mapped_column(primary_key=True, default=uuid4)
-    pipeline_result_id: Mapped[UUID] = mapped_column(
-        ForeignKey("pipeline_results.id"), unique=True
-    )
+    pipeline_result_id: Mapped[UUID] = mapped_column(ForeignKey("pipeline_results.id"), unique=True)
     submission_id: Mapped[UUID] = mapped_column(ForeignKey("submissions.id"))
     language: Mapped[str] = mapped_column(Text)
     domain: Mapped[str] = mapped_column(Text)
@@ -171,9 +157,7 @@ class AISignal(CreatedAtMixin, Base):
         ARRAY(PG_UUID(as_uuid=True)), default=list, server_default=text("ARRAY[]::uuid[]")
     )
     requires_review: Mapped[bool] = mapped_column(Boolean, server_default=text("false"))
-    academic_score_effect: Mapped[Decimal] = mapped_column(
-        Numeric(8, 3), server_default="0"
-    )
+    academic_score_effect: Mapped[Decimal] = mapped_column(Numeric(8, 3), server_default="0")
     disclaimer: Mapped[str] = mapped_column(
         Text,
         server_default="Review-only evidence signal; not a misconduct verdict.",

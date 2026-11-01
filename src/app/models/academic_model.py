@@ -28,6 +28,7 @@ class User(TimestampMixin, Base):
     id: Mapped[UUID] = mapped_column(primary_key=True, default=uuid4)
     email: Mapped[str] = mapped_column(Text, unique=True)
     display_name: Mapped[str] = mapped_column(Text)
+    password_hash: Mapped[str | None] = mapped_column(Text, nullable=True)
     global_role: Mapped[str] = mapped_column(Text, server_default="user")
     is_active: Mapped[bool] = mapped_column(Boolean, server_default=text("true"))
 
@@ -94,9 +95,7 @@ class GroupMember(Base):
     project_id: Mapped[UUID] = mapped_column(ForeignKey("projects.id"))
     user_id: Mapped[UUID] = mapped_column(ForeignKey("users.id"))
     role: Mapped[str] = mapped_column(Text, server_default="member")
-    joined_at: Mapped[datetime] = mapped_column(
-        DateTime(timezone=True), server_default=func.now()
-    )
+    joined_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
 
 
 class RubricVersion(CreatedAtMixin, Base):

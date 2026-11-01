@@ -80,9 +80,7 @@ class Claim(CreatedAtMixin, Base):
 
 class CodeGraphSnapshot(CreatedAtMixin, Base):
     __tablename__ = "code_graph_snapshots"
-    __table_args__ = (
-        UniqueConstraint("submission_id", "source_sha256", "graphify_version"),
-    )
+    __table_args__ = (UniqueConstraint("submission_id", "source_sha256", "graphify_version"),)
 
     id: Mapped[UUID] = mapped_column(primary_key=True, default=uuid4)
     submission_id: Mapped[UUID] = mapped_column(ForeignKey("submissions.id"))

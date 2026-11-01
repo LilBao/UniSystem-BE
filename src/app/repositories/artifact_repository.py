@@ -84,10 +84,13 @@ class ArtifactRepository:
             raise AppError(ErrorCode.STORAGE_ERROR, "Could not sign artifact download") from exc
 
     def ocr_download_url(self, artifact: Artifact) -> str:
-        lifetime = int(
-            self.settings.paddleocr_poll_timeout_seconds
-            + self.settings.paddleocr_request_timeout_seconds
-        ) + 300
+        lifetime = (
+            int(
+                self.settings.paddleocr_poll_timeout_seconds
+                + self.settings.paddleocr_request_timeout_seconds
+            )
+            + 300
+        )
         return self._download_url(artifact, lifetime)
 
     async def download_to(self, artifact: Artifact, destination: Path, max_bytes: int) -> None:
@@ -99,6 +102,7 @@ class ArtifactRepository:
         if cache_file.exists() and cache_file.stat().st_size == artifact.byte_size:
             logger.info("Artifact %s found in local cache, using cached file", artifact.id)
             import shutil
+
             shutil.copyfile(cache_file, destination)
             return
 
@@ -128,6 +132,7 @@ class ArtifactRepository:
             try:
                 cache_dir.mkdir(parents=True, exist_ok=True)
                 import shutil
+
                 shutil.copyfile(destination, cache_file)
             except Exception as exc:
                 logger.warning("Failed to save artifact to cache: %s", exc)

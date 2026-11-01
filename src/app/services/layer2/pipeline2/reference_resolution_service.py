@@ -4,6 +4,7 @@ from uuid import UUID
 import httpx
 
 from app.adapters.crossref import CrossrefAdapter
+from app.adapters.open_access import OpenAccessAdapter
 from app.core.config import Settings
 from app.repositories.reference_repository import ReferenceRepository
 
@@ -14,18 +15,18 @@ class ReferenceResolutionService:
         repository: ReferenceRepository,
         resolver: CrossrefAdapter,
         settings: Settings,
+        open_access: OpenAccessAdapter | None = None,
     ) -> None:
         self.repository = repository
         self.resolver = resolver
         self.settings = settings
+        self.open_access = open_access
 
     async def resolve_submission(
         self,
         submission_id: UUID,
     ) -> dict[str, int]:
-        references = await self.repository.list_unresolved(
-            submission_id
-        )
+        references = await self.repository.list_unresolved(submission_id)
 
         metrics = {
             "total": len(references),
@@ -37,9 +38,7 @@ class ReferenceResolutionService:
 
         for reference in references:
             try:
-                resolution = await self.resolver.resolve(
-                    reference.raw_citation
-                )
+                resolution = await self.resolver.resolve(reference.raw_citation)
             except (
                 httpx.TimeoutException,
                 httpx.NetworkError,
@@ -52,24 +51,23 @@ class ReferenceResolutionService:
                 metrics["retryable_error"] += 1
                 continue
 
-            if (
-                resolution.status == "resolved"
-                and resolution.candidate is not None
-            ):
+            if resolution.status == "resolved" and resolution.candidate is not None:
                 candidate = resolution.candidate
+
+                if candidate.abstract is None and self.open_access is not None:
+                    enriched_abstract = await self.open_access.fetch_abstract(
+                        doi=candidate.doi,
+                        title=candidate.title,
+                    )
+                    if enriched_abstract:
+                        candidate = candidate.model_copy(update={"abstract": enriched_abstract})
 
                 document = None
                 if candidate.doi is not None:
-                    document = (
-                        await self.repository
-                        .find_document_by_doi(candidate.doi)
-                    )
+                    document = await self.repository.find_document_by_doi(candidate.doi)
 
                 if document is None:
-                    document = (
-                        await self.repository
-                        .create_reference_document(candidate)
-                    )
+                    document = await self.repository.create_reference_document(candidate)
 
                 await self.repository.mark_resolved(
                     reference,
@@ -81,10 +79,7 @@ class ReferenceResolutionService:
                 metrics["resolved"] += 1
                 continue
 
-            alternatives = [
-                item.model_dump(mode="json")
-                for item in resolution.alternatives
-            ]
+            alternatives = [item.model_dump(mode="json") for item in resolution.alternatives]
 
             await self.repository.mark_unresolved_result(
                 reference,

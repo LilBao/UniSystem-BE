@@ -5,14 +5,17 @@ from fastapi import FastAPI, Request
 from fastapi.exceptions import RequestValidationError
 from fastapi.responses import JSONResponse
 
+from app.controllers.auth_controller import router as auth_router
 from app.controllers.pipeline2_controller import router as pipeline2_router
+from app.controllers.pipeline3_controller import router as pipeline3_router
 from app.controllers.reference_controller import router as reference_router
 from app.controllers.submission_controller import router as submission_router
 from app.controllers.upload_controller import router as upload_router
 from app.core.config import get_settings
+from app.core.database import ensure_schema_migrations
 from app.core.error_codes import ErrorCode, get_error
 from app.core.exceptions import AppError
-from app.services.cache_eviction_service import evict_stale_cache
+from app.services.common.cache_eviction_service import evict_stale_cache
 
 
 @asynccontextmanager
@@ -20,15 +23,18 @@ async def lifespan(_: FastAPI) -> AsyncIterator[None]:
     import asyncio
 
     settings = get_settings()
+    await ensure_schema_migrations()
     await asyncio.to_thread(evict_stale_cache, settings)
     yield
 
 
 app = FastAPI(title=get_settings().app_name, version="0.1.0", lifespan=lifespan)
+app.include_router(auth_router)
 app.include_router(submission_router)
 app.include_router(upload_router)
 app.include_router(reference_router)
 app.include_router(pipeline2_router)
+app.include_router(pipeline3_router)
 
 
 @app.exception_handler(RequestValidationError)

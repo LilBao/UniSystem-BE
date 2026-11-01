@@ -20,6 +20,7 @@ DOI_PATTERN = re.compile(
 
 YEAR_PATTERN = re.compile(r"\b(?:19|20)\d{2}\b")
 
+
 class CrossrefAdapter:
     def __init__(self, settings: Settings) -> None:
         self.settings = settings
@@ -123,12 +124,7 @@ class CrossrefAdapter:
         ]
 
     def _client(self) -> httpx.AsyncClient:
-        headers = {
-            "User-Agent": (
-                "UniSystem/0.1 "
-                f"(mailto:{self.settings.crossref_mailto})"
-            )
-        }
+        headers = {"User-Agent": (f"UniSystem/0.1 (mailto:{self.settings.crossref_mailto})")}
 
         return httpx.AsyncClient(
             base_url=self.settings.crossref_base_url,
@@ -188,9 +184,7 @@ class CrossrefAdapter:
         if not title_tokens:
             return 0.0
 
-        containment = len(
-            title_tokens & citation_tokens
-        ) / len(title_tokens)
+        containment = len(title_tokens & citation_tokens) / len(title_tokens)
 
         sequence_score = SequenceMatcher(
             None,
@@ -203,10 +197,7 @@ class CrossrefAdapter:
         citation_year = self._extract_year(raw_citation)
         candidate_year = self._extract_year_from_item(item)
 
-        if (
-            citation_year is not None
-            and candidate_year is not None
-        ):
+        if citation_year is not None and candidate_year is not None:
             if citation_year == candidate_year:
                 score += 0.05
             else:
@@ -246,10 +237,7 @@ class CrossrefAdapter:
             "published-online",
             "published",
         ):
-            date_parts = (
-                item.get(key, {})
-                .get("date-parts", [])
-            )
+            date_parts = item.get(key, {}).get("date-parts", [])
 
             if date_parts and date_parts[0]:
                 return int(date_parts[0][0])

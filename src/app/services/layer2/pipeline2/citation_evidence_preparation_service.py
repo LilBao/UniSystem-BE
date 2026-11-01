@@ -1,0 +1,4 @@
+from app.services.layer2.pipeline2.citation_verification_service import CitationVerificationService
+
+
+class CitationEvidencePreparationService(CitationVerificationService): pass

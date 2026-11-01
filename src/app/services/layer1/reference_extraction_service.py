@@ -8,6 +8,7 @@ REFERENCE_ENTRY = re.compile(
     flags=re.DOTALL,
 )
 
+
 class ReferenceExtractionService:
     def extract(
         self,
@@ -44,4 +45,3 @@ class ReferenceExtractionService:
             seen.add(marker)
 
         return references
-

@@ -20,8 +20,7 @@ class SubmissionService:
             existing = await self.repository.get_by_idempotency_key(idempotency_key)
             if existing is not None:
                 same_request = all(
-                    getattr(existing, field) == value
-                    for field, value in data.model_dump().items()
+                    getattr(existing, field) == value for field, value in data.model_dump().items()
                 )
                 if not same_request:
                     raise AppError(
