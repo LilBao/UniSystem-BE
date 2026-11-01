@@ -45,6 +45,10 @@ from app.schemas.auth_schema import (
     UserResponse,
 )
 
+_LOCAL_SEED_COURSE_ID = UUID("00000000-0000-4000-8000-000000000002")
+_LOCAL_SEED_PROJECT_ID = UUID("00000000-0000-4000-8000-000000000003")
+_LOCAL_SEED_GROUP_ID = UUID("00000000-0000-4000-8000-000000000004")
+
 
 class AuthService:
     def __init__(self, repository: AuthRepository, settings: Settings) -> None:
@@ -69,6 +73,23 @@ class AuthService:
             )
         except IntegrityError as exc:
             raise AppError(ErrorCode.DUPLICATE_RESOURCE, "Email already registered") from exc
+
+        if self.settings.app_env == "local":
+            seed_course = await self.repository.get_course(_LOCAL_SEED_COURSE_ID)
+            if seed_course is not None:
+                await self.repository.upsert_course_membership(
+                    course_id=_LOCAL_SEED_COURSE_ID,
+                    user_id=user.id,
+                    role=CourseRole.STUDENT.value,
+                )
+            seed_group = await self.repository.get_project_group(_LOCAL_SEED_GROUP_ID)
+            if seed_group is not None:
+                await self.repository.upsert_group_member(
+                    group_id=_LOCAL_SEED_GROUP_ID,
+                    project_id=_LOCAL_SEED_PROJECT_ID,
+                    user_id=user.id,
+                    role=GroupRole.MEMBER.value,
+                )
 
         return self._issue_tokens_for_user(user)
 

@@ -13,11 +13,15 @@ CREATE TABLE users (
   id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
   email text NOT NULL UNIQUE,
   display_name text NOT NULL,
-  global_role text NOT NULL DEFAULT 'user' CHECK (global_role IN ('user','admin')),
+  password_hash text,
+  global_role text NOT NULL DEFAULT 'user' CONSTRAINT ck_users_global_role CHECK (global_role IN ('user', 'student', 'instructor', 'admin')),
   is_active boolean NOT NULL DEFAULT true,
   created_at timestamptz NOT NULL DEFAULT now(),
   updated_at timestamptz NOT NULL DEFAULT now()
 );
+
+CREATE UNIQUE INDEX IF NOT EXISTS uq_users_normalized_email
+  ON users (lower(email));
 
 CREATE TABLE courses (
   id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
